@@ -16,11 +16,11 @@ The following data elements must always be present or must be supported if the d
 1. one or more policies, each with a URI identifying the base policy governing this consent
 1. a provision, that must include the following:
     1. a type
-1. a Consent grantee extension (backported from the R5 Consent resource)
 
 **Each Consent Must Support:**
 
 1. all Must Have
+1. a Consent grantee extension (backported from the R5 Consent resource; 0..* to accommodate implicit or program-based grantees where the explicit identity of the grantee is determined by the policy rather than named in the Consent itself)
 1. a provision purpose
 1. a Consent manager extension (backported from the R5 Consent resource)
 1. a Consent controller extension (backported from the R5 Consent resource)
