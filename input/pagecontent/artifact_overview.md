@@ -34,7 +34,6 @@ The artifacts are of five types:
 * [FAST Reference](StructureDefinition-FASTReference.html) - {{site.data.StructureDefinition-FASTReference.description}}
 
 #### Search Parameters
-* [FAST AuditEvent Consent](SearchParameter-fast-auditevent-consent.html) - {{site.data.SearchParameter-fast-auditevent-consent.description}}
 * [FAST Consent Controller](SearchParameter-fast-consent-controller.html) - {{site.data.SearchParameter-fast-consent-controller.description}}
 * [FAST Consent Grantee](SearchParameter-fast-consent-grantee.html) - {{site.data.SearchParameter-fast-consent-grantee.description}}
 * [FAST Consent Manager](SearchParameter-fast-consent-manager.html) - {{site.data.SearchParameter-fast-consent-manager.description}}
