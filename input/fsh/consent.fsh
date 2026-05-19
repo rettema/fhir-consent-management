@@ -20,7 +20,7 @@ http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named c
 * organization 0..0
 * source[x] 1..1 MS
 * source[x] only Reference($USCoreQuestionnaireResponse or FASTDocumentReference)
-* policy MS
+* policy 1..* MS
   * uri 1..1 MS
 * provision 1..1 MS
   * type 1..1 MS

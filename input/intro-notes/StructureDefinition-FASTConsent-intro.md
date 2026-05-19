@@ -13,6 +13,7 @@ The following data elements must always be present or must be supported if the d
 1. a dateTime
 1. a performer (where the reference SHALL contain an identifier for the organization, patient, related person, or practitioner)
 1. a source[x] that is either a DocumentReference with an attachment or a QuestionnaireResponse
+1. one or more policies, each with a URI identifying the base policy governing this consent
 1. a provision, that must include the following:
     1. a type
 1. a Consent grantee extension (backported from the R5 Consent resource)
@@ -20,7 +21,6 @@ The following data elements must always be present or must be supported if the d
 **Each Consent Must Support:**
 
 1. all Must Have
-1. a policy
 1. a provision purpose
 1. a Consent manager extension (backported from the R5 Consent resource)
 1. a Consent controller extension (backported from the R5 Consent resource)
