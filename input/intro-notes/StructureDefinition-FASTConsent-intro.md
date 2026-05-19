@@ -33,6 +33,10 @@ The following data elements must always be present or must be supported if the d
 1. an organization - this is contained in the extensions
 1. more than two levels of provision
 
+### Constraints and Exceptions
+
+In the base FHIR R4 Consent resource, the terms "constraint" and "exception" are used interchangeably to describe rules that refine the overall consent decision. For example, a Consent may permit access to all health information (a "permit" provision) with a constraint that excludes mental health records (a nested provision of type "deny"). In R4 the `provision.type` code `deny` is sometimes labelled an "exception" in documentation. This guide uses the terms interchangeably and does not distinguish between them.
+
 ### Referencing External Participants
 
 Since a FHIR reference can contain a RESTful id to a patient, organization, practitioner, or related person, and those RESTful ids may not be useful once a Consent instance has propogated to other consent servers, this guide requires that an external identifier for those participants SHALL be populated.  The RESTful id can also be sent but it is not necessary since the mandatory identifier conveys the identity of the participant.  The FHIR additionalIdentifier extension is also included in the Reference to allow for multiple identifiers for participants to be conveyed.
