@@ -8,7 +8,7 @@ The following data elements must always be present or must be supported if the d
 1. a status
 1. a scope (fixed to the code 'patient-privacy')
 1. a category
-1. an identifier
+1. one or more identifiers (at least one identifier is required to support cross-system identification of the Consent)
 1. a patient (where the reference SHALL contain an identifier for the patient)
 1. a dateTime
 1. a performer (where the reference SHALL contain an identifier for the organization, patient, related person, or practitioner)
