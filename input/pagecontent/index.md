@@ -2,7 +2,13 @@
 This guide details the consent management use cases as well as the required custom FHIR operations and profiles to exchange the required consent data elements both between the user and the consent management repository as well as between repositories.  
 
 ### Rationale
-There is currently some support for some basic consent management use cases in the existing specifications, including FHIR Core and the IHE.ITI Privacy Consent on FHIR (PCF), mostly at the basic operations for creating, reading, and updating consent resources. Consent management, however, needs more implementation guidance and standardized specifications that are still missing. This includes the interactions between patients and the consent management system in the process of soliciting, navigating, and executing consents, which is sometimes referred to as consent ceremony, as well as a high-level API (e.g., defining custom FHIR operations) to cover use cases for consent management.
+There is currently some support for some basic consent management use cases in the existing specifications, including FHIR Core and the IHE.ITI Privacy Consent on FHIR (PCF), mostly at the basic operations for creating, reading, and updating consent resources. Consent management, however, needs more implementation guidance and standardized specifications that are still missing. This includes the interactions between patients and the consent management system in the process of soliciting, navigating, and executing consents, which is sometimes referred to as a Consent Ceremony (see Definitions below), as well as a high-level API (e.g., defining custom FHIR operations) to cover use cases for consent management.
+
+### Definitions
+
+**Privacy Consent** — As used in this guide, a *Consent* refers specifically to a *Privacy Consent*: an authorization by a patient (or someone acting on the patient's behalf) governing how the patient's health information may be collected, used, or disclosed. This guide constrains the FHIR Consent resource to represent privacy consents only. Other consent types defined in the FHIR Consent resource — such as research consent or treatment consent — are not in scope.
+
+**Consent Ceremony** — The end-to-end process through which a patient's consent is solicited, reviewed, executed, and filed. This typically includes presenting a consent form or policy, allowing the patient (or their authorized representative) to review it, obtaining the patient's agreement or refusal, and recording the result as a FHIR Consent resource in a consent administration system.
 
 
 ### Scope
