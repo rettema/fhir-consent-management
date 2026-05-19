@@ -63,14 +63,14 @@ The [Revoke Consent Operation](OperationDefinition-revoke-consent.html) is used 
 * [status]({{site.data.fhir.path}}consent.html#search)
 * [scope]({{site.data.fhir.path}}consent.html#search)
 
+To search for consents by organization identifier, implementers **SHOULD** use the `controller:identifier` chained search parameter (e.g., `GET [base]/Consent?controller:identifier=|1234567890`) rather than a custom organization ID search parameter.
+
 
 ##### Consent Subscriptions
 To allow for systems to be informed when a patient's consent has changed but not require polling of systems, this guide mandates that Subscriptions be used.  A [SubscriptionTopic](SubscriptionTopic-FASTConsentSubscriptionTopic.html) has been defined for use by systems to register subscriptions.
 
 To register a subscription, client systems will POST to a consent administration service's Subscription endpoint.  In this request is a link to the FAST Subscription Topic and any criteria to be used to filter subscription responses.  The defined filter criteria for the FAST Subscription Topic are:
 
-* [patient ID](SearchParameter-fast-consent-patientId.html)
-* [organization ID](SearchParameter-fast-consent-organizationId.html)
 * [actor]({{site.data.fhir.path}}consent.html#search)
 * [status]({{site.data.fhir.path}}consent.html#search)
 * [scope]({{site.data.fhir.path}}consent.html#search)

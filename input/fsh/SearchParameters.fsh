@@ -20,26 +20,6 @@ Usage: #definition
 * comparator[0] = #eq
 
 
-Instance: fast-consent-organizationId
-InstanceOf: SearchParameter
-Description: "The Consent organization identifier which is defined either within one or more of the extensions grantee, manager, controller or the provision.actor.role.reference."
-Usage: #definition
-
-* id = "fast-consent-organizationId"
-* url = "http://hl7.org/fhir/us/consent-management/SearchParameter/fast-consent-organizationId"
-* version = "0.1.0"
-* name = "FASTConsentOrganizationId"
-* status = #active
-* experimental = false
-* description = "The Consent organization identifier which is defined either within one or more of the extensions grantee, manager, controller or the provision.actor.role.reference."
-* jurisdiction = urn:iso:std:iso:3166#US
-* code = #organizationId
-* base = #Consent
-* type = #token
-* expression = "Consent.provision.actor.reference.identifier | Consent.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantee').extension.value.identifier | Consent.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager').extension.value.identifier | Consent.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller').extension.value.identifier"
-* xpath = "f:Consent/f:provision/f:actor/f:reference/f:identifier | f:Consent/f:extension[@url='http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantee']/f:extension/f:valueReference/f:identifier | f:Consent/f:extension[@url='http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager']/f:extension/f:valueReference/f:identifier | f:Consent/f:extension[@url='http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller']/f:extension/f:valueReference/f:identifier"
-* xpathUsage = #normal
-* comparator[0] = #eq
 
 
 Instance: fast-consent-controller

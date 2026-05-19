@@ -60,10 +60,6 @@ Usage: #definition
       * definition = Canonical(fast-consent-manager)
       * type = #reference
     * searchParam[+]
-      * name = "organizationId"
-      * definition = Canonical(fast-consent-organizationId)
-      * type = #token
-    * searchParam[+]
       * name = "patient"
       * type = #reference
     * searchParam[+]
@@ -150,10 +146,6 @@ Usage: #definition
       * name = "manager"
       * definition = Canonical(fast-consent-manager)
       * type = #reference
-    * searchParam[+]
-      * name = "organizationId"
-      * definition = Canonical(fast-consent-organizationId)
-      * type = #token
     * searchParam[+]
       * name = "patient"
       * type = #reference

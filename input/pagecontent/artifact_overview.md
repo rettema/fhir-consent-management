@@ -38,7 +38,6 @@ The artifacts are of five types:
 * [FAST Consent Controller](SearchParameter-fast-consent-controller.html) - {{site.data.SearchParameter-fast-consent-controller.description}}
 * [FAST Consent Grantee](SearchParameter-fast-consent-grantee.html) - {{site.data.SearchParameter-fast-consent-grantee.description}}
 * [FAST Consent Manager](SearchParameter-fast-consent-manager.html) - {{site.data.SearchParameter-fast-consent-manager.description}}
-* [FAST Consent Organization ID](SearchParameter-fast-consent-organizationId.html) - {{site.data.SearchParameter-fast-consent-organizationId.description}}
 * [FAST Consent Patient ID](SearchParameter-fast-consent-patientId.html) - {{site.data.SearchParameter-fast-consent-patientId.description}}
 
 #### Examples
