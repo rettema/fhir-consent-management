@@ -19,7 +19,6 @@ The artifacts are of five types:
 #### Operation Definitions
 * [File a Consent](OperationDefinition-file-consent.html) - {{site.data.OperationDefinition-file-consent.description}}
 * [Revoke a Consent](OperationDefinition-revoke-consent.html) - {{site.data.OperationDefinition-revoke-consent.description}}
-* [Record Disclosure](OperationDefinition-record-disclosure.html) - {{site.data.OperationDefinition-record-disclosure.description}}
 
 #### Consent Subsription Topic
 * [FAST Consent Subscription Topic](SubscriptionTopic-FASTConsentSubscriptionTopic.html) - {{site.data.SubscriptionTopic-FASTConsentSubscriptionTopic.description}}

@@ -18,9 +18,8 @@ Usage: #definition
   * resource[+]
     * type = #AuditEvent
     * supportedProfile = Canonical(FASTConsentAuditEvent)
-    * operation[+]
-      * name = "recordDisclosure"
-      * definition = Canonical(RecordDisclosure)
+    * interaction[+]
+      * code = #create
     * interaction[+]
       * code = #search-type
     * interaction[+]
@@ -110,9 +109,8 @@ Usage: #definition
   * resource[+]
     * type = #AuditEvent
     * supportedProfile = Canonical(FASTConsentAuditEvent)
-    * operation[+]
-      * name = "recordDisclosure"
-      * definition = Canonical(RecordDisclosure)
+    * interaction[+]
+      * code = #create
     * interaction[+]
       * code = #search-type
     * interaction[+]
