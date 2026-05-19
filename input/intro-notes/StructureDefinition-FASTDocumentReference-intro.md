@@ -7,4 +7,4 @@ Along with the rules for a US Core DocumentReference,
 
 **Each DocumentReference Must Have:**
 
-1. a category that is fixed to the LOINC code 57016-8.
+1. a category that is fixed to the LOINC code [57016-8](https://loinc.org/57016-8/) — *Privacy policy acknowledgment Document*. This LOINC code was chosen because it specifically represents a document in which a patient acknowledges a privacy policy, which is the primary use case for the consent documents referenced by this profile.
