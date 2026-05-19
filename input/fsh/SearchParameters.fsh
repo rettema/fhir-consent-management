@@ -68,23 +68,3 @@ Usage: #definition
 * comparator[0] = #eq
 
 
-Instance: fast-auditevent-consent
-InstanceOf: SearchParameter
-Description: "The Record Disclosure AuditEvent consent reference which is defined by the AuditEvent entity."
-Usage: #definition
-
-* id = "fast-auditevent-consent"
-* url = "http://hl7.org/fhir/us/consent-management/SearchParameter/fast-auditevent-consent"
-* version = "0.1.0"
-* name = "FASTAuditEventConsent"
-* status = #active
-* experimental = false
-* description = "The Record Disclosure AuditEvent consent reference which is defined by the AuditEvent entity."
-* jurisdiction = urn:iso:std:iso:3166#US
-* code = #consent
-* base = #AuditEvent
-* type = #reference
-* expression = "AuditEvent.entity.what.where(resolve() is Consent)"
-* xpath = "f:AuditEvent/f:entity/f:what"
-* xpathUsage = #normal
-* comparator[0] = #eq

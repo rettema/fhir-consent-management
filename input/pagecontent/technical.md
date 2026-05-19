@@ -89,6 +89,6 @@ Implementers are encouraged to consult the [IHE Basic Audit Log Patterns (BALP)]
 ##### Searching for Disclosures
 §OP9:To allow systems to document disclosures to requesting authorities (including a patient), systems **SHALL** support the searching for FAST Audit Events§ using the following search parameters:
 
-* [consent](SearchParameter-fast-auditevent-consent.html)
+* [entity]({{site.data.fhir.path}}auditevent.html#search) — use `entity=Consent/[id]` to search for audit events related to a specific Consent instance
 * [patient]({{site.data.fhir.path}}auditevent.html#search)
 

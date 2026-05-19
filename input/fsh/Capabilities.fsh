@@ -27,10 +27,6 @@ Usage: #definition
     * searchParam[+]
       * name = "patient"
       * type = #reference
-    * searchParam[+]
-      * name = "consent"
-      * definition = Canonical(fast-auditevent-consent)
-      * type = #reference
   * resource[+]
     * type = #Consent
     * supportedProfile = Canonical(FASTConsent)
@@ -107,10 +103,6 @@ Usage: #definition
       * code = #search-type
     * interaction[+]
       * code = #read
-    * searchParam[+]
-      * name = "consent"
-      * definition = Canonical(fast-auditevent-consent)
-      * type = #reference
     * searchParam[+]
       * name = "patient"
       * type = #reference
