@@ -63,8 +63,10 @@ This implementation guide (and the menu for it) is organized into the following 
 At present, FAST Consent is based on [FHIR R4]({{site.data.fhir.path}}).  In addition, Consent is dependent on the [US Core 6.1 (FHIR R4)]({{site.data.fhir.ver.uscore}}) implementation guides.  
 
 In addition, this guide uses content from the following FHIR-related specifications and implementation guides:
+* [US Core]({{site.data.fhir.ver.uscore}})
 * [Subscriptions R5 Backport]({{site.data.fhir.ver.subscriptions}})
-* [IHE Privacy Consent on FHIR]({{site.data.fhir.ver.iheconsent}})
+* [IHE Privacy Consent on FHIR (PCF)]({{site.data.fhir.ver.iheconsent}})
+* [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/)
 
 In addition, this guide also relies on a number of parent implementation guides:
 
