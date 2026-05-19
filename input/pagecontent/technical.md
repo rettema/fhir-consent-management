@@ -63,7 +63,7 @@ The [Revoke Consent Operation](OperationDefinition-revoke-consent.html) is used 
 * [status]({{site.data.fhir.path}}consent.html#search)
 * [scope]({{site.data.fhir.path}}consent.html#search)
 
-To search for consents by organization identifier, implementers **SHOULD** use the `controller:identifier` chained search parameter (e.g., `GET [base]/Consent?controller:identifier=|1234567890`) rather than a custom organization ID search parameter.
+To search for consents by organization identifier, implementers **SHOULD** use the `controller:identifier` chained search parameter (e.g., `GET [base]/Consent?controller:identifier=|1234567890`) rather than a custom organization ID search parameter.  To search for consents by patient identifier, implementers **SHOULD** use the `patient:identifier` chained search parameter (e.g., `GET [base]/Consent?patient:identifier=http://example.org/mrn|M1230041`).
 
 
 ##### Consent Subscriptions

@@ -63,10 +63,6 @@ Usage: #definition
       * name = "patient"
       * type = #reference
     * searchParam[+]
-      * name = "patientId"
-      * definition = Canonical(fast-consent-patientId)
-      * type = #token
-    * searchParam[+]
       * name = "scope"
       * type = #token
     * searchParam[+]
@@ -149,10 +145,6 @@ Usage: #definition
     * searchParam[+]
       * name = "patient"
       * type = #reference
-    * searchParam[+]
-      * name = "patientId"
-      * definition = Canonical(fast-consent-patientId)
-      * type = #token
     * searchParam[+]
       * name = "scope"
       * type = #token
