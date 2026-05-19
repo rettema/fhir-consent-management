@@ -81,6 +81,14 @@ To register a subscription, client systems will POST to a consent administration
 
 For more details about supporting subscriptions, including how to delete a subscription that is no longer desired, consult the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
 
+#### Updating Consents
+
+This guide does not define an Update Consent operation, and systems conforming to this guide **SHOULD NOT** update an existing Consent resource in place using RESTful `PUT` or `PATCH`. The reasons are:
+
+1. **Traceability and auditability** — Consent changes are significant events in a patient's care record. Updating a Consent in place loses the history of what was previously consented to. Each new patient consent decision should result in a new Consent resource (or a Revoke followed by a new File).
+2. **Propagation integrity** — In a federated consent network, other systems may hold copies of a shared Consent. In-place updates would require those systems to detect the change via subscription or polling. Revoking and re-filing makes the change unambiguous and ensures that subscription notifications accurately reflect the transition from one consent state to another.
+3. **Status lifecycle** — The primary lifecycle events for a consent are filing (`status = active`) and revocation (`status = inactive`). These are supported by the [File Consent](OperationDefinition-file-consent.html) and [Revoke Consent](OperationDefinition-revoke-consent.html) operations respectively. Administrative corrections (e.g., fixing a data entry error) may be performed via `PUT` but should be clearly distinguished from patient-driven consent changes.
+
 #### Sharing Health Information due to Consent
 §OP8:Along with the business use cases of consent management, consent administration services **SHALL** be able to record and retrieve disclosures of when a consent was accessed to determine whether patient information could be accessed.§  To support this requirement, systems record consent disclosures as standard FHIR AuditEvent resources using RESTful FHIR interactions, and are required to support searches for those disclosures.
 
