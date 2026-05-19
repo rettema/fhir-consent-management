@@ -51,7 +51,7 @@
 <artifact id="Requirements/technical-specification-admin-service" key="Requirements-technical-specification-admin-service" name="Technical Specification Admin Service"/>
 <artifact id="Requirements/technical-specification-client" key="Requirements-technical-specification-client" name="Technical Specification Client"/>
 <artifact id="Requirements/workflow-client-admin-service" key="Requirements-workflow-client-admin-service" name="Workflow Client Admin Service"/>
-<artifact id="SearchParameter/fast-auditevent-consent" key="SearchParameter-fast-auditevent-consent" name="fast-auditevent-consent"/>
+<artifact deprecated="true" id="SearchParameter/fast-auditevent-consent" key="SearchParameter-fast-auditevent-consent" name="fast-auditevent-consent"/>
 <artifact id="SearchParameter/fast-consent-controller" key="SearchParameter-fast-consent-controller" name="fast-consent-controller"/>
 <artifact id="SearchParameter/fast-consent-grantee" key="SearchParameter-fast-consent-grantee" name="fast-consent-grantee"/>
 <artifact id="SearchParameter/fast-consent-manager" key="SearchParameter-fast-consent-manager" name="fast-consent-manager"/>
