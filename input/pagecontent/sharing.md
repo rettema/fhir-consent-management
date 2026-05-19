@@ -11,6 +11,12 @@ This guide provides both a means for [searching for consents](technical.html#sea
 
 There is a complexity that this guide introduces in that there may be a network of systems that receive a consent.  See the [Implementation Notes](implementation_notes.html) for more information about how consents may be shared and stored across the network.
 
+When a Consent resource is shared between systems, the following conformance requirements apply to preserve the provenance of the consent and enable downstream systems to track updates:
+
+§NR3:When sharing a Consent resource with another system, the originating or forwarding system **SHALL NOT** modify the `manager` extension value.§ The `manager` extension identifies the system that originally created the Consent and must remain unchanged throughout the consent's lifecycle across all sharing relationships.
+
+§NR4:A system that receives a shared Consent resource **SHOULD** establish a FHIR Subscription with the system identified in the `manager` extension to receive updates to that Consent (e.g., revocations).§ This ensures that shared copies of the consent remain current.
+
 ### What health information has been shared with who?
 Similar to the question of where a patient's Consent record has been shared, this question is asking about health information more generally.  What specific health information (i.e. lab tests, procedures, medications) has been shared and with whom?
 
