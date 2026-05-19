@@ -6,8 +6,6 @@ http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager named mana
 http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named controller 0..* MS
 
 * status 1..1 MS
-  * ^short = "active | inactive"
-* status from FASTConsentStatuses (required)
 * scope 1..1 MS
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
 * category 1..* MS

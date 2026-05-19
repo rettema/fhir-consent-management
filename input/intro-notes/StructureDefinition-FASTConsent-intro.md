@@ -5,7 +5,7 @@ The following data elements must always be present or must be supported if the d
 
 **Each Consent Must Have:**
 
-1. a status
+1. a status (any value from the FHIR [consent-state-codes]({{site.data.fhir.path}}valueset-consent-state-codes.html) value set is permitted; `active` is used for consents that are in force and `inactive` is used for revoked consents; other status values such as `draft`, `entered-in-error`, and `rejected` may be used as appropriate)
 1. a scope (fixed to the code 'patient-privacy')
 1. a category
 1. one or more identifiers (at least one identifier is required to support cross-system identification of the Consent)
