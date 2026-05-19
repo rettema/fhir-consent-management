@@ -1,7 +1,9 @@
 
 ### Mandatory and Must Support Data Elements
 
-The following data elements must always be present or must be supported if the data is present in the sending system [Must Support]({{site.data.fhir.path}}conformance-rules.html#mustSupport). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The [Formal Views](#profile) below provides the formal summary, definitions, and terminology requirements.  
+The following data elements must always be present or must be supported if the data is present in the sending system [Must Support]({{site.data.fhir.path}}conformance-rules.html#mustSupport). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The [Formal Views](#profile) below provides the formal summary, definitions, and terminology requirements.
+
+**Must Have** elements have a minimum cardinality of 1 or greater in this profile — they are always required to be present in a conformant instance.  **Must Support** elements have a minimum cardinality of 0 but systems claiming conformance must be capable of populating them when the data is available, and receiving systems must be capable of processing them without error.
 
 **Each Consent Must Have:**
 
@@ -11,6 +13,7 @@ The following data elements must always be present or must be supported if the d
 1. one or more identifiers (at least one identifier is required to support cross-system identification of the Consent)
 1. a patient (where the reference SHALL contain an identifier for the patient)
 1. a dateTime
+1. one or more performers (where each reference SHALL contain an identifier for the organization, patient, related person, or practitioner)
 1. a source[x] that is either a DocumentReference with an attachment or a QuestionnaireResponse
 1. one or more policies, each with a URI identifying the base policy governing this consent
 1. a provision, that must include the following:
@@ -19,8 +22,8 @@ The following data elements must always be present or must be supported if the d
 **Each Consent Must Support:**
 
 1. all Must Have elements
-1. a performer (where the reference SHALL contain an identifier for the organization, patient, related person, or practitioner); to accommodate implicit or program-based performers where the explicit identity of the performer is determined by the policy rather than named in the Consent itself
 1. a provision purpose
+1. a Consent grantee extension (backported from the R5 Consent resource; 0..* to accommodate implicit or program-based grantees where the explicit identity of the grantee is determined by the policy rather than named in the Consent itself)
 1. a Consent manager extension (backported from the R5 Consent resource)
 1. a Consent controller extension (backported from the R5 Consent resource)
 1. a provision, that must support the following:
