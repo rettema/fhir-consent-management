@@ -2,14 +2,11 @@
 ### Background
 The need for this guide emerged from an initial FAST discovery project to evaluate and identify gaps in the existing consent-related specifications and guidelines, as outlined in the [Consent at Scale](https://confluence.hl7.org/download/attachments/204279212/FAST-consent-at-scale-2023-08-20-final-version.pdf) Report. This report defines the impetus and scope of the current implementation guide.
 
-### Underlying Technologies
-This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standard.  Implementers of this specification therefore need to understand the basics of these specifications. 
+### Underlying Specifications
+This guide is built on several underlying specifications. Implementers should be familiar with the key aspects of each before reading this guide.
 
-This implementation guide is based on the [R4]({{site.data.fhir.path}}index.html) version of the FHIR standard.
-
-#### FHIR
-This implementation guide uses terminology, notations and design principles that are
-specific to FHIR.  Before reading this implementation guide, it's important to be familiar with some of the basic principles of FHIR, as well as general guidance on how to read FHIR specifications.  Readers who are unfamiliar with FHIR are encouraged to read (or at least skim) the following prior to reading the rest of this implementation guide.
+#### FHIR R4
+This implementation guide is based on the [HL7 FHIR R4]({{site.data.fhir.path}}index.html) standard.  Implementers need to understand the basics of FHIR, including terminology, notations, and design principles.  Readers who are unfamiliar with FHIR are encouraged to read (or at least skim) the following prior to reading the rest of this implementation guide.
 
 * [FHIR Overview]({{site.data.fhir.path}}overview.html)
 * [Developer's Introduction]({{site.data.fhir.path}}overview-dev.html) (or [Clinical Introduction]({{site.data.fhir.path}}overview-clinical.html))
@@ -19,9 +16,17 @@ specific to FHIR.  Before reading this implementation guide, it's important to b
 * [How to Read Resource & Profile Definitions]({{site.data.fhir.path}}formats.html) and additional [IG reading guidance](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html)
 * [Base Resource]({{site.data.fhir.path}}resource.html)
 
-This implementation guide also builds on the [US Core]({{site.data.fhir.uscore}}) Implementation Guide and implementers need to familiarize themselves with the profiles in that IG.
+#### US Core
+This implementation guide builds on the [US Core]({{site.data.fhir.ver.uscore}}) Implementation Guide. Implementers need to be familiar with the US Core profiles for Patient, Practitioner, Organization, RelatedPerson, PractitionerRole, and QuestionnaireResponse, as these are referenced directly by the FAST Consent profile.
 
-This implementation guide uses Subscriptions that are based on the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
+#### Subscriptions R5 Backport
+This implementation guide uses subscriptions to notify systems of consent changes. Subscriptions are based on the [Subscriptions R5 Backport framework]({{site.data.fhir.ver.subscriptions}}). Implementers should understand how to register a subscription, how topic-based subscriptions work, and how to receive and process subscription notifications.
+
+#### IHE Privacy Consent on FHIR (PCF)
+This guide aligns with the [IHE Privacy Consent on FHIR (PCF)]({{site.data.fhir.ver.iheconsent}}) guide. The FAST Consent profiles are designed to be a US-Core-flavoured subset of IHE-PCF — a Consent instance that is valid against the FAST Consent profile will generally also satisfy IHE-PCF constraints. Implementers should consult IHE-PCF for additional context on consent actors, transactions, and enforcement patterns. IHE-PCF also includes Appendix P, which provides foundational background on the concepts underlying privacy consent management.
+
+#### IHE Basic Audit Log Patterns (BALP)
+This guide relies on [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) for representing audit events related to consent access and health information disclosure. Implementers should be familiar with the BALP Consent Authorized Decision Audit Message and the Privacy Disclosure Audit Message profiles.
 
 Implementers should also familiarize themselves with the FHIR resources used within the guide:
 

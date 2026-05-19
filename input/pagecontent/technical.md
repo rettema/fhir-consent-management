@@ -7,7 +7,7 @@ Before reading this formal specification, implementers should first familiarize 
 
 * The [Use Cases & Overview](usecases.html) page provides context for what this formal specification is trying to accomplish and will give a sense of both the business context and general process flow enabled by the formal specification below.
 
-* The [Technical Background](background.html) page provides information about the underlying specifications and indicates what portions of them should be read and understood to have the necessary foundation to understand the constraints and usage guidance described here.
+* The [Underlying Specifications](background.html) page describes the specifications this guide builds on and indicates what portions of them should be read and understood to have the necessary foundation to understand the constraints and usage guidance described here.
 
 
 #### Systems
