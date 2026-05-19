@@ -78,12 +78,9 @@ To register a subscription, client systems will POST to a consent administration
 For more details about supporting subscriptions, including how to delete a subscription that is no longer desired, consult the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
 
 #### Sharing Health Information due to Consent
-§OP8:Along with the business use cases of consent management, consent administration services **SHALL** be able to record and retrieve disclosures of when a consent was accessed to determine whether patient information could be accessed.§  To support this requirement, this guide defines an operation for recording consent disclosures and requires systems to implement searches for disclosures.
+§OP8:Along with the business use cases of consent management, consent administration services **SHALL** be able to record and retrieve disclosures of when a consent was accessed to determine whether patient information could be accessed.§  To support this requirement, systems record consent disclosures as FHIR AuditEvent resources and are required to support searches for those disclosures.
 
-Disclosures are recorded as FHIR AuditEvent instances.  These AuditEvents reflect the Consent instance that was consulted as well as the type of health information that was shared.
-
-##### Record Disclosure Operation
-§OP12:The [Record Disclosure Operation](OperationDefinition-record-disclosure.html) SHALL be used when a system accesses a Consent instance for determining whether informtion can be accessed.§  This operation takes an [Audit Event instance](StructureDefinition-FASTConsentAuditEvent.html) that conveys the purpose of the access (reading, writing, sending, etc.) while a reference to a Consent instance indicates the consent that was accessed.
+Disclosures are recorded as FHIR AuditEvent instances that conform to the [FAST Consent Audit Event](StructureDefinition-FASTConsentAuditEvent.html) profile.  These AuditEvents reflect the Consent instance that was consulted as well as the type of health information that was shared.  §OP12:Systems **SHALL** create a FAST Consent Audit Event via a RESTful FHIR `POST AuditEvent` whenever a Consent instance is accessed to determine whether patient information can be accessed.§
 
 ##### Searching for Disclosures
 §OP9:To allow systems to document disclosures to requesting authorities (including a patient), systems **SHALL** support the searching for FAST Audit Events§ using the following search parameters:
