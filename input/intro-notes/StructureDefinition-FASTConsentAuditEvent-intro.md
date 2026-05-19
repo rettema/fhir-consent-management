@@ -21,6 +21,15 @@ The following data elements must always be present or must be supported if the d
     1. patient whose consent was consulted
     1. the Consent resource that was consulted
 
+### Meaning of Outcome
+
+The `AuditEvent.outcome` element records whether the *audited system operation* completed successfully, not whether data was ultimately shared with the requesting party. Specifically:
+
+- **`0` (Success)** — the authorization evaluation completed without error. This does NOT mean that data was shared; a successful outcome may reflect either a permit decision (data sharing allowed) or a deny decision (data sharing refused). Both outcomes are valid results of a successful consent evaluation.
+- **`4` (Minor failure)** or **`8` (Serious failure)** — the authorization evaluation itself encountered an error and could not be completed (for example, the Consent resource was unreachable or malformed).
+
+To determine whether a consent permit or deny decision was made, examine the `AuditEvent.purposeOfEvent` and the content of the `entity` elements rather than relying on `outcome` alone.
+
 ### Referencing External Participants
 
 Since a FHIR reference can contain a RESTful id to a patient, organization, practitioner, or related person, and those RESTful ids may not be useful once an Audit Event instance has propogated to other consent servers, this guide requires that an external identifier for those participants SHALL be populated.  The RESTful id can also be sent but it is not necessary since the mandatory identifier conveys the identity of the participant.  The FHIR additionalIdentifier extension is also included in the Reference to allow for multiple identifiers for participants to be conveyed.
