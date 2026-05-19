@@ -2,7 +2,6 @@ Profile: FASTConsent
 Parent: Consent
 Description: "This profile captures the details of a Patient's Consent."
 * extension contains
-http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantee named grantee 0..* MS and
 http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager named manager 0..* MS and
 http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named controller 0..* MS
 
@@ -15,7 +14,7 @@ http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named c
 * patient only FASTReference
 * patient only Reference($USCorePatient)
 * dateTime 1..1 MS
-* performer 1..* MS
+* performer 0..* MS
 * performer only FASTReference
 * performer only Reference($USCoreOrganization or $USCorePatient or $USCorePractitioner or $USCoreRelatedPerson or $USCorePractitionerRole)
 * organization 0..0
@@ -24,6 +23,7 @@ http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named c
 * policy 1..* MS
   * uri 1..1 MS
 * provision 1..1 MS
+  * ^short = "Constraints on the base Consent.policy as defined by the URI element."
   * type 1..1 MS
   * actor MS
     * role 1..1 MS
@@ -51,7 +51,7 @@ Description: "An example of a consent."
     * system = "http://example.org/mrn"
     * value = "M1230041"
 * dateTime = 2024-01-01
-* policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#hipaa-auth
+* policy.uri = http://terminology.hl7.org/CodeSystem/consentpolicycodes#hipaa-auth
 * performer
   * identifier
     * system = "http://example.org/mrn"
@@ -187,6 +187,6 @@ Description: "The two codes that are applicable to FAST Consent instances.  'act
 Profile: FASTReference
 Parent: Reference
 Description: "A profile on the Reference datatype that requires the identifier and exposes a set of additional identifiers in an extension."
-* extension contains http://hl7.org/fhir/StructureDefinition/additionalIdentifier|5.2.0 named additionalIdentifier 0..* MS
+* extension contains http://hl7.org/fhir/StructureDefinition/additionalIdentifier|5.3.0 named additionalIdentifier 0..* MS
 * identifier 1..1 MS
 

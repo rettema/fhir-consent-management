@@ -46,7 +46,8 @@ This implementation guide (and the menu for it) is organized into the following 
 
 * *Background* - Supporting informative pages that do not set conformance expectations
   * [Underlying Specifications](background.html) describes the specifications this guide builds on — FHIR R4, US Core, Subscriptions R5 Backport, IHE-PCF, and IHE-BALP — and what portions must be understood before reading the normative content
-  * [Use Case Pages](usecases.html) - each use case page describes an intended use case, gives examples of its use, and provides a high-level overview of expected process flow
+  * [Use Cases](usecases.html) - each use case page describes an intended use case, gives examples of its use, and provides a high-level overview of expected process flow
+  * [Implementation Notes](implementation_notes.html) - supplementary notes to support the understanding and implementation of this Implementation Guide and the use cases in its scope
   * [Project and Participants](credits.html) gives a high-level overview of FAST and identifies the individuals and organizations involved in developing this implementation guide
 * *Specification* - Pages that set conformance expectations
   * [Conformance Expectations](conformance.html) defines base language and expectations for declaring conformance with the guide
@@ -57,10 +58,10 @@ This implementation guide (and the menu for it) is organized into the following 
   * [Artifacts Overview](artifact_overview.html) introduces and provides links to all profiles, extensions, search parameters, operations, and examples defined in this implementation guide
 * *Base Specifications* - Quick links to the various specifications this guide derives from
 * *Support* - Links to help with use of this guide
-  * *Discussion Forum* is a place to ask questions about the guide, discuss potential issues, and search through prior discussions
-  * *Project Home* includes information about project calls, agendas, past minutes, and instructions for how to participate
-  * *Project Dashboard* shows new and historical issues that have been logged against the specification, proposed dispositions, unapplied changes, etc.
-  * *Propose a Change* allows formal submission of requests for change to the specification.  (Consider raising on the discussion forum first.)
+  * [*Discussion Forum*](https://chat.fhir.org/#narrow/stream/426241-FHIR-at-Scale-.28FAST.29.3A-Consent-Management) is a place to ask questions about the guide, discuss potential issues, and search through prior discussions
+  * [*Project Home*](https://confluence.hl7.org/spaces/FAST/pages/358254755/Consent+Management) includes information about project calls, agendas, past minutes, and instructions for how to participate
+  * [*Project Dashboard*](https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=18104) shows new and historical issues that have been logged against the specification, proposed dispositions, unapplied changes, etc.
+  * [*Propose a Change*](https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&issuetype=10600&customfield_11302=FHIR-us-consent-management) allows formal submission of requests for change to the specification.  (Consider raising on the discussion forum first.)
   * [Downloads](downloads.html) allows download of this and other specifications, as well as other useful files
 
 ### Dependencies

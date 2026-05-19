@@ -68,14 +68,26 @@ pages:
     title: Use Cases
   implementation_notes.md:
     title: Implementation Notes
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: trial-use
   credits.md:
     title: Project and Participants
   conformance.md:
     title: Conformance Expectations
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: trial-use
   technical.md:
     title: Technical Specification
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: trial-use
   sharing.md:
     title: Consent and Information Sharing
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: trial-use
   artifact_overview.md:
     title: Artifact Overview
   downloads.md:
@@ -102,6 +114,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   produce-jekyll-data: true
   globals-in-artifacts: true
   pin-canonicals: pin-multiples
+  show-nav: true
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
@@ -114,7 +127,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 menu:
   Home: index.html
   Background:
-    Reading This IG: background.html
+    Upderlying Specifications: background.html
     Use Cases: usecases.html
     Implementation Notes: implementation_notes.html
     Project and Participants: credits.html
@@ -124,7 +137,6 @@ menu:
     Information Sharing: sharing.html
   Artifacts:
     Overview: artifact_overview.html 
-    FHIR Artifacts: artifacts.html
   Base Specs:
     FHIR R4 Spec: new-tab {{site.data.fhir.path}}
     US Core 6.1.0: new-tab https://hl7.org/fhir/us/core/STU6.1/index.html

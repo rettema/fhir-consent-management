@@ -11,7 +11,6 @@ The following data elements must always be present or must be supported if the d
 1. one or more identifiers (at least one identifier is required to support cross-system identification of the Consent)
 1. a patient (where the reference SHALL contain an identifier for the patient)
 1. a dateTime
-1. a performer (where the reference SHALL contain an identifier for the organization, patient, related person, or practitioner)
 1. a source[x] that is either a DocumentReference with an attachment or a QuestionnaireResponse
 1. one or more policies, each with a URI identifying the base policy governing this consent
 1. a provision, that must include the following:
@@ -19,13 +18,15 @@ The following data elements must always be present or must be supported if the d
 
 **Each Consent Must Support:**
 
-1. all Must Have
-1. a Consent grantee extension (backported from the R5 Consent resource; 0..* to accommodate implicit or program-based grantees where the explicit identity of the grantee is determined by the policy rather than named in the Consent itself)
+1. all Must Have elements
+1. a performer (where the reference SHALL contain an identifier for the organization, patient, related person, or practitioner); to accommodate implicit or program-based performers where the explicit identity of the performer is determined by the policy rather than named in the Consent itself
 1. a provision purpose
 1. a Consent manager extension (backported from the R5 Consent resource)
 1. a Consent controller extension (backported from the R5 Consent resource)
 1. a provision, that must support the following:
     1. an actor (where role is fixed to IRCP)
+    1. a purpose
+    1. a nested provision
 
 **Each Consent MUST NOT provide:**
 
