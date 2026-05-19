@@ -1,4 +1,4 @@
-This section offers supplementary notes to support the understanding and implementation of this Implementation Guide and the use cases in its scope. The content is informative and aims to help implementers interpret the guide correctly, align with best practices, and assist in making technical design decisions.
+This section offers supplementary notes to support the understanding and implementation of this Implementation Guide and the use cases in its scope. It includes both normative conformance requirements and informative guidance to help implementers interpret the guide correctly, align with best practices, and make technical design decisions.
 
 ### Enforcing Consent
 Consent is a key policy component that must be enforced within the broader access control framework. Whether a transaction or data exchange is subject to patient consent depends on overarching policies, which define when consent is required and when data may flow without it. For example, jurisdictional regulations may stipulate that data exchanged for treatment purposes does not require patient consent, while the exchange of sensitive information does. When overarching policies indicate that a transaction depends on consent, the system must identify the patients whose consents are relevant, retrieve the applicable consents, and apply them within the transaction's context.
@@ -26,7 +26,7 @@ As these cross-organization exchanges occur, a relationship chain or network of 
 
 Each subsequent sharing of the same consent will retain its origin, establishing a relationship between the system retaining the Consent resource and the system that created it irrespective of the intermediaries through which the Consent was sent.
 
-For example, if System A created a Consent, System A would add a system identifier to the Consent to establish itself as the manager of the Consent. This originator identifier is encapsulated using the `manager` extension. This attribute denotes to all recipients of the shared Consent what system originated it. Thus, when the Consent resource is shared with another system or systems, a relationship between sender and recipient system(s) is formed.
+§NR1:When the Consent record is created on System A, System A's system identifier **SHALL** be recorded in the `manager` extension of the Consent instance.§ This originator identifier denotes to all recipients of the shared Consent what system originated it. §NR2:Systems that ingest a Consent from another system **SHALL** preserve the `manager` extension value unchanged.§ Thus, when the Consent resource is shared with another system or systems, a relationship between the originating system and the recipient system(s) is established.
 
 Consent resources, when shared from system to system, operationally instantiate a relationship through the creation of a Subscription within the system from which it was received.
 
