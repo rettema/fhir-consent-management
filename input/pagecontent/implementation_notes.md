@@ -19,7 +19,7 @@ A consent enforcer may choose to rely on one or more of these methods to enginee
 
 #### Consent Network Relationship
 
-As these cross-organization exchanges occur, a relationship chain or network of systems may be created. When any System creates and subsequently exchanges a Consent resource with another System, the originating system must convey its identity within the Consent resource itself. The following figure below depicts such an exchange:
+As these cross-organization exchanges occur, a relationship chain or network of systems may be created. When any System creates and subsequently exchanges a Consent resource with another System, the originating system must convey its identity within the Consent resource itself. The means by which consents are shared can be a push (the originating system proactively sends the Consent to another system) or a pull (another system fetches the Consent from the originating system). The following figure depicts such an exchange, showing how consent records are shared between systems:
 
 <div>{%include consent-network-activity.svg%}</div>
 
@@ -42,7 +42,7 @@ This is achieved through the use of standard FHIR Subscription operations
 
 ##### Consent Network Relationship Tree
 
-The inherent network created by the relationships across systems in which the same Consent resource is shared forms a tree of relationships based on the Consent.
+The inherent network created by the relationships across systems in which the same Consent resource is shared forms a tree of relationships based on the Consent. The means in which consents are shared can be a push or a pull between systems. Regardless of whether a system received the consent via push or pull, that system is responsible for subscribing to updates from the manager system to ensure its copy remains current.
 
 The figure below represents a three-layered Consent Network illustrating this virtual Network Relationship Tree
 

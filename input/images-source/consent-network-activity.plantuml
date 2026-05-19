@@ -6,9 +6,9 @@ start
 :System A creates a 
 consent document with 
 origin attributes;
-:Document is transmitted 
-through a secure 
-exchange network;
+:Document is transmitted
+through a secure exchange
+network (push or pull);
 :Network passes the 
 document without altering 
 origin information;
