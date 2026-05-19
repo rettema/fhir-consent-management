@@ -71,9 +71,11 @@ To allow for systems to be informed when a patient's consent has changed but not
 
 To register a subscription, client systems will POST to a consent administration service's Subscription endpoint.  In this request is a link to the FAST Subscription Topic and any criteria to be used to filter subscription responses.  The defined filter criteria for the FAST Subscription Topic are:
 
+* [patient]({{site.data.fhir.path}}consent.html#search) (use `patient:identifier` chained search to filter by patient identifier)
+* [controller](SearchParameter-fast-consent-controller.html) (use `controller:identifier` chained search to filter by organization identifier)
 * [actor]({{site.data.fhir.path}}consent.html#search)
 * [status]({{site.data.fhir.path}}consent.html#search)
-* [scope]({{site.data.fhir.path}}consent.html#search)
+* [category]({{site.data.fhir.path}}consent.html#search)
 
 For more details about supporting subscriptions, including how to delete a subscription that is no longer desired, consult the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
 

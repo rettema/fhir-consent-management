@@ -7,7 +7,7 @@ Description: "A profile for FAST subscriptions."
 Instance: FASTPatientSubscriptionExample
 InstanceOf: FASTSubscription
 Description: "An example of a FAST Subscription for a specific patient."
-* criteria.extension[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria].valueString = "patientId=http://hl7.org/fhir/sid/us-npi|1234567893"
+* criteria.extension[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria].valueString = "patient:identifier=http://example.org/mrn|M1230041"
 * status = #active
 * channel.endpoint = "http://example.org/send-me-subscription-notifications"
 * channel.payload = #application/fhir+json
@@ -16,8 +16,8 @@ Description: "An example of a FAST Subscription for a specific patient."
 
 Instance: FASTOrganizationSubscriptionExample
 InstanceOf: FASTSubscription
-Description: "An example of a FAST Subscription for a specific organization."
-* criteria.extension[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria].valueString = "organizationId=http://hl7.org/fhir/sid/us-npi|1234567893"
+Description: "An example of a FAST Subscription for a specific organization (controller)."
+* criteria.extension[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria].valueString = "controller:identifier=http://hl7.org/fhir/sid/us-npi|1234567893"
 * status = #active
 * channel.endpoint = "http://example.org/send-me-subscription-notifications"
 * channel.payload = #application/fhir+json

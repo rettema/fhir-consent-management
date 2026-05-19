@@ -17,16 +17,18 @@
   ],
   "canFilterBy": [
     {
-      "description": "The identifier of the consent patient.",
-      "filterParameter": "patientId",
-      "filterDefinition": "http://hl7.org/fhir/us/consent-management/SearchParameter/fast-consent-patientId",
-      "comparator": ["eq"]
+      "description": "The patient whose consent is being subscribed to. Use patient:identifier chained search to filter by patient identifier.",
+      "filterParameter": "patient",
+      "filterDefinition": "http://hl7.org/fhir/SearchParameter/Consent-patient",
+      "comparator": ["eq"],
+      "modifier": ["identifier"]
     },
     {
-      "description": "The identifier of the organization actor that gained consent.",
-      "filterParameter": "organizationId",
-      "filterDefinition": "http://hl7.org/fhir/us/consent-management/SearchParameter/fast-consent-organizationId",
-      "comparator": ["eq"]
+      "description": "The controller of the consent. Use controller:identifier chained search to filter by organization identifier.",
+      "filterParameter": "controller",
+      "filterDefinition": "http://hl7.org/fhir/us/consent-management/SearchParameter/fast-consent-controller",
+      "comparator": ["eq"],
+      "modifier": ["identifier"]
     },
     {
       "description": "The identifier of one of the actors that is controlled by a consent.",
