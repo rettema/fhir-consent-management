@@ -48,8 +48,7 @@ This implementation guide (and the menu for it) is organized into the following 
   * [Information Sharing](sharing.html) defines the conformance requirements for sharing consent information between consent management systems.
   * [Privacy, Safety, and Security]({{site.data.fhir.path}}security.html#SecPrivConsiderations) covers considerations around data access, protection, and similar concepts that apply to all implementations
 * *FHIR Artifacts*
-  * [Overview](artifact_overview.html) introduces and provides links to the profiles, search parameters and other FHIR artifacts used in this implementation guide
-  * [Artifacts](artifacts.html) points to the complete list of artifacts defined in this guide
+  * [Artifacts Overview](artifact_overview.html) introduces and provides links to all profiles, extensions, search parameters, operations, and examples defined in this implementation guide
 * *Base Specifications* - Quick links to the various specifications this guide derives from
 * *Support* - Links to help with use of this guide
   * *Discussion Forum* is a place to ask questions about the guide, discuss potential issues, and search through prior discussions
