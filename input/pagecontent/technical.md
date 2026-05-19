@@ -30,7 +30,7 @@ This implementation guide also builds on the [US Core]({{site.data.fhir.uscore}}
 This implementation guide uses Subscriptions that are based on the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
 
 #### Testing Requirements
-There is a [FAST Consent Testing Guide](https://wildfhir4.wildfhir.org/ig/fhir-consent-management-tg/index.html) which is a companion guide to this guide and provides testing artifacts used in the verification and validation implementations declaring conformance to and against this guide.
+There is a [FAST Consent Testing Guide](https://wildfhir4.wildfhir.org/ig/fhir-consent-management-tg/index.html) which is a companion guide to this guide and provides testing artifacts used in the verification and validation of implementations declaring conformance to this guide. Note: at the time of publication of this guide, the Testing Guide is a working draft that has not yet been published under HL7 governance. The link above points to the current working version; the link will be updated once the Testing Guide is hosted on an HL7-governed site.
 
 ### Detailed Requirements
 
