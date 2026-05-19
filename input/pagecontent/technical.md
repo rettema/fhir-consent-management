@@ -78,9 +78,11 @@ To register a subscription, client systems will POST to a consent administration
 For more details about supporting subscriptions, including how to delete a subscription that is no longer desired, consult the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
 
 #### Sharing Health Information due to Consent
-§OP8:Along with the business use cases of consent management, consent administration services **SHALL** be able to record and retrieve disclosures of when a consent was accessed to determine whether patient information could be accessed.§  To support this requirement, systems record consent disclosures as FHIR AuditEvent resources and are required to support searches for those disclosures.
+§OP8:Along with the business use cases of consent management, consent administration services **SHALL** be able to record and retrieve disclosures of when a consent was accessed to determine whether patient information could be accessed.§  To support this requirement, systems record consent disclosures as standard FHIR AuditEvent resources using RESTful FHIR interactions, and are required to support searches for those disclosures.
 
 Disclosures are recorded as FHIR AuditEvent instances that conform to the [FAST Consent Audit Event](StructureDefinition-FASTConsentAuditEvent.html) profile.  These AuditEvents reflect the Consent instance that was consulted as well as the type of health information that was shared.  §OP12:Systems **SHALL** create a FAST Consent Audit Event via a RESTful FHIR `POST AuditEvent` whenever a Consent instance is accessed to determine whether patient information can be accessed.§
+
+Implementers are encouraged to consult the [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) implementation guide, in particular the [ITI-81 Retrieve ATNA Audit Event](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) transaction, for additional guidance on structuring AuditEvent records and supporting privacy-centric audit log queries.
 
 ##### Searching for Disclosures
 §OP9:To allow systems to document disclosures to requesting authorities (including a patient), systems **SHALL** support the searching for FAST Audit Events§ using the following search parameters:
