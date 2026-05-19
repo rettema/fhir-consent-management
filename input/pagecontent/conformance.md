@@ -5,24 +5,26 @@ The FAST Consent implementation guide defines the responsibilities of the two ty
 
 [**Server systems**](CapabilityStatement-ConsentAdministrativeServerCapabilities.html) (or servers) are consent administration systems.
 
+### Conformance Verbs
+
+The conformance verbs — **SHALL**, **SHOULD**, **MAY** — used in this guide are defined in [FHIR Conformance Rules]({{site.data.fhir.path}}conformance-rules.html#conflang).
+
 ### MustSupport
-This implementation guide uses specific terminology to flag statements that have relevance for the evaluation of conformance with the guide:
 
-* **SHALL** indicates requirements that must be met to be conformant with the specification.
+Profiles in this implementation guide make use of the [mustSupport]({{site.data.fhir.path}}profiling.html#mustsupport) element. Base expectations for mustSupport are set in the [FHIR core specification]({{site.data.fhir.path}}conformance-rules.html#conflang). Also see the mustSupport rules for [US Core]({{site.data.fhir.ver.uscore}}/must-support.html), which apply to content adhering to data elements profiled in those guides.
 
-* **SHOULD** indicates behaviors that ought to be adhered to to avoid suboptimal interoperability but which do not, for this version of the specification, affect the determination of specification conformance.
+The following rule defines the meaning of mustSupport in this guide:
 
-* **MAY** describes optional behaviors that are free to consider but where there is no recommendation for or against adoption.
+* §MS-1:Consent Client systems **SHALL** be capable of populating a mustSupport element when sharing resources compliant with the profile. I.e., the system must be able to demonstrate the population and sharing of the element, but it is acceptable to omit the element if the system doesn’t have values in a particular instance. A system that is incapable of ever sharing the element would be non-conformant.§
 
-As well, profiles in this implementation guide make use of the [mustSupport]({{site.data.fhir.path}}profiling.html#mustsupport) element.  Base expectations for the intepretations of these terms are set in the [FHIR core specification]({{site.data.fhir.path}}conformance-rules.html#conflang).  Also see the mustSupport rules for the [US Core]({{site.data.fhir.ver.uscore}}/must-support.html) implementation guides, which apply to content adhering to data elements profiled in those guides.
+### General Conformance Rules
 
-Along with those expectations, the following rules on MustSupport are also required:
+The following rules apply to all elements in profiles defined in this guide, not only mustSupport elements:
 
-* §MS-1:Data Sources **SHALL** be capable of populating the data element when sharing resources compliant with the profile. I.e. the system must be able to demonstrate the population and sharing of the element, but it is acceptable to omit the element if the system doesn't have values in a particular instance. A system that is incapable of ever sharing the element would be non-conformant.§
-* §MS-2:Data Consumers **SHALL** be capable of processing resource instances containing the data elements without generating an error or causing the application to fail.§
-* §MS-3:If the minimum cardinality of an element is greater than 0 – i.e. the element is ‘required’, then the element **SHALL** be present in the instance and **SHALL** have a value.§
-* §MS-4:Data Consumers **SHALL** interpret missing data elements within resource instances as data not being present in the Data Source’s systems or was not deemed to be shareable with the Data Consumer for privacy or other business reasons.§
-* §MS-5:Data Consumers **SHALL** be able to process resource instances containing data elements that have extensions in place of a value where such extensions are declared as part of the profile.§
+* §MS-2:Consent Server systems **SHALL** be capable of processing resource instances containing data elements without generating an error or causing the application to fail.§
+* §MS-3:If the minimum cardinality of an element is greater than 0 — i.e., the element is required — then the element **SHALL** be present in the instance and **SHALL** have a value.§
+* §MS-4:Consent Server systems **SHALL** interpret missing data elements within resource instances as data not being present in the sending system or not being shareable for privacy or other business reasons.§
+* §MS-5:Consent Server systems **SHALL** be able to process resource instances containing data elements that have extensions in place of a value where such extensions are declared as part of the profile.§
 
 ### Conformance Statements in this Guide
 
