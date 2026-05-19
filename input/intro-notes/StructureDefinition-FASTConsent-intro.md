@@ -22,8 +22,6 @@ The following data elements must always be present or must be supported if the d
 **Each Consent Must Support:**
 
 1. all Must Have elements
-1. a provision purpose
-1. a Consent grantee extension (backported from the R5 Consent resource; 0..* to accommodate implicit or program-based grantees where the explicit identity of the grantee is determined by the policy rather than named in the Consent itself)
 1. a Consent manager extension (backported from the R5 Consent resource)
 1. a Consent controller extension (backported from the R5 Consent resource)
 1. a provision, that must support the following:
