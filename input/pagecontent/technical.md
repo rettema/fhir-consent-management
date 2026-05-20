@@ -110,9 +110,20 @@ This guide distinguishes two related but distinct types of audit events:
 
 Implementers are encouraged to consult the [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) implementation guide, in particular the [ITI-81 Retrieve ATNA Audit Event](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) transaction, for additional guidance on structuring both authorization decision and disclosure audit event records.
 
-##### Searching for Disclosures
-§OP9:To allow systems to document disclosures to requesting authorities (including a patient), systems **SHALL** support the searching for FAST Audit Events§ using the following search parameters:
+##### Who Creates Authorization Decision Events
 
-* [entity]({{site.data.fhir.path}}auditevent.html#search) — use `entity=Consent/[id]` to search for audit events related to a specific Consent instance
-* [patient]({{site.data.fhir.path}}auditevent.html#search)
+A FAST Consent Audit Event is created by the system that evaluates a Consent resource to determine whether to permit or deny a data access request. In many deployments this will be the consent administration service itself, if it functions as a Policy Decision Point (PDP). In deployments where consent evaluation is performed by a separate authorization component, that component is responsible for creating the FAST Consent Audit Event and persisting it by POSTing it to an `AuditEvent` endpoint.
+
+The [FAST Consent Audit Event](StructureDefinition-FASTConsentAuditEvent.html) profile captures the key facts of the evaluation: which system made the request, which user or organization initiated it, which Consent was consulted, and which patient's consent was at issue. This record is what enables patients and authorized systems to later discover when and by whom a consent was used as the basis of an access decision — including decisions to deny access, which would otherwise be invisible to the patient.
+
+##### Querying Authorization Decision Events
+
+§OP9:To allow systems to document and retrieve consent authorization decision events — including for disclosure to patients and requesting authorities — systems **SHALL** support searching for FAST Consent Audit Events§ using the following search parameters:
+
+* [entity]({{site.data.fhir.path}}auditevent.html#search) — use `entity=Consent/[id]` to search for all authorization decisions made against a specific Consent instance
+* [patient]({{site.data.fhir.path}}auditevent.html#search) — use `patient=[ref]` to search for all authorization decisions involving any consent for a specific patient
+
+A patient wishing to know when their consent was consulted — including cases where the decision was to deny access — can query using `patient:identifier=[system]|[value]` to retrieve all FAST Consent Audit Events associated with their consents. Because this profile captures both permit and deny decisions (see [Meaning of Outcome](StructureDefinition-FASTConsentAuditEvent.html#meaning-of-outcome)), patients can identify not only when their data was shared but also when a request to share it was refused.
+
+For disclosure events (cases where health information was actually shared following a permit decision), implementers **SHOULD** follow IHE-BALP patterns and the [ITI-81 Retrieve ATNA Audit Event](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) transaction for querying those events.
 

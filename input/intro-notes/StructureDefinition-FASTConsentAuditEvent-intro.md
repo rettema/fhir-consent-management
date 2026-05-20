@@ -1,5 +1,13 @@
 This profile is based on the [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) profile for when an Authorization decision is made based on a Consent record. The differences are that the relevant participant references use US Core profiles where needed.
 
+### When to Create This Event
+
+A FAST Consent Audit Event **SHALL** be created by the system that evaluates a Consent resource to determine whether a request to access patient information should be permitted or denied. This system is acting as a Policy Decision Point (PDP) in the access control framework.
+
+The event **SHALL** be created regardless of whether the authorization decision was a permit or a deny. Both outcomes represent a completed consent evaluation and must be recorded to give patients a complete picture of how their consent has been used. The event is persisted by POSTing it to the `AuditEvent` endpoint of the consent administration service or another ATNA-compliant audit repository.
+
+This profile applies exclusively to **authorization decision events** — cases where a Consent resource was consulted to make an access control decision. It does not apply to disclosure events (cases where health information was actually shared following a permit decision). For disclosure events, use [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) patterns directly, without this profile.
+
 ### Mandatory and Must Support Data Elements
 
 The following data elements must always be present or must be supported if the data is present in the sending system [Must Support]({{site.data.fhir.path}}conformance-rules.html#mustSupport). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The [Formal Views](#profile) below provides the formal summary, definitions, and terminology requirements.
