@@ -2,4 +2,5 @@
 Consenter -> "Consent Server System": Revoke Consent event is sent to system
 "Consent Server System" -> "Consent Server System": Invoked business process of revoking consent 
 "Consent Server System" -> "Consent Server System": Deactivate consent
+"Consent Server System" -> Consenter: Confirm consent has been revoked
 @enduml

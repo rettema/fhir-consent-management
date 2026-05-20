@@ -117,7 +117,8 @@ A consent form has been reviewed and completed (see use case [Review Consent](us
 By navigating and signing a delegation form, the consenter assigns a delegate to sign and file a consent on their behalf. 
 
 **Post-condition:**
-- Notices to collect consent from the the original consenter would be routed to the delegate. 
+- Notices to collect consent from the original consenter would be routed to the delegate.
+- The consenter receives confirmation that the delegation has been recorded and is active. 
 
 - The delegate may also be able to revoke the consent. This may depend on the conditions of delegation as decided by the consenter, or by overarching policies. 
 
@@ -146,6 +147,7 @@ A consent has been previously signed and filed and is still active (not expired)
 
 **Post-condition:**
 - The state of the consent is marked as inactive.
+- The consenter receives confirmation that the consent has been successfully revoked.
 - The revocation event and pertinent metadata is recorded in the provenance of the consent.
 - The record of the consent revocation (if a signed form was required in the legal context) is retained and associated with the consent and the provenance event.
 

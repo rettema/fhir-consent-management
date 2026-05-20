@@ -2,4 +2,5 @@
 Consenter -> "Consent Server System": Select and assigns a delegate 
 "Consent Server System" -> "Consent Server System": Store the delegation record 
 "Consent Server System" -> "Consent Server System": Enact and apply the delegation in future interactions
+"Consent Server System" -> Consenter: Confirm delegation is recorded and active
 @enduml
