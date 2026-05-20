@@ -2,8 +2,8 @@
   "resourceType" : "ActorDefinition",
   "id" : "admin-service",
   "url" : "http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service",
-  "name" : "AdminService",
-  "title" : "Admin Service",
+  "name" : "ConsentServer",
+  "title" : "Consent Server System",
   "status" : "active",
   "experimental" : false,
   "date" : "2025-10-15T14:24:14-04:00",
@@ -15,7 +15,7 @@
       "value" : "http://www.hl7.org/Special/committees/cbcc"
     }]
   }],
-  "description" : "Admin Service",
+  "description" : "A consent administration service responsible for storing consent records and servicing requests for consent data. Implements the File Consent and Revoke Consent operations, supports consent search and subscriptions, and maintains audit events for consent access decisions. Corresponds to the IHE-PCF Consent Registry actor.",
   "type" : "system",
-  "documentation" : "An application or product that implements the Admin Service."
+  "documentation" : "An application or product that implements the Consent Server System actor. Consent Server systems receive consents filed by Consent Client systems, store them, service search requests, manage subscriptions, and persist authorization decision audit events."
 }

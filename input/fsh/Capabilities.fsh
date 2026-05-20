@@ -79,11 +79,11 @@ Usage: #definition
 
 Instance: ConsentAdministrativeServerCapabilities
 InstanceOf: CapabilityStatement
-Title: "Consent Administrative Server Capabilities"
-Description: "Capabilities required for a server system receiving consents."
+Title: "Consent Server Capabilities"
+Description: "Capabilities required for a Consent Server system (consent administration service) receiving and managing consents."
 Usage: #definition
 * url = Canonical(ConsentAdministrativeServerCapabilities)
-* name = "ConsentAdministrativeServer"
+* name = "ConsentServer"
 * status = #active
 * experimental = false
 * date = "2025-01-01"

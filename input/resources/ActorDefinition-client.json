@@ -2,8 +2,8 @@
   "resourceType" : "ActorDefinition",
   "id" : "client",
   "url" : "http://hl7.org/fhir/us/consent-management/ActorDefinition/client",
-  "name" : "Client",
-  "title" : "Client",
+  "name" : "ConsentClient",
+  "title" : "Consent Client System",
   "status" : "active",
   "experimental" : false,
   "date" : "2025-10-15T14:24:14-04:00",
@@ -15,7 +15,7 @@
       "value" : "http://www.hl7.org/Special/committees/cbcc"
     }]
   }],
-  "description" : "Client",
+  "description" : "A system responsible for gathering patient consent decisions and filing them with a consent administration service. Typically implemented as an EHR system, patient portal, or similar application. Corresponds to the IHE-PCF Consent Recorder actor.",
   "type" : "system",
-  "documentation" : "An application or product that implements the Client."
+  "documentation" : "An application or product that implements the Consent Client System actor. Consent Client systems gather consent from patients and invoke the File Consent and Revoke Consent operations on a Consent Server System."
 }
