@@ -1,5 +1,13 @@
 This section offers supplementary notes to support the understanding and implementation of this Implementation Guide and the use cases in its scope. It includes both normative conformance requirements and informative guidance to help implementers interpret the guide correctly, align with best practices, and make technical design decisions.
 
+### Dependency on Current Consent State
+
+A critical challenge in consent-driven access control is that authorization decisions depend on the *current* state of a patient's consent — and consent state can change at any time, most importantly through revocation. A system that caches a copy of a consent and uses it for access decisions without checking for updates risks making incorrect authorization decisions based on stale data.
+
+This is why this guide mandates the use of FHIR Subscriptions rather than relying on periodic polling or on-demand fetching at the time of each authorization decision. The subscription model ensures that systems holding copies of consent records are proactively notified when the consent changes, so that their copies remain current and authorization decisions remain accurate. The latency between a consent revocation and its propagation to all subscriber systems represents a window of risk; subscriptions minimize this window compared to polling-based approaches.
+
+Implementers should design their systems with this dependency in mind: a system that cannot maintain a subscription to the consent management source **SHOULD** fetch a fresh copy of the consent at the time of each authorization decision rather than rely on a cached copy.
+
 ### Enforcing Consent
 Consent is a key policy component that must be enforced within the broader access control framework. Whether a transaction or data exchange is subject to patient consent depends on overarching policies, which define when consent is required and when data may flow without it. For example, jurisdictional regulations may stipulate that data exchanged for treatment purposes does not require patient consent, while the exchange of sensitive information does. When overarching policies indicate that a transaction depends on consent, the system must identify the patients whose consents are relevant, retrieve the applicable consents, and apply them within the transaction's context.
 
