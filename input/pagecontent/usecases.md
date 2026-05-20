@@ -16,7 +16,7 @@ This guide defines two categories of participants in consent workflows: **human 
 
 **Consent Client System** — The system used by the Consenter (and in some cases the Administrator) to interact with the consent administration service. Consent Client systems gather consent decisions and invoke the `$fileConsent` and `$revokeConsent` operations. In the sequence diagrams on this page, this corresponds to the application or portal the Consenter uses to review and sign consent forms. See the [Consent Client Capabilities](CapabilityStatement-ConsentClientCapabilities.html) for conformance requirements.
 
-**Consent Server System** — The consent administration service that stores consent records, services search and subscription requests, and maintains audit events. In the sequence diagrams on this page, this is labelled "ConsentSystem." See the [Consent Server Capabilities](CapabilityStatement-ConsentAdministrativeServerCapabilities.html) for conformance requirements.
+**Consent Server System** — The consent administration service that stores consent records, services search and subscription requests, and maintains audit events. In the sequence diagrams on this page, this is labelled "Consent Server System." See the [Consent Server Capabilities](CapabilityStatement-ConsentAdministrativeServerCapabilities.html) for conformance requirements.
 
 The typical interaction model is: **Consenter** (or Administrator) → **Consent Client System** → **Consent Server System**. The human roles are not directly represented in FHIR interactions; they operate through the technical actor systems.
 
@@ -118,7 +118,7 @@ A consent form has been reviewed and completed (see use case [Review Consent](us
 
 **Post-condition:**
 - A signed consent form is retained for future review.  
-- A computable consent resource is extracted based on the finalized consent form and is stored in the consent store FHIR server.
+- A computable consent resource is extracted based on the finalized consent form and is stored in the Consent Server System.
 
 
 ### Delegate Consent

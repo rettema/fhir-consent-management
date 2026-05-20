@@ -21,7 +21,7 @@ The artifacts are of five types:
 * [Revoke a Consent](OperationDefinition-revoke-consent.html) - {{site.data.OperationDefinition-revoke-consent.description}}
 
 #### Consent Subsription Topic
-* [FAST Consent Subscription Topic](SubscriptionTopic-FASTConsentSubscriptionTopic.html) - This is the subscription topic used for ensuring Consent records are updated amongst a set of Consent Registries.
+* [FAST Consent Subscription Topic](SubscriptionTopic-FASTConsentSubscriptionTopic.html) - This is the subscription topic used for ensuring Consent records are updated amongst a network of Consent Server systems.
 
 #### Profiles
 ##### Resource Profiles
