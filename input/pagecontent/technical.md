@@ -40,6 +40,16 @@ One of the most important parts of registering consents across systems is the pr
 #### General Operation Details
 Every operation in this guide has an optional OperationOutcome defined as the return of the operation.  This OperationOutcome instance will detail whether the operation was a success or not and, if not, what business rules did not allow the operation to be successful.  The HTTP status code returned by the operation will indicate whether an operation was successful or not.  §OP10:Systems **MAY** return an OperationOutcome with a success when they wish to provide additional structured information alongside a successful operation response.§  §OP11:Systems **SHOULD** return an OperationOutcome with the details if an HTTP status code of 4xx or 5xx is returned.§
 
+#### RESTful FHIR vs. Operations
+
+This guide defines custom FHIR operations (`$fileConsent` and `$revokeConsent`) as the primary mechanism for consent lifecycle management. While FHIR also supports direct RESTful resource manipulation (`POST`, `PUT`, `DELETE`), this guide does not restrict systems from exposing standard RESTful endpoints. However, implementers should be aware of the following considerations:
+
+- **Creating consents via `POST Consent`** bypasses the business logic encapsulated in `$fileConsent`, such as parameter validation, documentation requirements, and status enforcement. Systems implementing `$fileConsent` are not required to also accept bare `POST Consent`.
+- **Updating consents via `PUT` or `PATCH`** is strongly discouraged for patient-driven consent changes; see the [Updating Consents](#updating-consents) section below. Administrative corrections are the only appropriate use of in-place updates.
+- **Deleting consents via `DELETE`** is explicitly prohibited by §OP6. Revoked consents must remain in the system as `inactive` for audit purposes.
+
+Conformance to this guide requires implementing the defined operations and subscriptions. Whether or not systems additionally expose standard RESTful endpoints is an implementation decision.
+
 #### Consent Management
 
 §OP1:To satisfy the business use cases for consent management, two operations are defined that a consent administration service **SHALL** support: File Consent and Revoke Consent.§
