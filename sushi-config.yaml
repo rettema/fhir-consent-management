@@ -127,7 +127,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 menu:
   Home: index.html
   Background:
-    Upderlying Specifications: background.html
+    Underlying Specifications: background.html
     Use Cases: usecases.html
     Implementation Notes: implementation_notes.html
     Project and Participants: credits.html

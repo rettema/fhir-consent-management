@@ -5,17 +5,17 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="ActorDefinition/admin-service" key="ActorDefinition-admin-service" name="Admin Service"/>
 <artifact id="Requirements/capstmt-admin-service" key="Requirements-capstmt-admin-service" name="CapStmt Admin Service"/>
 <artifact id="Requirements/capstmt-client" key="Requirements-capstmt-client" name="CapStmt Client"/>
-<artifact id="ActorDefinition/client" key="ActorDefinition-client" name="Client"/>
 <artifact id="Requirements/components-admin-service" key="Requirements-components-admin-service" name="Components Admin Service"/>
 <artifact id="Requirements/components-client" key="Requirements-components-client" name="Components Client"/>
 <artifact id="Requirements/conformance-admin-service" key="Requirements-conformance-admin-service" name="Conformance Admin Service"/>
 <artifact id="Requirements/conformance-client" key="Requirements-conformance-client" name="Conformance Client"/>
 <artifact id="Requirements/conformance-client-admin-service" key="Requirements-conformance-client-admin-service" name="Conformance Client Admin Service"/>
-<artifact id="CapabilityStatement/ConsentAdministrativeServerCapabilities" key="CapabilityStatement-ConsentAdministrativeServerCapabilities" name="Consent Administrative Server Capabilities"/>
 <artifact id="CapabilityStatement/ConsentClientCapabilities" key="CapabilityStatement-ConsentClientCapabilities" name="Consent Client Capabilities"/>
+<artifact id="ActorDefinition/client" key="ActorDefinition-client" name="Consent Client System"/>
+<artifact id="CapabilityStatement/ConsentAdministrativeServerCapabilities" key="CapabilityStatement-ConsentAdministrativeServerCapabilities" name="Consent Server Capabilities"/>
+<artifact id="ActorDefinition/admin-service" key="ActorDefinition-admin-service" name="Consent Server System"/>
 <artifact id="AuditEvent/ConsentAuditEventExample" key="AuditEvent-ConsentAuditEventExample" name="ConsentAuditEventExample"/>
 <artifact id="Consent/ConsentExample" key="Consent-ConsentExample" name="ConsentExample"/>
 <artifact id="DocumentReference/DocumentReferenceExample" key="DocumentReference-DocumentReferenceExample" name="DocumentReferenceExample"/>
