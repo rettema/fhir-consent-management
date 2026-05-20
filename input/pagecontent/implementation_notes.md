@@ -1,5 +1,13 @@
 This section offers supplementary notes to support the understanding and implementation of this Implementation Guide and the use cases in its scope. It includes both normative conformance requirements and informative guidance to help implementers interpret the guide correctly, align with best practices, and make technical design decisions.
 
+### Authorization to Subscribe
+
+When a system receives a copy of a Consent resource — whether via push from an originating system or via pull through a search — the authorization that permitted that exchange implies the system is also authorized to subscribe for updates to that consent. This is a key principle of the Consent Network Relationship: a system that legitimately holds a copy of a Consent must be able to maintain that copy's accuracy, and subscribing for updates is the primary mechanism for doing so.
+
+In practice, the access control framework governing subscription registration should align with the framework governing Consent access. A consent administration service receiving a `POST Subscription` request **SHOULD** verify that the subscribing system is authorized to access the consents it is requesting to be notified about. A system that is not authorized to read a Consent resource should not be authorized to subscribe for notifications when that Consent changes.
+
+Patient authorization is an upstream component of this trust model. When a patient's consent is shared between organizations — for example, because the patient has authorized a data sharing arrangement — the consent management systems involved may enter into subscription relationships as a direct consequence of that patient authorization. The specific mechanisms by which organizational trust relationships and subscription authorization are established are outside the scope of this guide; implementers should consult their applicable authorization infrastructure, including SMART App Launch for OAuth-based access control patterns.
+
 ### Dependency on Current Consent State
 
 A critical challenge in consent-driven access control is that authorization decisions depend on the *current* state of a patient's consent — and consent state can change at any time, most importantly through revocation. A system that caches a copy of a consent and uses it for access decisions without checking for updates risks making incorrect authorization decisions based on stale data.
