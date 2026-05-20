@@ -7,7 +7,7 @@ Within the Consent sphere, there are three types of information sharing question
 For #1 and #2, there are existing mechanisms to convey the answer to those questions.  This guide provides guidance to help answer question #3.
 
 ### Who has my Consent record been shared with?
-This guide provides both a means for [searching for consents](technical.html#searching-for-consents) and to [subscribe for updates](technical.html#consent-subscriptions) to those consents.  The use of AuditEvents can be used to answer the question of who has received my Consent record.  By querying for AuditEvents that have an entity of a consent record, a system can find out when it was returned in a search result.
+This guide provides both a means for [searching for consents](technical.html#searching-for-consents) and to [subscribe for updates](technical.html#consent-subscriptions) to those consents.  The use of AuditEvents can be used to answer the question of who has received my Consent record.  Systems that return a Consent resource in a search result or read interaction **SHOULD** record a standard FHIR AuditEvent following the [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) patterns for FHIR Search and Read events.  By querying for AuditEvents that have an entity of a consent record, a system can find out when the consent was returned in a search result and to which system it was disclosed.
 
 There is a complexity that this guide introduces in that there may be a network of systems that receive a consent.  See the [Implementation Notes](implementation_notes.html) for more information about how consents may be shared and stored across the network.
 
