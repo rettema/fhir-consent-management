@@ -25,6 +25,29 @@ This implementation guide uses subscriptions to notify systems of consent change
 #### IHE Privacy Consent on FHIR (PCF)
 This guide aligns with the [IHE Privacy Consent on FHIR (PCF)]({{site.data.fhir.ver.iheconsent}}) guide. The FAST Consent profiles are designed to be a US-Core-flavoured subset of IHE-PCF — a Consent instance that is valid against the FAST Consent profile will generally also satisfy IHE-PCF constraints. Implementers should consult IHE-PCF for additional context on consent actors, transactions, and enforcement patterns. IHE-PCF also includes Appendix P, which provides foundational background on the concepts underlying privacy consent management.
 
+##### Actor Mapping
+
+IHE-PCF defines four actors: **Consent Recorder**, **Consent Registry**, **Consent Authorization Server**, and **Consent Enforcement Point**. This guide defines two system roles — **Client** and **Server** — that correspond to a subset of these actors:
+
+- The FAST Consent **Client** system corresponds most closely to the IHE-PCF **Consent Recorder**: it is responsible for gathering consent from patients and filing it with a consent administration service.
+- The FAST Consent **Server** (consent administration service) corresponds to the IHE-PCF **Consent Registry**: it stores consents and services queries for consent records.
+- The **Consent Authorization Server** and **Consent Enforcement Point** actors from IHE-PCF are outside the scope of this guide. This guide standardizes the representation and exchange of consent data; the application of that data to make and enforce access decisions is handled by external authorization infrastructure.
+
+##### Operations vs. IHE-PCF Transactions
+
+IHE-PCF defines transactions using IHE's ITI transaction model. This guide uses custom FHIR operations and RESTful FHIR interactions rather than IHE-style transactions. The functional correspondence is:
+
+- The `$fileConsent` operation (this guide) corresponds to IHE-PCF's **[ITI-108] Access Consent** (create).
+- The `$revokeConsent` operation (this guide) corresponds to IHE-PCF's **[ITI-109] Revoke Consent**.
+- Consent search (this guide) corresponds to IHE-PCF's **[ITI-108] Access Consent** (search/read).
+- FHIR Subscriptions (this guide) extend beyond IHE-PCF by adding proactive change notification; IHE-PCF does not define a subscription or notification transaction.
+
+Implementers conforming to this guide do not need to implement IHE-PCF transactions, but systems that already implement IHE-PCF transactions may find that their implementations are largely compatible with the operations defined here.
+
+##### Authorization and SMART App Launch
+
+IHE-PCF relies on IHE's own authorization model (IUA — Internet User Authorization). This guide recommends [SMART App Launch](https://hl7.org/fhir/smart-app-launch/) as the OAuth-based authorization mechanism for securing the operations and interactions defined here. Systems that have already implemented IHE IUA for IHE-PCF compliance may adapt their existing authorization infrastructure to satisfy the SMART-based access control expectations of this guide; the underlying OAuth 2.0 token model is compatible. See the [Privacy, Safety, and Security]({{site.data.fhir.path}}security.html#SecPrivConsiderations) section for additional guidance.
+
 #### IHE Basic Audit Log Patterns (BALP)
 This guide relies on [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) for representing audit events related to consent access and health information disclosure. Implementers should be familiar with the BALP Consent Authorized Decision Audit Message and the Privacy Disclosure Audit Message profiles.
 
