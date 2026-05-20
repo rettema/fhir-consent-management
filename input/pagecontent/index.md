@@ -23,6 +23,17 @@ Patient Consent management is the central component in a consent ecosystem and a
 7. Propagate Consent Events
 8. Disclosure Audit
 
+#### Permit and Deny; Opt-in and Opt-out
+
+A consent recorded using this guide can express either a **permit** (the patient authorizes a specified use or disclosure) or a **deny** (the patient refuses or restricts a specified use or disclosure), as represented by the `provision.type` element of the FHIR Consent resource. Both permit and deny consents are within the scope of this guide.
+
+Two related but distinct concepts — **opt-in** and **opt-out** — describe the *default* posture a jurisdiction or organization takes in the absence of an explicit patient consent decision:
+
+- **Opt-in** (explicit consent required): data may not be used or shared unless the patient has actively consented. A filed, active Consent with `provision.type = permit` represents the patient opting in.
+- **Opt-out** (consent assumed unless refused): data may be used or shared unless the patient has actively refused. A filed, active Consent with `provision.type = deny` represents the patient opting out.
+
+Determining whether a particular data exchange requires opt-in or opt-out consent — and what the default behavior is in the absence of an explicit patient decision — depends on overarching jurisdictional and organizational policies and is **out of scope** for this guide. This guide provides the mechanisms to record, manage, and exchange the consent decision once it has been made; the policy framework that determines when and whether consent is required is handled in the Policy Administration environment surrounding this IG.
+
 The following diagram provides a high-level overview of the consent administration system and its use cases within the context of other adjacent services and  highlights what is in scope for this IG. At a high-level, there are four broad areas of service as discussed below. These are well-established concepts in access control and authorization literature, for example, the definitions of Policy Administration Point (PAP), Policy Decision Point (PDP), and Policy Enforcement Point (PEP) in the [OASIS Extensible Access Control Markup Language (XACML)](https://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-en.html).
 
 - **Policy Administration** covers all the processes and activities for creating, updating, and maintaining authorization policies. Consents are part of the authorization policies authored by the patient (or someone on the patient's behalf). The policy administration functions related to consents are within the primary focus on this IG and within its scope. Consents as referenced in this IG are assumed to be [FHIR Consent resources]({{site.data.fhir.path}}consent.html). The management and administration of other types of policies (e.g., jurisdictional and organizational policies) are NOT in the scope of this IG. In particular, jurisdictional privacy rules and regulations — such as laws governing what data may be shared without patient consent — are considered part of the overarching policy environment and are handled outside this IG. This guide is explicitly scoped to *patient consent*: each Consent resource must be linked to a specific patient (`Consent.patient` is required), and use cases involving aggregate, population-level, or purely jurisdictional data sharing without patient involvement are out of scope.
