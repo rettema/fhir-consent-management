@@ -1,5 +1,24 @@
 <div>{%include usecases.svg%}</div>
 
+### Systems and Actors
+
+This guide defines two categories of participants in consent workflows: **human roles** (the people involved) and **technical actors** (the systems they use to carry out interactions). Keeping these distinct is important: a human role describes *who* is involved in a use case; a technical actor describes *which system* executes the FHIR interactions.
+
+#### Human Roles
+
+**Consenter** — The individual who makes the consent decision. This is typically the patient, but may also be a caregiver, guardian, or legally authorized representative acting on the patient's behalf. The Consenter is the subject of all use cases on this page.
+
+**Administrator** — A person or organizational role that initiates consent-related workflows on behalf of a healthcare organization. For example, an administrator may request that a patient complete a consent form, or may act as an intermediary between the patient and the consent system. The Administrator is distinct from the Consenter: the Administrator initiates or facilitates the process; the Consenter makes the decision.
+
+#### Technical Actors
+
+**Consent Client System** — The system used by the Consenter (and in some cases the Administrator) to interact with the consent administration service. Consent Client systems gather consent decisions and invoke the `$fileConsent` and `$revokeConsent` operations. In the sequence diagrams on this page, this corresponds to the application or portal the Consenter uses to review and sign consent forms. See the [Consent Client Capabilities](CapabilityStatement-ConsentClientCapabilities.html) for conformance requirements.
+
+**Consent Server System** — The consent administration service that stores consent records, services search and subscription requests, and maintains audit events. In the sequence diagrams on this page, this is labelled "ConsentSystem." See the [Consent Server Capabilities](CapabilityStatement-ConsentAdministrativeServerCapabilities.html) for conformance requirements.
+
+The typical interaction model is: **Consenter** (or Administrator) → **Consent Client System** → **Consent Server System**. The human roles are not directly represented in FHIR interactions; they operate through the technical actor systems.
+
+---
 
 ### Request Consent
 
