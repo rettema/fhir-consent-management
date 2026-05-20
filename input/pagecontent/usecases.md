@@ -18,6 +18,21 @@ This guide defines two categories of participants in consent workflows: **human 
 
 The typical interaction model is: **Consenter** (or Administrator) → **Consent Client System** → **Consent Server System**. The human roles are not directly represented in FHIR interactions; they operate through the technical actor systems.
 
+#### Use Cases and Technical Operations
+
+The table below provides an informative mapping between the use cases on this page and the FHIR operations and mechanisms defined in this guide. This mapping is informative: the use cases describe illustrative scenarios and are not themselves conformance requirements. Conformance requirements — specifying what systems must implement — are defined in the [Technical Specifications](technical.html) section.
+
+| Use Case | FHIR Operation or Mechanism | Notes |
+|----------|----------------------------|-------|
+| [Request Consent](#request-consent) | Out of scope | The mechanism for requesting and assigning consent forms is out of scope; this use case describes a pre-condition for the normative use cases |
+| [Review Consent](#review-consent) | Out of scope | Form review is an application-layer concern; no specific FHIR interactions are defined in this guide |
+| [Sign and File Consent](#sign-and-file-consent) | [`$fileConsent`](OperationDefinition-file-consent.html) | Required for Consent Client systems |
+| [Delegate Consent](#delegate-consent) | [`$fileConsent`](OperationDefinition-file-consent.html) | Delegation is recorded as a Consent resource; the technical mechanism parallels Sign and File |
+| [Revoke Consent](#revoke-consent) | [`$revokeConsent`](OperationDefinition-revoke-consent.html) | Required for Consent Client systems |
+| [Disclosure Audit](#disclosure-audit) | [AuditEvent search](StructureDefinition-FASTConsentAuditEvent.html) | Optional; see the `(implementing this use case is optional)` note on the use case |
+| [Propagate Consent Events](#propagate-consent-events) | [FHIR Subscriptions](SubscriptionTopic-FASTConsentSubscriptionTopic.html) | Required for Consent Server systems |
+| [Consent Provenance](#consent-provenance) | [AuditEvent search](StructureDefinition-FASTConsentAuditEvent.html) | Required for Consent Server systems (§OP9) |
+
 ---
 
 ### Request Consent
