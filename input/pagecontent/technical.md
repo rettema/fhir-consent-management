@@ -12,10 +12,12 @@ Before reading this formal specification, implementers should first familiarize 
 
 #### Systems
 
-This implementation guide sets expectations for two types of systems:
+This implementation guide sets expectations for two types of systems, defined as canonical actors:
 
-* **Client** systems are systems that are responsible for gathering and filing consents
-* **Server** systems are consent administration services that store consents and handle requests for consents.
+* **Consent Client systems** are systems responsible for gathering patient consent decisions and filing them with a consent administration service.
+* **Consent Server systems** are consent administration services that store consents and handle requests for consents.
+
+See [Conformance Expectations](conformance.html#systems) for the full actor definitions and links to the corresponding CapabilityStatements.
 
 
 #### Profiles

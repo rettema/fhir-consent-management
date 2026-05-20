@@ -1,9 +1,10 @@
 ### Systems
-The FAST Consent implementation guide defines the responsibilities of the two types of systems involved in a Consent solution:
 
-[**Client systems**](CapabilityStatement-ConsentClientCapabilities.html) are typically Electronic Medical Record (EHR) systems but could theoretically be any system responsible for gathering consent records. 
+The FAST Consent implementation guide defines the responsibilities of two types of systems involved in a consent solution. These are the canonical **Consent Client System** and **Consent Server System** actors defined in this guide.
 
-[**Server systems**](CapabilityStatement-ConsentAdministrativeServerCapabilities.html) (or servers) are consent administration systems.
+[**Consent Client systems**](CapabilityStatement-ConsentClientCapabilities.html) are systems responsible for gathering patient consent decisions and filing them with a consent administration service. They are typically Electronic Medical Record (EHR) systems or patient portals, but can be any system that invokes the File Consent and Revoke Consent operations on behalf of a patient or authorized representative.
+
+[**Consent Server systems**](CapabilityStatement-ConsentAdministrativeServerCapabilities.html) are consent administration services that store consent records, service search requests, manage subscriptions, and persist audit events for consent access decisions.
 
 ### Conformance Verbs
 
