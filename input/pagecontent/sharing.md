@@ -23,6 +23,6 @@ Similar to the question of where a patient's Consent record has been shared, thi
 IHE has a number of guides related to this question so this guide does not offer specific means for answering the question.  A good guide to consult is the [IHE Basic Audit Log Pattern](https://profiles.ihe.net/ITI/BALP/).  Its focus is on enabling Privacy centric AuditEvent logs that hold well-formed indication of the Patient when they are the subject of the activity being recorded in the log.
 
 ### Who has consulted my Consent record to make a decision on sharing my health information?
-Nestled in between question #1 and question #3 is the question around who consulted a patient's Consent record.  There will be times when a Consent record was consulted and a decision made to **NOT** share information.  A patient may want to know that this happened.
+Along with the other two questions is the question around who consulted a patient's Consent record.  There will be times when a Consent record was consulted and a decision made to **NOT** share information.  A patient may want to know that this happened.
 
 To enable this question to be answered, systems **SHALL** record a [FAST Consent Audit Event](StructureDefinition-FASTConsentAuditEvent.html) via a RESTful FHIR `POST` to the `AuditEvent` endpoint whenever a Consent record was consulted, no matter whether that led to health information sharing or not.  See the [Technical Specification](technical.html#sharing-health-information-due-to-consent) for details.
