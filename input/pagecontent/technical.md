@@ -77,7 +77,7 @@ The [Revoke Consent Operation](OperationDefinition-revoke-consent.html) is used 
 
 The `controller` and `manager` search parameters are required (not merely recommended) because they are fundamental to the federated consent management model that is the core purpose of this IG. Searching by `manager` allows subscriber systems to locate all consents for which they must maintain subscriptions to receive updates from the originating system. Searching by `controller` allows systems to find all consents within their data governance scope. Making these parameters optional would undermine the interoperability goals of federated consent sharing.  For single-organization deployments, the practical utility of these parameters may be limited.
 
-To search for consents by organization identifier, implementers **SHOULD** use the `controller:identifier` chained search parameter (e.g., `GET [base]/Consent?controller:identifier=|1234567890`) rather than a custom organization ID search parameter.  To search for consents by patient identifier, implementers **SHOULD** use the `patient:identifier` chained search parameter (e.g., `GET [base]/Consent?patient:identifier=http://example.org/mrn|M1230041`).
+§OP13:To search for consents by organization identifier, implementers **SHOULD** use the `controller:identifier` chained search parameter (e.g., `GET [base]/Consent?controller:identifier=|1234567890`) rather than a custom organization ID search parameter.§  §OP14:To search for consents by patient identifier, implementers **SHOULD** use the `patient:identifier` chained search parameter (e.g., `GET [base]/Consent?patient:identifier=http://example.org/mrn|M1230041`).§
 
 
 ##### Consent Subscriptions
@@ -95,7 +95,7 @@ For more details about supporting subscriptions, including how to delete a subsc
 
 #### Updating Consents
 
-This guide does not define an Update Consent operation, and systems conforming to this guide **SHOULD NOT** update an existing Consent resource in place using RESTful `PUT` or `PATCH`. The reasons are:
+§OP15:This guide does not define an Update Consent operation, and systems conforming to this guide **SHOULD NOT** update an existing Consent resource in place using RESTful `PUT` or `PATCH`.§ The reasons are:
 
 1. **Traceability and auditability** — Consent changes are significant events in a patient's care record. Updating a Consent in place loses the history of what was previously consented to. Each new patient consent decision should result in a new Consent resource (or a Revoke followed by a new File).
 2. **Propagation integrity** — In a federated consent network, other systems may hold copies of a shared Consent. In-place updates would require those systems to detect the change via subscription or polling. Revoking and re-filing makes the change unambiguous and ensures that subscription notifications accurately reflect the transition from one consent state to another.
@@ -108,7 +108,7 @@ This guide distinguishes two related but distinct types of audit events:
 
 1. **Authorization Decision Event** — An event recorded whenever a Consent resource is consulted to determine whether a request to access patient information should be permitted or denied. This event captures *that a consent was consulted and a decision was made*, regardless of whether that decision was to permit or deny access. The [FAST Consent Audit Event](StructureDefinition-FASTConsentAuditEvent.html) profile, based on the IHE-BALP `IHE.BasicAudit.AuthZconsent` profile, is used for this event type. §OP12:Systems **SHALL** create a FAST Consent Audit Event via a RESTful FHIR `POST AuditEvent` whenever a Consent instance is accessed to determine whether patient information can be accessed.§
 
-2. **Disclosure Event** — An event recorded when health information is actually shared with a requesting party following a permit decision. This event captures *what data was shared and with whom*. For disclosure events, implementers **SHOULD** follow the [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) guide, specifically the patterns for data disclosure audit events. This guide does not define a custom profile for disclosure events; IHE-BALP patterns should be used directly.
+2. **Disclosure Event** — An event recorded when health information is actually shared with a requesting party following a permit decision. This event captures *what data was shared and with whom*. §OP16:For disclosure events, implementers **SHOULD** follow the [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) guide, specifically the patterns for data disclosure audit events.§ This guide does not define a custom profile for disclosure events; IHE-BALP patterns should be used directly.
 
 Implementers are encouraged to consult the [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) implementation guide, in particular the [ITI-81 Retrieve ATNA Audit Event](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) transaction, for additional guidance on structuring both authorization decision and disclosure audit event records.
 
@@ -127,5 +127,5 @@ The [FAST Consent Audit Event](StructureDefinition-FASTConsentAuditEvent.html) p
 
 A patient wishing to know when their consent was consulted — including cases where the decision was to deny access — can query using `patient:identifier=[system]|[value]` to retrieve all FAST Consent Audit Events associated with their consents. Because this profile captures both permit and deny decisions (see [Meaning of Outcome](StructureDefinition-FASTConsentAuditEvent.html#meaning-of-outcome)), patients can identify not only when their data was shared but also when a request to share it was refused.
 
-For disclosure events (cases where health information was actually shared following a permit decision), implementers **SHOULD** follow IHE-BALP patterns and the [ITI-81 Retrieve ATNA Audit Event](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) transaction for querying those events.
+§OP17:For disclosure events (cases where health information was actually shared following a permit decision), implementers **SHOULD** follow IHE-BALP patterns and the [ITI-81 Retrieve ATNA Audit Event](https://profiles.ihe.net/ITI/TF/Volume2/ITI-81.html) transaction for querying those events.§
 
