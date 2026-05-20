@@ -51,6 +51,14 @@ IHE-PCF relies on IHE's own authorization model (IUA — Internet User Authoriza
 #### IHE Basic Audit Log Patterns (BALP)
 This guide relies on [IHE Basic Audit Log Patterns (BALP)](https://profiles.ihe.net/ITI/BALP/) for representing audit events related to consent access and health information disclosure. Implementers should be familiar with the BALP Consent Authorized Decision Audit Message and the Privacy Disclosure Audit Message profiles.
 
+#### CDA Privacy Consent Directives
+
+Prior to the widespread adoption of FHIR, patient consent decisions were commonly represented using HL7 Clinical Document Architecture (CDA) documents, including the [HL7 CDA R2 Implementation Guide: Privacy Consent Directives](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=280). These CDA-based consent directives capture the same fundamental patient decisions — authorizing or restricting the use and disclosure of health information — that this guide represents as FHIR Consent resources.
+
+This guide does not define a migration path or transformation profile for converting CDA Privacy Consent Directives to FHIR Consent resources. Organizations operating in environments where consent is currently captured in CDA format will need to develop their own transformation processes to produce FHIR Consent instances conformant with the [FAST Consent profile](StructureDefinition-FASTConsent.html) defined here. The IHE-PCF guide includes guidance on representing consent in FHIR that may be useful as a reference for such transformations.
+
+Note that the IHE-PCF guide itself references and aligns with both the CDA Privacy Consent Directive tradition and the FHIR Consent resource model. Because the FAST Consent profile is a US-Core-flavoured subset of IHE-PCF, implementers familiar with IHE-PCF's handling of CDA-to-FHIR consent representations will find that guidance applicable here as well.
+
 Implementers should also familiarize themselves with the FHIR resources used within the guide:
 
 | Resource | Relevance |
