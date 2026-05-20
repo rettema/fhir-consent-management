@@ -1,7 +1,13 @@
 @startuml
 "Consent Server System" -> Consenter: Send the rendered consent form
-loop
-    Consenter -> Consenter: Reviews the consent form 
-    Consenter -> "Consent Server System": Saves partially filled form
+loop until form is complete or consenter saves and exits
+    Consenter -> Consenter: Reviews the consent form
+    alt consenter saves progress and exits
+        Consenter -> "Consent Server System": Save partially filled form
+        "Consent Server System" -> Consenter: Confirm form state saved
+    else consenter continues filling form
+        Consenter -> "Consent Server System": Saves partially filled form
+    end
 end
+Consenter -> "Consent Server System": Submit completed form
 @enduml
