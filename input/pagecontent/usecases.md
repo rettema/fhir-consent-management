@@ -57,6 +57,8 @@ The table below provides an informative mapping between the use cases on this pa
 - The consenter is notified about the request.
 - If there is a delegation in place, the substitute decision maker should be notified.
 
+**Note:** The consent form referenced in this use case is a conceptual artifact representing the mechanism by which a specific consent decision is requested from and assigned to a consenter. The technical representation, transport, and rendering of consent forms is outside the scope of this implementation guide. This use case describes an important pre-condition for the normative consent operations ([Sign and File Consent](#sign-and-file-consent) and [Revoke Consent](#revoke-consent)) but does not itself define normative FHIR interactions.
+
 ### Review Consent
 
 <div>{%include review-consent-sequence.svg%}</div>
@@ -92,7 +94,7 @@ The table below provides an informative mapping between the use cases on this pa
 **Alternative Flow:**
 - The consenter may save the incomplete form and log out of the application. The state of the form including all the information entered shall be retained.
 
-
+**Note:** The requirements in the narrative above (including phrases such as "shall") describe expected behavior for consent collection applications and represent user experience and quality expectations, not FHIR conformance requirements. The partially-filled form referenced here is a conceptual artifact; its technical representation is outside the scope of this guide. See the [Technical Specifications](technical.html) for normative FHIR requirements.
 
 ### Sign and File Consent
 
