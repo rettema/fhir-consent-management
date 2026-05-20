@@ -24,7 +24,7 @@ The typical interaction model is: **Consenter** (or Administrator) → **Consent
 
 <div>{%include request-consent-sequence.svg%}</div>
 
-**Actor:** Administrator, Consenter
+**Actor:** Administrator, Consenter, Consent Server System
 
 **Pre-condition:** 
 - If the initiator is an administrator, they are already aware of the identity of the consenter, either by manual selection or implied by the overarching workflow (e.g., a referral).
@@ -108,6 +108,11 @@ A consent form has been reviewed and completed (see use case [Review Consent](us
 
 **Actor:** Consenter
 
+**Pre-condition:**
+- The consenter is an authenticated user of the Consent Client System.
+- The consenter has authority to delegate: they are either the patient or a currently authorized representative with delegation rights.
+- The consent management system supports the delegation workflow.
+
 **Narrative:**
 By navigating and signing a delegation form, the consenter assigns a delegate to sign and file a consent on their behalf. 
 
@@ -163,7 +168,7 @@ A consent has been signed and filed.
 
 <div>{%include propagate-consent-events-sequence.svg%}</div>
 
-**Actor:** Consenter
+**Actor:** Consent Server System
 
 **Pre-condition:**
 - A subscription has been registered with the consent administration service by an authorized entity specifying the address and the protocol for sending notifications about the events pertaining to consents of interest.
@@ -193,3 +198,6 @@ The consenter can navigate the timeline of the lifecycle events about the consen
 - When and by whom the consent was filed/signed.
 - If/when and by whom the consent was revoked.
 - If/when and to whom the consent has been shared.
+
+**Post-condition:**
+- The lifecycle events of the consent are returned to the Consenter for review.
