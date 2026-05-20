@@ -1,5 +1,5 @@
 @startuml
-Administrator -> ConsentSystem: Request to collect consent specifying a consenter and a consent form
-ConsentSystem -> Consenter: Notify the consent request
-ConsentSystem -> ConsentSystem: Track request status
+Administrator -> "Consent Server System": Request to collect consent specifying a consenter and a consent form
+"Consent Server System" -> Consenter: Notify the consent request
+"Consent Server System" -> "Consent Server System": Track request status
 @enduml

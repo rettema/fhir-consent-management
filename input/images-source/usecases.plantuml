@@ -2,7 +2,7 @@
 left to right direction
 actor Administrator as a
 actor Consenter as c
-actor ConsentSystem as s
+actor "Consent Server System" as s
 package Consent {
   usecase "Request Consent" as UC1
   usecase "Review Consent" as UC2

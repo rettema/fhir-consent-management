@@ -1,5 +1,5 @@
 @startuml
-Consenter -> ConsentSystem: Revoke Consent event is sent to system
-ConsentSystem -> ConsentSystem: Invoked business process of revoking consent 
-ConsentSystem -> ConsentSystem: Deactivate consent
+Consenter -> "Consent Server System": Revoke Consent event is sent to system
+"Consent Server System" -> "Consent Server System": Invoked business process of revoking consent 
+"Consent Server System" -> "Consent Server System": Deactivate consent
 @enduml

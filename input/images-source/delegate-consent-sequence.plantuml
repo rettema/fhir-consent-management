@@ -1,5 +1,5 @@
 @startuml
-Consenter -> ConsentSystem: Select and assigns a delegate 
-ConsentSystem -> ConsentSystem: Store the delegation record 
-ConsentSystem -> ConsentSystem: Enact and apply the delegation in future interactions
+Consenter -> "Consent Server System": Select and assigns a delegate 
+"Consent Server System" -> "Consent Server System": Store the delegation record 
+"Consent Server System" -> "Consent Server System": Enact and apply the delegation in future interactions
 @enduml

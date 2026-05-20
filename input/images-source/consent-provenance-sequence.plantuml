@@ -1,4 +1,4 @@
 @startuml
-Consenter -> ConsentSystem: Retrieve consent lifecycle events
-ConsentSystem --> Consenter: Return events around the consent
+Consenter -> "Consent Server System": Retrieve consent lifecycle events
+"Consent Server System" --> Consenter: Return events around the consent
 @enduml
