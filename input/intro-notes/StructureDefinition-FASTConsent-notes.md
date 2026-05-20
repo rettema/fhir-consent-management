@@ -11,9 +11,9 @@ Below is an overview of the required Server RESTful FHIR interactions for this p
 
 #### Mandatory Search Parameters:
 
-§SC-1:The following search parameters and search parameter combinations **SHALL** be supported:§
+§SC-1?^admin-service:The following search parameters and search parameter combinations **SHALL** be supported:§
 
-1. §SC-2:**SHALL** support both read Consent by `id` **AND** Consent search using the **[`_id`]({{site.data.fhir.path}}search.html#id)** search parameter:§
+1. §SC-2?^admin-service:**SHALL** support both read Consent by `id` **AND** Consent search using the **[`_id`]({{site.data.fhir.path}}search.html#id)** search parameter:§
 
     `GET [base]/Consent/[id]` or `GET [base]/Consent?_id=[id]`
 
@@ -24,7 +24,7 @@ Below is an overview of the required Server RESTful FHIR interactions for this p
 
     *Implementation Notes:*  ([how to search by the logical id]({{site.data.fhir.path}}references.html#logical) of the resource)
 
-1. §SC-3:**SHALL** support searching a consent by an identifier such as a CDA consent document using the **[`identifier`]({{site.data.fhir.path}}search.html#token)** search parameter:§
+1. §SC-3?^admin-service:**SHALL** support searching a consent by an identifier such as a CDA consent document using the **[`identifier`]({{site.data.fhir.path}}search.html#token)** search parameter:§
 
     `GET [base]/Consent?identifier={system|}[code]`
 
@@ -34,7 +34,7 @@ Below is an overview of the required Server RESTful FHIR interactions for this p
 
     *Implementation Notes:* Fetches a bundle containing any Consent resources matching the identifier ([how to search by token]({{site.data.fhir.path}}search.html#token))
 
-1. §SC-4:**SHALL** support searching a consent by a patient using the **[`patient`]({{site.data.fhir.path}}search.html#reference)** search parameter:§
+1. §SC-4?^admin-service:**SHALL** support searching a consent by a patient using the **[`patient`]({{site.data.fhir.path}}search.html#reference)** search parameter:§
 
     `GET [base]/Consent?patient={type\}[id]`
 
@@ -44,7 +44,7 @@ Below is an overview of the required Server RESTful FHIR interactions for this p
 
     *Implementation Notes:* Fetches a bundle containing any Consent resources matching the patient ([how to search by reference]({{site.data.fhir.path}}search.html#reference))
 
-1. §SC-5:**SHALL** support searching using the combination of the **[`patient`]({{site.data.fhir.path}}search.html#reference)** and **[`status`]({{site.data.fhir.path}}search.html#token)** search parameters:§
+1. §SC-5?^admin-service:**SHALL** support searching using the combination of the **[`patient`]({{site.data.fhir.path}}search.html#reference)** and **[`status`]({{site.data.fhir.path}}search.html#token)** search parameters:§
 
     `GET [base]/Consent?patient={type\}[id]&amp;status=[code]`
 
@@ -56,9 +56,9 @@ Below is an overview of the required Server RESTful FHIR interactions for this p
 
 #### Optional Search Parameters:
 
-§SC-6:The following search parameter combinations **SHOULD** be supported:§
+§SC-6?^admin-service:The following search parameter combinations **SHOULD** be supported:§
 
-1. §SC-7:**SHOULD** support searching using the combination of the **[`patient`]({{site.data.fhir.path}}search.html#reference)** and **[`date`]({{site.data.fhir.path}}search.html#date)** search parameters:§
+1. §SC-7?^admin-service:**SHOULD** support searching using the combination of the **[`patient`]({{site.data.fhir.path}}search.html#reference)** and **[`date`]({{site.data.fhir.path}}search.html#date)** search parameters:§
 
     `GET [base]/Consent?patient={type\}[id]&amp;date=[date]`
 
