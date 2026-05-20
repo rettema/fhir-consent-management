@@ -1,5 +1,7 @@
 <div>{%include usecases.svg%}</div>
 
+> **Informative Content:** The use cases on this page are **informative**. They illustrate the consent workflows this implementation guide is designed to support and provide context for the normative technical requirements. The use case narratives — including phrases such as "shall" within narrative descriptions — describe expected application behavior and user experience, not FHIR conformance requirements. Only one use case (Disclosure Audit) is explicitly marked optional; this does not imply the others are conformance requirements. Normative conformance requirements are defined in the [Technical Specifications](technical.html) section.
+
 ### Systems and Actors
 
 This guide defines two categories of participants in consent workflows: **human roles** (the people involved) and **technical actors** (the systems they use to carry out interactions). Keeping these distinct is important: a human role describes *who* is involved in a use case; a technical actor describes *which system* executes the FHIR interactions.
@@ -8,7 +10,7 @@ This guide defines two categories of participants in consent workflows: **human 
 
 **Consenter** — The individual who makes the consent decision. This is typically the patient, but may also be a caregiver, guardian, or legally authorized representative acting on the patient's behalf. The Consenter is the subject of all use cases on this page. The use cases and operations in this guide support the Consenter as part of the consent process regardless of whether that person is the patient or their authorized representative. Explicit out-of-band notification of caregivers or guardians (e.g., notifying a guardian when the patient files a consent) is outside the scope of this guide.
 
-**Administrator** — A person or organizational role that initiates consent-related workflows on behalf of a healthcare organization. For example, an administrator may request that a patient complete a consent form, or may act as an intermediary between the patient and the Consent Server System. The Administrator is distinct from the Consenter: the Administrator initiates or facilitates the process; the Consenter makes the decision.
+**Administrator** — A person or organizational role that initiates consent-related workflows on behalf of a healthcare organization. For example, an administrator may request that a patient complete a consent form, or may act as an intermediary between the patient and the Consent Server System. The Administrator is distinct from the Consenter: the Administrator initiates or facilitates the process; the Consenter makes the decision. Note: "Administrator" in this context refers to a healthcare organization's consent workflow role (e.g., a registration clerk, a care coordinator, or an EHR system acting on behalf of an organization) — not a system or technical administrator.
 
 #### Technical Actors
 
