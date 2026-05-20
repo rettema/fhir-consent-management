@@ -27,10 +27,10 @@ This guide aligns with the [IHE Privacy Consent on FHIR (PCF)]({{site.data.fhir.
 
 ##### Actor Mapping
 
-IHE-PCF defines four actors: **Consent Recorder**, **Consent Registry**, **Consent Authorization Server**, and **Consent Enforcement Point**. This guide defines two system roles — **Client** and **Server** — that correspond to a subset of these actors:
+IHE-PCF defines four actors: **Consent Recorder**, **Consent Registry**, **Consent Authorization Server**, and **Consent Enforcement Point**. This guide defines two system roles — **Consent Client System** and **Consent Server System** — that correspond to a subset of these actors:
 
-- The FAST Consent **Client** system corresponds most closely to the IHE-PCF **Consent Recorder**: it is responsible for gathering consent from patients and filing it with a consent administration service.
-- The FAST Consent **Server** (consent administration service) corresponds to the IHE-PCF **Consent Registry**: it stores consents and services queries for consent records.
+- The **Consent Client System** corresponds most closely to the IHE-PCF **Consent Recorder**: it is responsible for gathering consent from patients and filing it with a consent administration service.
+- The **Consent Server System** (consent administration service) corresponds to the IHE-PCF **Consent Registry**: it stores consents and services queries for consent records.
 - The **Consent Authorization Server** and **Consent Enforcement Point** actors from IHE-PCF are outside the scope of this guide. This guide standardizes the representation and exchange of consent data; the application of that data to make and enforce access decisions is handled by external authorization infrastructure.
 
 ##### Operations vs. IHE-PCF Transactions

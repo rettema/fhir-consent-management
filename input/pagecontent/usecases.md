@@ -8,7 +8,7 @@ This guide defines two categories of participants in consent workflows: **human 
 
 **Consenter** — The individual who makes the consent decision. This is typically the patient, but may also be a caregiver, guardian, or legally authorized representative acting on the patient's behalf. The Consenter is the subject of all use cases on this page.
 
-**Administrator** — A person or organizational role that initiates consent-related workflows on behalf of a healthcare organization. For example, an administrator may request that a patient complete a consent form, or may act as an intermediary between the patient and the consent system. The Administrator is distinct from the Consenter: the Administrator initiates or facilitates the process; the Consenter makes the decision.
+**Administrator** — A person or organizational role that initiates consent-related workflows on behalf of a healthcare organization. For example, an administrator may request that a patient complete a consent form, or may act as an intermediary between the patient and the Consent Server System. The Administrator is distinct from the Consenter: the Administrator initiates or facilitates the process; the Consenter makes the decision.
 
 #### Technical Actors
 
@@ -36,7 +36,7 @@ The typical interaction model is: **Consenter** (or Administrator) → **Consent
 
 - The administrator initiates a request to collect consent from the consenter based on the form and identity of the consenter.
 
-- The consent system notifies the consenter and tracks the assignment of the form to the consenter.
+- The Consent Server System notifies the consenter and tracks the assignment of the form to the consenter.
 
 **Post-condition:**
 - The consenter is notified about the request.
