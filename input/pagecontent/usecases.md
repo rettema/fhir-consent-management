@@ -6,7 +6,7 @@ This guide defines two categories of participants in consent workflows: **human 
 
 #### Human Roles
 
-**Consenter** — The individual who makes the consent decision. This is typically the patient, but may also be a caregiver, guardian, or legally authorized representative acting on the patient's behalf. The Consenter is the subject of all use cases on this page.
+**Consenter** — The individual who makes the consent decision. This is typically the patient, but may also be a caregiver, guardian, or legally authorized representative acting on the patient's behalf. The Consenter is the subject of all use cases on this page. The use cases and operations in this guide support the Consenter as part of the consent process regardless of whether that person is the patient or their authorized representative. Explicit out-of-band notification of caregivers or guardians (e.g., notifying a guardian when the patient files a consent) is outside the scope of this guide.
 
 **Administrator** — A person or organizational role that initiates consent-related workflows on behalf of a healthcare organization. For example, an administrator may request that a patient complete a consent form, or may act as an intermediary between the patient and the Consent Server System. The Administrator is distinct from the Consenter: the Administrator initiates or facilitates the process; the Consenter makes the decision.
 
@@ -182,7 +182,9 @@ A notice of consent event is sent to a partner system. Supported events are:
 - The consent is revoked.
 
 **Post-condition:**
-- The requesting entity will receive event notifications. 
+- The requesting entity will receive event notifications.
+
+**Note:** Explicit notification of the patient (as distinct from the Consenter) when consent records are propagated across systems — for example, notifying the patient whenever a copy of their consent is shared with a new system — is outside the scope of this guide. The Consenter, who may be the patient themselves, is already a participant in the consent process through the filing and revocation use cases. 
 
 ### Consent Provenance
 
