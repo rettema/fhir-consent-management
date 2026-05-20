@@ -1,7 +1,7 @@
 Instance: ConsentClientCapabilities
 InstanceOf: CapabilityStatement
 Title: "Consent Client Capabilities"
-Description: "Capabilities required for a client system filing and review consents."
+Description: "Capabilities required for a Consent Client system filing and reviewing consents."
 Usage: #definition
 * url = Canonical(ConsentClientCapabilities)
 * name = "ConsentClient"
