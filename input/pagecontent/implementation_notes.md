@@ -8,6 +8,16 @@ In practice, the access control framework governing subscription registration sh
 
 Patient authorization is an upstream component of this trust model. When a patient's consent is shared between organizations — for example, because the patient has authorized a data sharing arrangement — the consent management systems involved may enter into subscription relationships as a direct consequence of that patient authorization. The specific mechanisms by which organizational trust relationships and subscription authorization are established are outside the scope of this guide; implementers should consult their applicable authorization infrastructure, including SMART App Launch for OAuth-based access control patterns.
 
+### Consent Access Management
+
+Consent administration services hold consent records on behalf of multiple patients and multiple organizations. Access to those records must be managed to ensure that a system only retrieves consents within its data governance scope.
+
+A requesting system — such as a data source or enforcement point — does not automatically have the right to access all consents in a consent administration service. Access should be limited to consents where the requesting system is a named participant: for example, consents where the system's organization is identified as a `controller`, `manager`, or `actor` within a consent's `provision`. Consent search requests (see [Searching for Consents](technical.html#searching-for-consents)) should be scoped accordingly by the consent administration service at the time of servicing the request.
+
+Implementers of consent administration services should apply appropriate access control filters when processing search queries. For example, a data source querying for consents by patient should only receive consents that are within the data governance scope of the requesting organization. Without such filtering, a consent management service could expose sensitive consent information to parties not authorized to receive it.
+
+The specific access control mechanisms used to enforce these constraints are outside the scope of this guide. Implementers are encouraged to leverage existing authorization frameworks such as SMART App Launch scopes and OAuth token claims to convey and enforce the requesting organization's governance role at the time of each request.
+
 ### Dependency on Current Consent State
 
 A critical challenge in consent-driven access control is that authorization decisions depend on the *current* state of a patient's consent — and consent state can change at any time, most importantly through revocation. A system that caches a copy of a consent and uses it for access decisions without checking for updates risks making incorrect authorization decisions based on stale data.
