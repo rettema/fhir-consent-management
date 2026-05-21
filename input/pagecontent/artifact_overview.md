@@ -35,7 +35,6 @@ The artifacts are of five types:
 
 #### Search Parameters
 * [FAST Consent Controller](SearchParameter-fast-consent-controller.html) - {{site.data.SearchParameter-fast-consent-controller.description}}
-* [FAST Consent Grantee](SearchParameter-fast-consent-grantee.html) - {{site.data.SearchParameter-fast-consent-grantee.description}}
 * [FAST Consent Manager](SearchParameter-fast-consent-manager.html) - {{site.data.SearchParameter-fast-consent-manager.description}}
 
 #### Examples
