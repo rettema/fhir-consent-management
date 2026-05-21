@@ -22,10 +22,10 @@ The following rule defines the meaning of mustSupport in this guide:
 
 The following rules apply to all elements in profiles defined in this guide, not only mustSupport elements:
 
-* §MS-2?^admin-service:Consent Server systems **SHALL** be capable of processing resource instances containing data elements without generating an error or causing the application to fail.§
-* §MS-3?^client,admin-service:If the minimum cardinality of an element is greater than 0 — i.e., the element is required — then the element **SHALL** be present in the instance and **SHALL** have a value.§
-* §MS-4?^admin-service:Consent Server systems **SHALL** interpret missing data elements within resource instances as data not being present in the sending system or not being shareable for privacy or other business reasons.§
-* §MS-5?^admin-service:Consent Server systems **SHALL** be able to process resource instances containing data elements that have extensions in place of a value where such extensions are declared as part of the profile.§
+* §MS-2?^consent-server:Consent Server systems **SHALL** be capable of processing resource instances containing data elements without generating an error or causing the application to fail.§
+* §MS-3?^client,consent-server:If the minimum cardinality of an element is greater than 0 — i.e., the element is required — then the element **SHALL** be present in the instance and **SHALL** have a value.§
+* §MS-4?^consent-server:Consent Server systems **SHALL** interpret missing data elements within resource instances as data not being present in the sending system or not being shareable for privacy or other business reasons.§
+* §MS-5?^consent-server:Consent Server systems **SHALL** be able to process resource instances containing data elements that have extensions in place of a value where such extensions are declared as part of the profile.§
 
 ### Conformance Statements in this Guide
 

@@ -41,25 +41,20 @@ Description: "An example of a FAST Subscription Notification"
 * entry[=].response.status = "200"
 
 Instance: FASTSubscriptionNotificationParameters
-InstanceOf: Parameters
+InstanceOf: http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status-r4
 Description: "An example of the parameters going back for a FAST subscription notification"
-* parameter[+]
-  * name = "subscription"
+* parameter[subscription]
   * valueReference = Reference(FASTPatientSubscriptionExample)
-* parameter[+]
-  * name = "topic"
+* parameter[topic]
   * valueCanonical = "http://hl7.org/fhir/us/consent-management/SubscriptionTopic/FASTConsentSubscriptionTopic|1.0.0"
-* parameter[+]
-  * name = "type"
+* parameter[status]
+  * valueCode = #active
+* parameter[type]
   * valueCode = #event-notification
-* parameter[+]
-  * name = "notification-event"
-  * part[+]
-    * name = "event-number"
+* parameter[notificationEvent]
+  * part[eventNumber]
     * valueString = "2"
-  * part[+]
-    * name = "timestamp"
+  * part[eventTimestamp]
     * valueInstant = "2020-05-29T11:44:33.188-05:00"
-  * part[+]
-    * name = "focus"
+  * part[eventFocus]
     * valueReference.reference = "http://example.org/Bundle/ConsentExample"

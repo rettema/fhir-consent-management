@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
-  "id" : "technical-specification-admin-service",
-  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/technical-specification-admin-service",
+  "id" : "technical-specification-consent-server",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/technical-specification-consent-server",
   "name" : "TechnicalSpecificationAdminService",
   "title" : "Technical Specification Admin Service",
   "status" : "active",
@@ -16,7 +16,7 @@
     }]
   }],
   "description" : "Technical Specification Requirements for Admin Service",
-  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service"],
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
   "statement" : [{
     "key" : "68",
     "label" : "requirement-68",

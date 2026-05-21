@@ -11,9 +11,9 @@ The following data elements must always be present or must be supported if the d
 1. a scope (fixed to the code 'patient-privacy')
 1. a category
 1. one or more identifiers (at least one identifier is required to support cross-system identification of the Consent)
-1. a patient (where the reference SHALL contain an identifier for the patient)
+1. a patient (where the reference contains an identifier for the patient)
 1. a dateTime
-1. one or more performers (where each reference SHALL contain an identifier for the organization, patient, related person, or practitioner)
+1. one or more performers (where each reference contains an identifier for the organization, patient, related person, or practitioner)
 1. a source[x] that is either a DocumentReference with an attachment or a QuestionnaireResponse
 1. one or more policies, each with a URI identifying the base policy governing this consent
 1. a provision, that must include the following:
@@ -48,4 +48,4 @@ In the base FHIR R4 Consent resource, the terms "constraint" and "exception" are
 
 ### Referencing External Participants
 
-Since a FHIR reference can contain a RESTful id to a patient, organization, practitioner, or related person, and those RESTful ids may not be useful once a Consent instance has propogated to other consent servers, this guide requires that an external identifier for those participants SHALL be populated.  The RESTful id can also be sent but it is not necessary since the mandatory identifier conveys the identity of the participant.  The FHIR additionalIdentifier extension is also included in the Reference to allow for multiple identifiers for participants to be conveyed.
+Since a FHIR reference can contain a RESTful id to a patient, organization, practitioner, or related person, and those RESTful ids may not be useful once a Consent instance has propogated to other consent servers, §SC-8?^client:this guide requires that an external identifier for those participants SHALL be populated.§  The RESTful id can also be sent but it is not necessary since the mandatory identifier conveys the identity of the participant.  The FHIR additionalIdentifier extension is also included in the Reference to allow for multiple identifiers for participants to be conveyed.

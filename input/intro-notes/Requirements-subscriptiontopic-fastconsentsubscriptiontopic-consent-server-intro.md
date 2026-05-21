@@ -3,7 +3,7 @@
 
 <p>These requirements apply to the following actors: </p>
 <ul>
-<li><b><a href="ActorDefinition-admin-service.html">Admin Service</a></b>&nbsp;An application or product that implements the Admin Service.</li>
+<li><b><a href="ActorDefinition-consent-server.html">Consent Server</a></b>&nbsp;An application or product that implements the Consent Server.</li>
 </ul>
 
 ### Requirements Statement List
@@ -24,7 +24,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;This requirement is derived by the definition in the topic plus the actual behavior defined in R5 SubscriptionTopic (which is what's linked).
@@ -44,7 +44,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;This requirement is derived by the definition in the topic plus the actual behavior defined in R5 SubscriptionTopic (which is what's linked).
@@ -64,7 +64,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;This requirement is derived by the definition in the topic plus the actual behavior defined in R5 SubscriptionTopic (which is what's linked).
@@ -84,10 +84,10 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-476">476:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-476</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-476">476:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-476</a>
 </p>
 </div>
 </div>
@@ -104,10 +104,10 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-475">475:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-475</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-475">475:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-475</a>
 </p>
 </div>
 </div>
@@ -124,7 +124,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596</a>
 </p>
 </div>
 </div>
@@ -141,7 +141,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596</a>
 </p>
 </div>
 </div>
@@ -158,7 +158,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596</a>
 </p>
 </div>
 </div>
@@ -175,7 +175,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596</a>
 </p>
 </div>
 </div>
@@ -192,7 +192,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;MAY</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser.html#requirement-596</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Not going to test just yet

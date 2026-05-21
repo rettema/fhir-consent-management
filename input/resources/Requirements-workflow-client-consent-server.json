@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
-  "id" : "workflow-client-admin-service",
-  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/workflow-client-admin-service",
+  "id" : "workflow-client-consent-server",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/workflow-client-consent-server",
   "name" : "WorkflowClientAdminService",
   "title" : "Workflow Client Admin Service",
   "status" : "active",
@@ -16,7 +16,7 @@
     }]
   }],
   "description" : "Workflow Requirements for Client Admin Service",
-  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server",
   "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
   "statement" : [{
     "key" : "541",

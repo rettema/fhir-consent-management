@@ -3,7 +3,7 @@
 
 <p>These requirements apply to the following actors: </p>
 <ul>
-<li><b><a href="ActorDefinition-admin-service.html">Admin Service</a></b>&nbsp;An application or product that implements the Admin Service.</li>
+<li><b><a href="ActorDefinition-consent-server.html">Consent Server</a></b>&nbsp;An application or product that implements the Consent Server.</li>
 </ul>
 
 ### Requirements Statement List
@@ -71,7 +71,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-472">472:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-472</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-472">472:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-472</a>
 </p>
 </div>
 </div>
@@ -102,7 +102,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-474">474:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-474</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-474">474:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-474</a>
 </p>
 </div>
 </div>
@@ -164,7 +164,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">463:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-463</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-463">463:&nbsp;Requirements-extended-operations-client-consent-server.html#requirement-463</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Redundant with CapStmt
@@ -184,7 +184,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">466:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-466">466:&nbsp;Requirements-extended-operations-client-consent-server.html#requirement-466</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Redundant with CapStmt

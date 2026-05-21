@@ -1,18 +1,59 @@
 {
   "resourceType" : "Requirements",
   "id" : "fromNarrative",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cbcc"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/consent-management/ImplementationGuide/hl7.fhir.us.consent-management"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/consent-management/ImplementationGuide/hl7.fhir.us.consent-management"
+      }]
+    }
+  }],
   "url" : "http://hl7.org/fhir/us/consent-management/Requirements/fromNarrative",
+  "version" : "1.0.0-preview",
   "name" : "FromNarrative",
   "title" : "Narrative Conformance Statements",
   "status" : "active",
   "experimental" : false,
+  "date" : "2026-05-20T16:41:22+02:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/homehealth"
+    }]
+  }],
   "description" : "Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
   "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server",
-  "http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-client"],
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
   "_actor" : [{
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }]
   },
   {
@@ -22,9 +63,19 @@
     }]
   }],
   "statement" : [{
+    "key" : "1",
+    "conformance" : ["SHALL"],
+    "requirement" : "SC-8?^client:this guide requires that an external identifier for those participants SHALL be populated."
+  },
+  {
+    "key" : "2",
+    "conformance" : ["SHALL"],
+    "requirement" : "SC-8?^client:this guide requires that an external identifier for those participants SHALL be populated."
+  },
+  {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "AE1",
     "conformance" : ["SHALL"],
@@ -34,7 +85,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "AE2",
     "conformance" : ["SHALL"],
@@ -44,7 +95,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "AE3",
     "conformance" : ["SHALL"],
@@ -64,7 +115,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "IN1",
     "conformance" : ["SHOULD"],
@@ -94,7 +145,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "MS-2",
     "conformance" : ["SHALL"],
@@ -108,7 +159,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "MS-3",
     "conformance" : ["SHALL"],
@@ -118,7 +169,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "MS-4",
     "conformance" : ["SHALL"],
@@ -128,7 +179,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "MS-5",
     "conformance" : ["SHALL"],
@@ -138,7 +189,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "NR1",
     "conformance" : ["SHALL"],
@@ -152,7 +203,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "NR2",
     "conformance" : ["SHALL"],
@@ -170,7 +221,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "NR3",
     "conditionality" : true,
@@ -183,7 +234,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "NR4",
     "conformance" : ["SHOULD"],
@@ -193,7 +244,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP1",
     "conformance" : ["SHALL"],
@@ -203,7 +254,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP2",
     "conformance" : ["SHALL"],
@@ -213,7 +264,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP3",
     "conformance" : ["SHALL"],
@@ -233,7 +284,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP5",
     "conformance" : ["SHALL"],
@@ -247,7 +298,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP6",
     "conditionality" : true,
@@ -256,7 +307,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP7",
     "conformance" : ["SHALL"],
@@ -266,7 +317,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP8",
     "conformance" : ["SHALL"],
@@ -276,7 +327,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP9",
     "conformance" : ["SHALL"],
@@ -286,7 +337,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP10",
     "conformance" : ["MAY"],
@@ -296,7 +347,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP11",
     "conformance" : ["SHOULD"],
@@ -306,7 +357,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP12",
     "conformance" : ["SHALL"],
@@ -340,7 +391,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP15",
     "conformance" : ["SHOULD-NOT"],
@@ -350,7 +401,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP16",
     "conformance" : ["SHOULD"],
@@ -364,7 +415,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "OP17",
     "conformance" : ["SHOULD"],
@@ -374,7 +425,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "SC-1",
     "conformance" : ["SHALL"],
@@ -384,7 +435,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "SC-2",
     "conformance" : ["SHALL"],
@@ -394,7 +445,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "SC-3",
     "conformance" : ["SHALL"],
@@ -404,7 +455,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "SC-4",
     "conformance" : ["SHALL"],
@@ -414,7 +465,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "SC-5",
     "conformance" : ["SHALL"],
@@ -424,7 +475,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "SC-6",
     "conformance" : ["SHOULD"],
@@ -434,7 +485,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "SC-7",
     "conformance" : ["SHOULD"],
@@ -444,7 +495,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "SH1",
     "conformance" : ["SHOULD"],
@@ -454,7 +505,7 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueId" : "admin-service"
+      "valueId" : "consent-server"
     }],
     "key" : "SH2",
     "conformance" : ["SHALL"],

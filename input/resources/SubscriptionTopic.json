@@ -19,7 +19,7 @@
     {
       "description": "The patient whose consent is being subscribed to. Use patient:identifier chained search to filter by patient identifier.",
       "filterParameter": "patient",
-      "filterDefinition": "http://hl7.org/fhir/SearchParameter/Consent-patient",
+      "filterDefinition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
       "comparator": ["eq"],
       "modifier": ["identifier"]
     },

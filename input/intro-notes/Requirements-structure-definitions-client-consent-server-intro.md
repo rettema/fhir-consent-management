@@ -3,7 +3,7 @@
 
 <p>These requirements apply to the following actors: </p>
 <ul>
-<li><b><a href="ActorDefinition-admin-service.html">Admin Service</a></b>&nbsp;An application or product that implements the Admin Service.</li>
+<li><b><a href="ActorDefinition-consent-server.html">Consent Server</a></b>&nbsp;An application or product that implements the Consent Server.</li>
 <li><b><a href="ActorDefinition-client.html">Client</a></b>&nbsp;An application or product that implements the Client.</li>
 </ul>
 
@@ -39,10 +39,10 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-464">Requirements-structure-definitions-client-admin-service.html#requirement-464</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-464">Requirements-structure-definitions-client-consent-server.html#requirement-464</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
 </p>
 </div>
 </div>
@@ -59,7 +59,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-464">Requirements-structure-definitions-client-admin-service.html#requirement-464</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-464">Requirements-structure-definitions-client-consent-server.html#requirement-464</a>
 </p>
 </div>
 </div>
@@ -90,10 +90,10 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-469">Requirements-structure-definitions-client-admin-service.html#requirement-469</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-469">Requirements-structure-definitions-client-consent-server.html#requirement-469</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
 </p>
 </div>
 </div>
@@ -110,7 +110,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-469">Requirements-structure-definitions-client-admin-service.html#requirement-469</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-469">Requirements-structure-definitions-client-consent-server.html#requirement-469</a>
 </p>
 </div>
 </div>
@@ -127,7 +127,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-469">Requirements-structure-definitions-client-admin-service.html#requirement-469</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-469">Requirements-structure-definitions-client-consent-server.html#requirement-469</a>
 </p>
 </div>
 </div>
@@ -158,7 +158,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-470">Requirements-structure-definitions-client-admin-service.html#requirement-470</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-470">Requirements-structure-definitions-client-consent-server.html#requirement-470</a>
 </p>
 </div>
 </div>
@@ -175,10 +175,10 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-470">Requirements-structure-definitions-client-admin-service.html#requirement-470</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-470">Requirements-structure-definitions-client-consent-server.html#requirement-470</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
 </p>
 </div>
 </div>
@@ -195,7 +195,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-595">595:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-595</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-595">595:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-595</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;- No requirements to use this yet

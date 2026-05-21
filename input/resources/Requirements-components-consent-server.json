@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
-  "id" : "components-admin-service",
-  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/components-admin-service",
+  "id" : "components-consent-server",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/components-consent-server",
   "name" : "ComponentsAdminService",
   "title" : "Components Admin Service",
   "status" : "active",
@@ -16,7 +16,7 @@
     }]
   }],
   "description" : "Components Requirements for Admin Service",
-  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service"],
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
   "statement" : [{
     "key" : "565",
     "label" : "requirement-565",

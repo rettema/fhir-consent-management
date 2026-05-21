@@ -48,10 +48,6 @@ Usage: #definition
       * name = "date"
       * type = #date
     * searchParam[+]
-      * name = "grantee"
-      * definition = Canonical(fast-consent-grantee)
-      * type = #reference
-    * searchParam[+]
       * name = "manager"
       * definition = Canonical(fast-consent-manager)
       * type = #reference
@@ -126,10 +122,6 @@ Usage: #definition
     * searchParam[+]
       * name = "date"
       * type = #date
-    * searchParam[+]
-      * name = "grantee"
-      * definition = Canonical(fast-consent-grantee)
-      * type = #reference
     * searchParam[+]
       * name = "manager"
       * definition = Canonical(fast-consent-manager)

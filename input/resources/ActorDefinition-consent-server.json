@@ -1,6 +1,6 @@
 {
   "resourceType" : "ActorDefinition",
-  "id" : "admin-service",
+  "id" : "consent-server",
   "url" : "http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server",
   "name" : "ConsentServer",
   "title" : "Consent Server System",

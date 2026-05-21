@@ -3,7 +3,7 @@
 
 <p>These requirements apply to the following actors: </p>
 <ul>
-<li><b><a href="ActorDefinition-admin-service.html">Admin Service</a></b>&nbsp;An application or product that implements the Admin Service.</li>
+<li><b><a href="ActorDefinition-consent-server.html">Consent Server</a></b>&nbsp;An application or product that implements the Consent Server.</li>
 </ul>
 
 ### Requirements Statement List
@@ -90,7 +90,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
 </p>
 </div>
 </div>
@@ -107,7 +107,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.
@@ -127,7 +127,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile
@@ -175,7 +175,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-472">472:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-472</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-472">472:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-472</a>
 </p>
 </div>
 </div>
@@ -206,7 +206,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-473">473:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-473</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-473">473:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-473</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Missing corresponding req in Tech spec 6.2.3.4
@@ -226,7 +226,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-474">474:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-474</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-474">474:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-474</a>
 </p>
 </div>
 </div>
@@ -243,7 +243,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-475">475:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-475</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-475">475:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-475</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Matches identifier of grantee, manager, controller or the provision.actor.reference
@@ -278,7 +278,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-476">476:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-476</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-476">476:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-476</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Matches patient.identifier or patient.extension additionalIdentifier
@@ -327,7 +327,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">463:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-463</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-463">463:&nbsp;Requirements-extended-operations-client-consent-server.html#requirement-463</a>
 </p>
 </div>
 </div>
@@ -344,7 +344,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">466:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-466">466:&nbsp;Requirements-extended-operations-client-consent-server.html#requirement-466</a>
 </p>
 </div>
 </div>
@@ -434,7 +434,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-445">445:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-445</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-445">445:&nbsp;Requirements-extended-operations-client-consent-server.html#requirement-445</a>
 </p>
 </div>
 </div>

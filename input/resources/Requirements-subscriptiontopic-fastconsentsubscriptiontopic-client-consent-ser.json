@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
-  "id" : "subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser",
-  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser",
+  "id" : "subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/subscriptiontopic-fastconsentsubscriptiontopic-client-consent-ser",
   "name" : "SubscriptionTopicFASTConsentSubscriptionTopicClientAdminService",
   "title" : "SubscriptionTopic FASTConsentSubscriptionTopic Client Admin Service",
   "status" : "active",
@@ -16,7 +16,7 @@
     }]
   }],
   "description" : "SubscriptionTopic FASTConsentSubscriptionTopic Requirements for Client Admin Service",
-  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server",
   "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
   "statement" : [{
     "key" : "596",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ActorDefinition",
   "id" : "client",
-  "url" : "http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-client",
+  "url" : "http://hl7.org/fhir/us/consent-management/ActorDefinition/client",
   "name" : "ConsentClient",
   "title" : "Consent Client System",
   "status" : "active",

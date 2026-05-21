@@ -114,7 +114,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   produce-jekyll-data: true
   globals-in-artifacts: true
   pin-canonicals: pin-multiples
-  show-nav: true
+  shownav: true
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │

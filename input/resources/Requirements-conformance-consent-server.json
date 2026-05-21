@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
-  "id" : "conformance-admin-service",
-  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/conformance-admin-service",
+  "id" : "conformance-consent-server",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/conformance-consent-server",
   "name" : "ConformanceAdminService",
   "title" : "Conformance Admin Service",
   "status" : "active",
@@ -16,7 +16,7 @@
     }]
   }],
   "description" : "Conformance Requirements for Admin Service",
-  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service"],
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
   "statement" : [{
     "key" : "496",
     "label" : "requirement-496",

@@ -3,7 +3,7 @@
 
 <p>These requirements apply to the following actors: </p>
 <ul>
-<li><b><a href="ActorDefinition-admin-service.html">Admin Service</a></b>&nbsp;An application or product that implements the Admin Service.</li>
+<li><b><a href="ActorDefinition-consent-server.html">Consent Server</a></b>&nbsp;An application or product that implements the Consent Server.</li>
 <li><b><a href="ActorDefinition-client.html">Client</a></b>&nbsp;An application or product that implements the Client.</li>
 </ul>
 
@@ -39,7 +39,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">Requirements-extended-operations-client-admin-service.html#requirement-463</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-463">Requirements-extended-operations-client-consent-server.html#requirement-463</a>
 </p>
 </div>
 </div>
@@ -56,7 +56,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">Requirements-extended-operations-client-admin-service.html#requirement-463</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-463">Requirements-extended-operations-client-consent-server.html#requirement-463</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;For the most part, I'm not going to trace to everything in StructDefs, because the FHIR validator will check these. We may revisit this decision.
@@ -76,7 +76,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">Requirements-extended-operations-client-admin-service.html#requirement-463</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-463">Requirements-extended-operations-client-consent-server.html#requirement-463</a>
 </p>
 </div>
 </div>
@@ -93,7 +93,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">Requirements-extended-operations-client-admin-service.html#requirement-463</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-463">Requirements-extended-operations-client-consent-server.html#requirement-463</a>
 </p>
 </div>
 </div>
@@ -110,7 +110,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">Requirements-extended-operations-client-admin-service.html#requirement-463</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-463">Requirements-extended-operations-client-consent-server.html#requirement-463</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Note no defined way to return Consent ID
@@ -144,7 +144,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-466">Requirements-extended-operations-client-consent-server.html#requirement-466</a>
 </p>
 </div>
 </div>
@@ -161,7 +161,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-466">Requirements-extended-operations-client-consent-server.html#requirement-466</a>
 </p>
 </div>
 </div>
@@ -178,10 +178,10 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-466">Requirements-extended-operations-client-consent-server.html#requirement-466</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
 </p>
 </div>
 </div>
@@ -198,7 +198,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-466">Requirements-extended-operations-client-consent-server.html#requirement-466</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;- See http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html
@@ -219,7 +219,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-466">Requirements-extended-operations-client-consent-server.html#requirement-466</a>
 </p>
 </div>
 </div>
@@ -236,7 +236,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-466">Requirements-extended-operations-client-consent-server.html#requirement-466</a>
 </p>
 </div>
 </div>
@@ -267,7 +267,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-467">Requirements-extended-operations-client-admin-service.html#requirement-467</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-467">Requirements-extended-operations-client-consent-server.html#requirement-467</a>
 </p>
 </div>
 </div>
@@ -284,7 +284,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-467">Requirements-extended-operations-client-admin-service.html#requirement-467</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-467">Requirements-extended-operations-client-consent-server.html#requirement-467</a>
 </p>
 </div>
 </div>
@@ -301,7 +301,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-467">Requirements-extended-operations-client-admin-service.html#requirement-467</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-467">Requirements-extended-operations-client-consent-server.html#requirement-467</a>
 </p>
 </div>
 </div>
@@ -318,10 +318,10 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-467">Requirements-extended-operations-client-admin-service.html#requirement-467</a>
+<b>Parent:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-467">Requirements-extended-operations-client-consent-server.html#requirement-467</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
 </p>
 </div>
 </div>
