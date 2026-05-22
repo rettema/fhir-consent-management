@@ -42,7 +42,7 @@
 - [FHIR-54361](https://jira.hl7.org/browse/FHIR-54361) - Update SubscriptionTopic canFilterBy - replace patientId/organizationId with patient/controller; update subscription examples and technical.md filter list *(Clarification)* [link](technical.html#consent-subscriptions)
 - [FHIR-54360](https://jira.hl7.org/browse/FHIR-54360) - Fixed typo in implementation notes *(Correction)* [link](implementation_notes.html#consent-network-relationship-tree)
 - [FHIR-54355](https://jira.hl7.org/browse/FHIR-54355) - Added hyperlink to Usecase bullet point. *(Correction)* [link](index.html#content-and-organization)
-- [FHIR-54354](https://jira.hl7.org/browse/FHIR-54354) - *(Correction)* UNABLE TO FIND WHICH PAGE THIS WAS OR WHAT IT WAS ALTERED TO
+- [FHIR-54354](https://jira.hl7.org/browse/FHIR-54354) - Altered wording, whicih has since been realtered to no longer exist. *(Correction)*
 - [FHIR-54131](https://jira.hl7.org/browse/FHIR-54131) - Add note that 'constraint' and 'exception' are used interchangeably in R4 provision terminology *(Clarification)* [link](StructureDefinition-FASTConsent.html#constraints-and-exceptions)
 - [FHIR-54127](https://jira.hl7.org/browse/FHIR-54127) - Clarify Must Have (min cardinality >= 1) vs Must Support (0 but required capability); restore performer to Must Have; add grantee to Must Support *(Clarification)* [link](StructureDefinition-FASTConsent.html#mandatory-and-must-support-data-elements)
 - [FHIR-54125](https://jira.hl7.org/browse/FHIR-54125) - Fixed indentation *(Correction)* [link](StructureDefinition-FASTConsent.html)
