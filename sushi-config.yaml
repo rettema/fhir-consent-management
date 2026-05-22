@@ -92,6 +92,8 @@ pages:
     title: Artifact Overview
   downloads.md:
     title: Downloads
+  changes.md:
+    title: Change Log
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -147,6 +149,7 @@ menu:
     Project Dashboard: https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=18104
     Propose a Change: https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&issuetype=10600&customfield_11302=FHIR-us-consent-management
     Downloads: downloads.html
+  Changelog: changes.html
     
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
