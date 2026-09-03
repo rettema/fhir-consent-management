@@ -3,8 +3,8 @@
 
 <p>These requirements apply to the following actors: </p>
 <ul>
-<li><b><a href="ActorDefinition-consent-server.html">Consent Server</a></b>&nbsp;An application or product that implements the Consent Server.</li>
 <li><b><a href="ActorDefinition-client.html">Client</a></b>&nbsp;An application or product that implements the Client.</li>
+<li><b><a href="ActorDefinition-consent-server.html">Consent Server</a></b>&nbsp;An application or product that implements the Consent Server.</li>
 </ul>
 
 ### Requirements Statement List
@@ -21,7 +21,10 @@
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#notification-entry-subscriptionstatus-1">https://hl7.org/fhir/uv/subscriptions-backport/conformance.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#notification-entry-subscriptionstatus-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
+</p>
+<p>
+<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#notification-entry-subscriptionstatus-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
@@ -38,7 +41,10 @@
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1">https://hl7.org/fhir/uv/subscriptions-backport/conformance.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#subscriptioncriteria-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
+</p>
+<p>
+<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#subscriptioncriteria-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>

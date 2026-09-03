@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "artifacts-summary-consent-server",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/artifacts-summary-consent-server",
+  "name" : "ArtifactsSummaryConsentServer",
+  "title" : "Artifacts Summary Consent Server",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-02T22:40:54-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "Artifacts Summary Requirements for Consent Server",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
+  "statement" : [{
+    "key" : "1",
+    "label" : "requirement-1",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL implement the server CapabilityStatement<br/><br/>Does this mean a conforming system has to reference the \"requirements\" CS here, or could they just have their own CS that happens to be compatible?\nAlso, what test should this be traced to? I'm thinking this traces to test procedure that ensures the right complement of tests are applied to a given system.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/artifacts.html#:~:text=Capabilities%20required%20for%20a%20Consent%20Server%20system%20%28consent%20administration%20service%29%20receiving%20and%20managing%20consents"]
+  }]
+}

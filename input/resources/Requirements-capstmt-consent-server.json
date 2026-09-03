@@ -2,11 +2,11 @@
   "resourceType" : "Requirements",
   "id" : "capstmt-consent-server",
   "url" : "http://hl7.org/fhir/us/consent-management/Requirements/capstmt-consent-server",
-  "name" : "CapStmtAdminService",
-  "title" : "CapStmt Admin Service",
+  "name" : "CapStmtConsentServer",
+  "title" : "CapStmt Consent Server",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-15T14:24:14-04:00",
+  "date" : "2026-09-02T22:40:54-04:00",
   "publisher" : "HL7 International / Community Based Collaborative Care",
   "contact" : [{
     "name" : "HL7 International / Community Based Collaborative Care",
@@ -15,25 +15,16 @@
       "value" : "http://www.hl7.org/Special/committees/cbcc"
     }]
   }],
-  "description" : "CapStmt Requirements for Admin Service",
+  "description" : "CapStmt Requirements for Consent Server",
   "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
   "statement" : [{
-    "key" : "1",
-    "label" : "requirement-1",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL implement the server CapabilityStatement<br/><br/>Does this mean a conforming system has to reference the \"requirements\" CS here, or could they just have their own CS that happens to be compatible?\nAlso, what test should this be traced to? I'm thinking this traces to test procedure that ensures the right complement of tests are applied to a given system.",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/artifacts.html#:~:text=Capabilities%20required%20for%20a%20server%20system%20receiving%20consents."]
-  },
-  {
     "key" : "2",
     "label" : "requirement-2",
     "conformance" : ["SHALL"],
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support JSON FHIR<br/><br/>- Plan is to have JSON and XML flavors of all tests, but explicitly tracing each of those back to these requirements is probably not necessary.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22%20%3A%20%5B-,%22json%22,-%2C%0A%20%20%20%20%22xml%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22%20%3A%20%5B-,%22json%22,-%2C%0A%20%20%20%20%22xml%22"]
   },
   {
     "key" : "34",
@@ -42,214 +33,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support XML FHIR<br/><br/>- Plan is to have JSON and XML flavors of all tests, but explicitly tracing each of those back to these requirements is probably not necessary.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22json%22%2C-,%22xml%22,-%5D%2C%0A%20%20%22"]
-  },
-  {
-    "key" : "43",
-    "label" : "requirement-43",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent resource",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22mode%22%20%3A%20%22server,type%22%20%3A%20%22Consent%22"]
-  },
-  {
-    "key" : "35",
-    "label" : "requirement-35",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent resources that conform to FASTConsent profile",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22"]
-  },
-  {
-    "key" : "331",
-    "label" : "requirement-331",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL mark with profile assertions Consent resources that conform to the FASTConsent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
-    "derivedFrom" : "HL7 FHIR R4",
-    "satisfiedBy" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
-  },
-  {
-    "key" : "332",
-    "label" : "requirement-332",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support searching by the _profile parameter for Consent resources that conform to the FASTConsent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile",
-    "derivedFrom" : "HL7 FHIR R4",
-    "satisfiedBy" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles"]
-  },
-  {
-    "key" : "36",
-    "label" : "requirement-36",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent read",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.html#:~:text=Core%20FHIR%20Resource-,Consent,Supports%20search%2Dtype%2C%20read,-."]
-  },
-  {
-    "key" : "37",
-    "label" : "requirement-37",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.html#:~:text=Core%20FHIR%20Resource-,Consent,Supports%20search%2Dtype%2C%20read,-."]
-  },
-  {
-    "key" : "199",
-    "label" : "requirement-199",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentController",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22reference%22"]
-  },
-  {
-    "key" : "72",
-    "label" : "requirement-72",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by date",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22date%22"]
-  },
-  {
-    "key" : "38",
-    "label" : "requirement-38",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentGrantee<br/><br/>Missing corresponding req in Tech spec 6.2.3.4",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,grantee%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
-  },
-  {
-    "key" : "200",
-    "label" : "requirement-200",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentManager",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,manager%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
-  },
-  {
-    "key" : "39",
-    "label" : "requirement-39",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentOrganizationId<br/><br/>Matches identifier of grantee, manager, controller or the provision.actor.reference\nMissing corresponding req in Tech spec 6.2.3.4",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22token%22"]
-  },
-  {
-    "key" : "40",
-    "label" : "requirement-40",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by patient",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,patient%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
-  },
-  {
-    "key" : "368",
-    "label" : "requirement-368",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentPatientId<br/><br/>Matches patient.identifier or patient.extension additionalIdentifier\nMissing corresponding req in Tech spec 6.2.3.4",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,patientId%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
-  },
-  {
-    "key" : "42",
-    "label" : "requirement-42",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by scope",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,scope%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
-  },
-  {
-    "key" : "41",
-    "label" : "requirement-41",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by status",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,status%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
-  },
-  {
-    "key" : "46",
-    "label" : "requirement-46",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support $fileConsent operation against Consent resource",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/file%2Dconsent%22"]
-  },
-  {
-    "key" : "374",
-    "label" : "requirement-374",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support $revokeConsent operation against Consent resource",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/revoke%2Dconsent%22"]
-  },
-  {
-    "key" : "661",
-    "label" : "requirement-661",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Subscription resource",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22resource%22,%3A%20%22Subscription%22"]
-  },
-  {
-    "key" : "377",
-    "label" : "requirement-377",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent subscriptions as defined by the FASTConsentSubscriptionTopic for FHIR R4 with Subscriptions Backport",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22type%22%20%3A%20%22Subscription%22"]
-  },
-  {
-    "key" : "378",
-    "label" : "requirement-378",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Subscription create<br/><br/>For now, testing limited to the topic declared in the CapStmt",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22create%22"]
-  },
-  {
-    "key" : "379",
-    "label" : "requirement-379",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Subscription update",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22update%22"]
-  },
-  {
-    "key" : "380",
-    "label" : "requirement-380",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Subscription delete",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22delete%22"]
-  },
-  {
-    "key" : "415",
-    "label" : "requirement-415",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support $recordDisclosure operation against AuditEvent resource",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22,OperationDefinition/record%2Ddisclosure%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22json%22%2C-,%22xml%22,-%5D%2C%0A%20%20%22"]
   },
   {
     "key" : "397",
@@ -258,7 +42,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support AuditEvent resource",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22resource%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22AuditEvent%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=type%22%20%3A-,%22AuditEvent%22,-%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile"]
   },
   {
     "key" : "398",
@@ -267,34 +51,16 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support AuditEvent resources that conform to FASTConsentAuditEvent profile",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsentAuditEvent%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97-,%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsentAuditEvent%22,-%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22"]
   },
   {
-    "key" : "399",
-    "label" : "requirement-399",
+    "key" : "1161",
+    "label" : "requirement-1161",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL mark with profile assertions AuditEvent resources that conform to the FASTConsentAuditEvent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
-    "derivedFrom" : "HL7 FHIR R4",
-    "satisfiedBy" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
-  },
-  {
-    "key" : "400",
-    "label" : "requirement-400",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support searching by the _profile parameter for AuditEvent resources that conform to the FASTConsentAuditEvent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile",
-    "derivedFrom" : "HL7 FHIR R4",
-    "satisfiedBy" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles"]
-  },
-  {
-    "key" : "404",
-    "label" : "requirement-404",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support AuditEvent read",
+    "requirement" : "Consent Administration Service SHALL support AuditEvent create",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent,code%22%20%3A%20%22read%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=StructureDefinition/FASTConsentAuditEvent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22create%22,-%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype"]
   },
   {
     "key" : "406",
@@ -303,16 +69,16 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support AuditEvent search",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsentAuditEvent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22create%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22search%2Dtype%22,-%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22read%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22searchParam"]
   },
   {
-    "key" : "409",
-    "label" : "requirement-409",
+    "key" : "404",
+    "label" : "requirement-404",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support AuditEvent search by FASTAuditEventConsent",
+    "requirement" : "Consent Administration Service SHALL support AuditEvent read",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent,type%22%20%3A%20%22reference%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=code%22%20%3A%20%22search%2Dtype%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22read%22,-%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22searchParam%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%20%3A%20%22patient"]
   },
   {
     "key" : "412",
@@ -321,106 +87,223 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support AuditEvent search by patient",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,patient%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=code%22%20%3A%20%22read%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22searchParam%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22name%22%20%3A%20%22patient%22%2C%20%22type%22%20%3A%20%22reference%22,-%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile"]
   },
   {
-    "key" : "505",
-    "label" : "requirement-505",
+    "key" : "43",
+    "label" : "requirement-43",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Subscription read",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHALL%20be%20capable%20of%20returning%20a%20Subscription%20resource%20using%3A%20GET%20%5Bbase%5D/Subscription/%5Bid%5D"]
+    "requirement" : "Consent Administration Service SHALL support Consent resource",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=type%22%20%3A-,%22Consent%22,-%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile"]
   },
   {
-    "key" : "503",
-    "label" : "requirement-503",
-    "conformance" : ["SHOULD"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHOULD support Subscription write via POST or PUT<br/><br/>- \"After POSTing the subscription, the client parses the Location header and saves the new Subscription's logical id for use in subsequent operations.\" - implies server should always return Location",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20creating%20a%20Subscription%20resource%20using%20either%3A%20POST%20%5Bbase%5D/Subscription%20or%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D"]
-  },
-  {
-    "key" : "509",
-    "label" : "requirement-509",
-    "conformance" : ["SHOULD"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHOULD support Subscription update via PUT or PATCH<br/><br/>The CapStmt and the rendered page disagree - the raw CS does not include patch and the page does. Not testing patch at this time.",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D"]
-  },
-  {
-    "key" : "510",
-    "label" : "requirement-510",
-    "conformance" : ["SHOULD"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHOULD support Subscription delete",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D"]
-  },
-  {
-    "key" : "511",
-    "label" : "requirement-511",
-    "conformance" : ["SHOULD"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHOULD support Subscription search<br/><br/>Not testing search at this time",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D"]
-  },
-  {
-    "key" : "602",
-    "label" : "requirement-602",
+    "key" : "35",
+    "label" : "requirement-35",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Subscription search by url<br/><br/>Not testing search at this time. Also, the raw CapStmt (linked) and the rendered page for the CapStmt disagree: the raw says SHALL, the page says SHOULD. See: http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,uri",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Supported%20Operations-,Subscription,url%2C%20status,-%2D"]
+    "requirement" : "Consent Administration Service SHALL support Consent resources that conform to FASTConsent profile",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97-,%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22,-%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22"]
   },
   {
-    "key" : "604",
-    "label" : "requirement-604",
-    "conformance" : ["SHOULD"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHOULD support Subscription search by status<br/><br/>Not testing search at this time",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,token"]
-  },
-  {
-    "key" : "508",
-    "label" : "requirement-508",
+    "key" : "37",
+    "label" : "requirement-37",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support $status operation against Subscription resource",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=SHALL%20support%20the%20%24status%20operation"]
+    "requirement" : "Consent Administration Service SHALL support Consent search",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=FASTConsent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22search%2Dtype%22,-%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22read%22"]
   },
   {
-    "key" : "694",
-    "label" : "requirement-694",
-    "conformance" : ["MAY"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service MAY support $events operation against Subscription resource<br/><br/>Not testing at this time",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=%22extension%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%22url%22%20%3A%20%22http%3A//hl7.org/fhir/StructureDefinition/capabilitystatement%2Dexpectation%22%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%22valueCode%22%20%3A%20%22MAY,http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/OperationDefinition/backport%2Dsubscription%2Devents%22"]
-  },
-  {
-    "key" : "695",
-    "label" : "requirement-695",
-    "conformance" : ["MAY"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service MAY support $get-ws-binding-token operation against Subscription resource<br/><br/>Not testing at this time",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=%24status%2C%20%24events%2C-,%24get%2Dws%2Dbinding%2Dtoken,-Subscription"]
-  },
-  {
-    "key" : "517",
-    "label" : "requirement-517",
+    "key" : "36",
+    "label" : "requirement-36",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Subscription resources that conform to BackportSubscription profile",
-    "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=%22resource%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%22extension%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%20%20%22url,StructureDefinition/backport%2Dsubscription%22%5D"]
+    "requirement" : "Consent Administration Service SHALL support Consent read",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22read%22"]
+  },
+  {
+    "key" : "199",
+    "label" : "requirement-199",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentController",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22controller%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/SearchParameter/fast%2Dconsent%2Dcontroller%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
+  },
+  {
+    "key" : "72",
+    "label" : "requirement-72",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by date",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22date%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22date%22"]
+  },
+  {
+    "key" : "200",
+    "label" : "requirement-200",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentManager",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22manager%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/SearchParameter/fast%2Dconsent%2Dmanager%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
+  },
+  {
+    "key" : "40",
+    "label" : "requirement-40",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by patient",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22name%22%20%3A%20%22patient%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22,-%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B"]
+  },
+  {
+    "key" : "42",
+    "label" : "requirement-42",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by scope",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22scope%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
+  },
+  {
+    "key" : "41",
+    "label" : "requirement-41",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by status",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22status%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
+  },
+  {
+    "key" : "46",
+    "label" : "requirement-46",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support $fileConsent operation against Consent resource",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22fileConsent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/OperationDefinition/file%2Dconsent%22"]
+  },
+  {
+    "key" : "374",
+    "label" : "requirement-374",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support $revokeConsent operation against Consent resource",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22revokeConsent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/OperationDefinition/revoke%2Dconsent%22"]
+  },
+  {
+    "key" : "377",
+    "label" : "requirement-377",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent subscriptions as defined by the FASTConsentSubscriptionTopic for FHIR R4 with Subscriptions Backport",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22url%22%20%3A%20%22http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/StructureDefinition/capabilitystatement%2Dsubscriptiontopic%2Dcanonical%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22valueCanonical%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/SubscriptionTopic/FASTConsentSubscriptionTopic%22"]
+  },
+  {
+    "key" : "661",
+    "label" : "requirement-661",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Subscription resource",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22%20%3A%20%22-,Subscription,-%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22"]
+  },
+  {
+    "key" : "959",
+    "label" : "requirement-959",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Subscription resources that conform to FASTSubscription profile",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTSubscription%22"]
+  },
+  {
+    "key" : "378",
+    "label" : "requirement-378",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Subscription create<br/><br/>For now, testing limited to the topic declared in the CapStmt",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=StructureDefinition/FASTSubscription%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22create%22,-%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22update%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code"]
+  },
+  {
+    "key" : "379",
+    "label" : "requirement-379",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Subscription update",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22%20%3A%20%22-,update,-%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C"]
+  },
+  {
+    "key" : "380",
+    "label" : "requirement-380",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Subscription delete",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22%20%3A%20%22-,delete,-%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D"]
+  },
+  {
+    "key" : "331",
+    "label" : "requirement-331",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL mark with profile assertions Consent resources that conform to the FASTConsent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
+    "derivedFrom" : "HL7 FHIR R4",
+    "satisfiedBy" : ["https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile%3A&text=Mark%20resources%20with%20profile%20assertions%20documenting%20the%20profile%28s%29%20they%20conform%20to%20%28this%20enables%20indexing%20by%20the%20profile%29"]
+  },
+  {
+    "key" : "961",
+    "label" : "requirement-961",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support searching by the _profile parameter for Subscription resources that conform to the FASTSubscription profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. BUT, what if the server doesn't support searching on the resource at all? Since searching isn't required, leaving this untested for now.",
+    "derivedFrom" : "HL7 FHIR R4",
+    "satisfiedBy" : ["https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile&text=%28if%20a%20server%29%20support%20searching%20by%20the%20_profile%20parameter%20for%20the%20declared%20profiles"]
+  },
+  {
+    "key" : "400",
+    "label" : "requirement-400",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support searching by the _profile parameter for AuditEvent resources that conform to the FASTConsentAuditEvent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile",
+    "derivedFrom" : "HL7 FHIR R4",
+    "satisfiedBy" : ["https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile&text=%28if%20a%20server%29%20support%20searching%20by%20the%20_profile%20parameter%20for%20the%20declared%20profiles"]
+  },
+  {
+    "key" : "332",
+    "label" : "requirement-332",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support searching by the _profile parameter for Consent resources that conform to the FASTConsent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile",
+    "derivedFrom" : "HL7 FHIR R4",
+    "satisfiedBy" : ["https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile&text=%28if%20a%20server%29%20support%20searching%20by%20the%20_profile%20parameter%20for%20the%20declared%20profiles"]
+  },
+  {
+    "key" : "515",
+    "label" : "requirement-515",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support searching by the _profile parameter for Subscription resources that conform to the BackportSubscription profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. BUT, what if the server doesn't support searching on the resource at all? Since searching isn't required, leaving this untested for now.",
+    "derivedFrom" : "HL7 FHIR R4",
+    "satisfiedBy" : ["https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile&text=%28if%20a%20server%29%20support%20searching%20by%20the%20_profile%20parameter%20for%20the%20declared%20profiles"]
+  },
+  {
+    "key" : "960",
+    "label" : "requirement-960",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL mark with profile assertions Subscription resources that conform to the FASTSubscription profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
+    "derivedFrom" : "HL7 FHIR R4",
+    "satisfiedBy" : ["https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of,by%20the%20profile%29&text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile"]
   },
   {
     "key" : "514",
@@ -429,15 +312,114 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL mark with profile assertions Subscription resources that conform to the BackportSubscription profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
     "derivedFrom" : "HL7 FHIR R4",
-    "satisfiedBy" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
+    "satisfiedBy" : ["https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of,by%20the%20profile%29&text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile"]
   },
   {
-    "key" : "515",
-    "label" : "requirement-515",
+    "key" : "399",
+    "label" : "requirement-399",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support searching by the _profile parameter for Subscription resources that conform to the BackportSubscription profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile",
+    "requirement" : "Consent Administration Service SHALL mark with profile assertions AuditEvent resources that conform to the FASTConsentAuditEvent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
     "derivedFrom" : "HL7 FHIR R4",
-    "satisfiedBy" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles"]
+    "satisfiedBy" : ["https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of,by%20the%20profile%29&text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile"]
+  },
+  {
+    "key" : "508",
+    "label" : "requirement-508",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support $status operation against Subscription resource",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=SHALL%20support%20the%20%24status%20operation"]
+  },
+  {
+    "key" : "505",
+    "label" : "requirement-505",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Subscription read",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHALL%20be%20capable%20of%20returning%20a%20Subscription%20resource%20using%3A%20GET%20%5Bbase%5D/Subscription/%5Bid%5D"]
+  },
+  {
+    "key" : "503",
+    "label" : "requirement-503",
+    "conformance" : ["SHOULD"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHOULD support Subscription write via POST or PUT<br/><br/>- \"After POSTing the subscription, the client parses the Location header and saves the new Subscription's logical id for use in subsequent operations.\" - implies server should always return Location",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20creating%20a%20Subscription%20resource%20using%20either%3A%20POST%20%5Bbase%5D/Subscription%20or%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D"]
+  },
+  {
+    "key" : "509",
+    "label" : "requirement-509",
+    "conformance" : ["SHOULD"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHOULD support Subscription update via PUT or PATCH<br/><br/>The CapStmt and the rendered page disagree - the raw CS does not include patch and the page does. Not testing patch at this time.",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D"]
+  },
+  {
+    "key" : "510",
+    "label" : "requirement-510",
+    "conformance" : ["SHOULD"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHOULD support Subscription delete",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20deleting%20a%20Subscription%20resource%20using%3A%20DELETE%20%5Bbase%5D/Subscription/%5Bid%5D"]
+  },
+  {
+    "key" : "511",
+    "label" : "requirement-511",
+    "conformance" : ["SHOULD"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHOULD support Subscription search<br/><br/>Not testing search at this time, as the Consent IG doesn't require/use it.",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20searching%20for%20Subscription%20resources%20using%3A%20GET%20%5Bbase%5D/Subscription/%3F%5Bparameters%5D"]
+  },
+  {
+    "key" : "517",
+    "label" : "requirement-517",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Subscription resources that conform to BackportSubscription profile<br/><br/>For now, only testing Subscriptions that conform to FASTSubscription, since it derives from BackportSubscription.",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22type%22%20%3A%20%22Subscription%22%2C%0A%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%22http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/StructureDefinition/backport%2Dsubscription%22"]
+  },
+  {
+    "key" : "602",
+    "label" : "requirement-602",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Subscription search by url<br/><br/>Not testing search at this time, as the Consent IG doesn't require/use it. Also, the raw CapStmt (linked) and the rendered page for the CapStmt disagree: the raw says SHALL, the page says SHOULD. See: https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,uri",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22name%22%20%3A%20%22url%22%2C%0A%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/SearchParameter/Subscription%2Durl%22"]
+  },
+  {
+    "key" : "604",
+    "label" : "requirement-604",
+    "conformance" : ["SHOULD"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHOULD support Subscription search by status<br/><br/>Not testing search at this time, as the Consent IG doesn't require/use it.",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22name%22%20%3A%20%22status%22%2C%0A%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/SearchParameter/Subscription%2Dstatus%22"]
+  },
+  {
+    "key" : "694",
+    "label" : "requirement-694",
+    "conformance" : ["MAY"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service MAY support $events operation against Subscription resource<br/><br/>Not testing at this time",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22name%22%20%3A%20%22%24events%22%2C%0A%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/OperationDefinition/backport%2Dsubscription%2Devents%22"]
+  },
+  {
+    "key" : "695",
+    "label" : "requirement-695",
+    "conformance" : ["MAY"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service MAY support $get-ws-binding-token operation against Subscription resource<br/><br/>Not testing at this time",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22name%22%20%3A%20%22%24get%2Dws%2Dbinding%2Dtoken%22%2C%0A%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/OperationDefinition/backport%2Dsubscription%2Dget%2Dws%2Dbinding%2Dtoken%22"]
   }]
 }

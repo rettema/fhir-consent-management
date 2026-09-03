@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "conformance-expectations-client-consent-server",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/conformance-expectations-client-consent-server",
+  "name" : "ConformanceExpectationsClientConsentServer",
+  "title" : "Conformance Expectations Client Consent Server",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-02T22:40:54-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "Conformance Expectations Requirements for Client Consent Server",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/client",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
+  "statement" : [{
+    "key" : "1158",
+    "label" : "requirement-1158",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "If the minimum cardinality of an element is greater than 0 — i.e., the element is required — then the element SHALL be present in the instance and SHALL have a value.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/conformance.html#:~:text=fail.%C2%A7MS%2D2-,if%20the%20minimum%20cardinality%20of%20an%20element%20is%20greater%20than%200%20%E2%80%94%20i.e.%2C%20the%20element%20is%20required%20%E2%80%94%20then%20the%20element%20shall%20be%20present%20in%20the%20instance%20and%20shall%20have%20a%20value.,-%C2%A7MS%2D3"]
+  }]
+}

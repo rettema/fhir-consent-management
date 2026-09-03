@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "conformance-expectations-client",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/conformance-expectations-client",
+  "name" : "ConformanceExpectationsClient",
+  "title" : "Conformance Expectations Client",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-02T22:40:54-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "Conformance Expectations Requirements for Client",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "statement" : [{
+    "key" : "1156",
+    "label" : "requirement-1156",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Client systems SHALL be capable of populating a mustSupport element when sharing resources compliant with the profile. I.e., the system must be able to demonstrate the population and sharing of the element, but it is acceptable to omit the element if the system doesn’t have values in a particular instance. A system that is incapable of ever sharing the element would be non-conformant.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/conformance.html#:~:text=in%20this%20guide%3A-,Consent%20Client%20systems%20SHALL,would%20be%20non%2Dconformant."]
+  }]
+}

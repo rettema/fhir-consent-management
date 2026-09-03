@@ -1,0 +1,388 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "structure-definitions-client",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/structure-definitions-client",
+  "name" : "StructureDefinitionsClient",
+  "title" : "Structure Definitions Client",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-02T22:40:54-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "Structure Definitions Requirements for Client",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "statement" : [{
+    "key" : "829",
+    "label" : "requirement-829",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsent must support extension:manager",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=by%20value%3Aurl-,extension%3Amanager,S,-0..%2A"]
+  },
+  {
+    "key" : "830",
+    "label" : "requirement-830",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsent must support extension:controller",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=extension%3Acontroller,S"]
+  },
+  {
+    "key" : "1171",
+    "label" : "requirement-1171",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsent must support performer",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=created%20or%20indexed-,performer,S%CE%A3"]
+  },
+  {
+    "key" : "831",
+    "label" : "requirement-831",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsent must support policy",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=consent%20is%20taken-,policy,1..%2A,-BackboneElement"]
+  },
+  {
+    "key" : "832",
+    "label" : "requirement-832",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsent must support provision.actor",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=or%20removing%20consent.-,actor,S,-0..%2A"]
+  },
+  {
+    "key" : "833",
+    "label" : "requirement-833",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsent must support provision.purpose",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=group%2C%20by%20role%29-,purpose,S,-%CE%A3"]
+  },
+  {
+    "key" : "834",
+    "label" : "requirement-834",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsent must support provision.provision",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=the%20specified%20labels.-,provision,S,-0..%2A"]
+  },
+  {
+    "key" : "1031",
+    "label" : "requirement-1031",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Client SHALL support Consent read",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=SHALL%20support%20both%C2%A0read%20Consent%20by%20id"]
+  },
+  {
+    "key" : "1025",
+    "label" : "requirement-1025",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Client SHALL support Consent search by _id",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=Consent%20search%20using%20the%20_id%20search%20parameter"]
+  },
+  {
+    "key" : "1027",
+    "label" : "requirement-1027",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Client SHALL support Consent search by identifier",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=SHALL%20support%20searching%20a%20consent%20by%20an%20identifier%20such%20as%20a%20CDA%20consent%20document%20using%20the%20identifier%20search%20parameter"]
+  },
+  {
+    "key" : "1029",
+    "label" : "requirement-1029",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Client SHALL support Consent search by patient",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=SHALL%20support%20searching%20a%20consent%20by%20a%20patient%20using%20the%20patient%20search%20parameter"]
+  },
+  {
+    "key" : "1033",
+    "label" : "requirement-1033",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Client SHALL support Consent search by the combination of the patient and status search parameters",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=SHALL%20support%20searching%20using%20the%20combination%20of%20the%20patient%20and%20status%20search%20parameters"]
+  },
+  {
+    "key" : "1035",
+    "label" : "requirement-1035",
+    "conformance" : ["SHOULD"],
+    "conditionality" : false,
+    "requirement" : "Consent Client SHOULD support Consent search by the combination of the patient and date search parameters",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=SHOULD%20support%20searching%20using%20the%20combination%20of%20the%20patient%20and%20date%20search%20parameters"]
+  },
+  {
+    "key" : "835",
+    "label" : "requirement-835",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsentAuditEvent must support outcomeDesc",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-598",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsentAuditEvent.html#:~:text=outcomeDesc,S"]
+  },
+  {
+    "key" : "836",
+    "label" : "requirement-836",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsentAuditEvent must support purposeOfEvent",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-598",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsentAuditEvent.html#:~:text=the%20event%20outcome-,purposeOfEvent,S,-%CE%A3"]
+  },
+  {
+    "key" : "837",
+    "label" : "requirement-837",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsentAuditEvent must support agent:client.policy",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-598",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsentAuditEvent.html#:~:text=user%20is%20initiator-,policy,S,-0..%2A"]
+  },
+  {
+    "key" : "838",
+    "label" : "requirement-838",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsentAuditEvent must support agent:user.role",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-598",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsentAuditEvent.html#:~:text=of%20the%20concept-,role,S,-0..%2A"]
+  },
+  {
+    "key" : "839",
+    "label" : "requirement-839",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsentAuditEvent must support agent:user.name",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-598",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsentAuditEvent.html#:~:text=Identifier%20of%20who-,name,S,-0..1"]
+  },
+  {
+    "key" : "840",
+    "label" : "requirement-840",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsentAuditEvent must support agent:user.policy",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-598",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsentAuditEvent.html#:~:text=Required%20Pattern%3A%20true-,policy,S,-0..%2A"]
+  },
+  {
+    "key" : "841",
+    "label" : "requirement-841",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsentAuditEvent must support agent:user.purposeOfUse",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-598",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsentAuditEvent.html#:~:text=that%20authorized%20event-,purposeOfUse,S,-0..%2A"]
+  },
+  {
+    "key" : "842",
+    "label" : "requirement-842",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTConsentAuditEvent must support agent:userorg.purposeOfUse",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-598",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsentAuditEvent.html#:~:text=Required%20Pattern%3A%20false-,purposeOfUse,S,-0..%2A"]
+  },
+  {
+    "key" : "859",
+    "label" : "requirement-859",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support identifier",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=cannot%20be%20ignored-,identifier,S,-%CE%A3"]
+  },
+  {
+    "key" : "860",
+    "label" : "requirement-860",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support date",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=date,S"]
+  },
+  {
+    "key" : "861",
+    "label" : "requirement-861",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support author",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=author,S"]
+  },
+  {
+    "key" : "862",
+    "label" : "requirement-862",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support author as a US Core Practitioner",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=author,S"]
+  },
+  {
+    "key" : "863",
+    "label" : "requirement-863",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support content.attachment.contentType",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=us%2Dcore%2D6-,contentType,S,-%CE%A3"]
+  },
+  {
+    "key" : "864",
+    "label" : "requirement-864",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support content.attachment.data",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=8%2C%20image/png-,data,base64Binary,-%28USCDI%29%20Data%20inline"]
+  },
+  {
+    "key" : "865",
+    "label" : "requirement-865",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support content.attachment.url",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=Data%20inline%2C%20base64ed-,url,S,-%CE%A3C"]
+  },
+  {
+    "key" : "866",
+    "label" : "requirement-866",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support content.format",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=logo%2Dsmall.png-,format,S,-%CE%A3"]
+  },
+  {
+    "key" : "867",
+    "label" : "requirement-867",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support context",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=%28extensible%29-,context,S,-%CE%A3"]
+  },
+  {
+    "key" : "868",
+    "label" : "requirement-868",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support context.encounter",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=even%20if%20unrecognized-,encounter,S,-0..1"]
+  },
+  {
+    "key" : "869",
+    "label" : "requirement-869",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTDocumentReference must support context.period",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-599",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTDocumentReference.html#:~:text=period,Period"]
+  },
+  {
+    "key" : "870",
+    "label" : "requirement-870",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTSubscription must support extension:filterCriteria<br/><br/>Since the client is the data source, they must be able to populate all filter criteria, as well as combinations.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-477",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTSubscription.html#:~:text=extension%3AfilterCriteria,S"]
+  },
+  {
+    "key" : "871",
+    "label" : "requirement-871",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTSubscription must support extension:customChannelType",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-477",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTSubscription.html#:~:text=extension%3AcustomChannelType,S"]
+  },
+  {
+    "key" : "872",
+    "label" : "requirement-872",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "FASTReference must support extension:additionalIdentifier",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-601",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTReference.html#:~:text=extension%3AadditionalIdentifier,S"]
+  },
+  {
+    "key" : "1172",
+    "label" : "requirement-1172",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "RevokeConsentParameters must support parameter:document",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-RevokeConsentParameters.html#:~:text=parameter%3Adocument,S%CE%A3C"]
+  },
+  {
+    "key" : "640",
+    "label" : "requirement-640",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Client SHALL support Consent notification filter combinations, and they combine as AND<br/><br/>Basing this on the definition in the topic and the fact that it is Must Support",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "parent" : "Requirements-subscription-topics-client-consent-server.html#requirement-596",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/StructureDefinition-backport-subscription-definitions.html#:~:text=When%20multiple%20filters%20are%20applied%2C%20evaluates%20to%20true%20if%20all%20the%20conditions%20are%20met%3B%20otherwise%20it%20returns%20false.%20%28i.e.%2C%20logical%20AND%29."]
+  }]
+}

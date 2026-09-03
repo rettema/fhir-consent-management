@@ -2,11 +2,11 @@
   "resourceType" : "Requirements",
   "id" : "workflow-client-consent-server",
   "url" : "http://hl7.org/fhir/us/consent-management/Requirements/workflow-client-consent-server",
-  "name" : "WorkflowClientAdminService",
-  "title" : "Workflow Client Admin Service",
+  "name" : "WorkflowClientConsentServer",
+  "title" : "Workflow Client Consent Server",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-15T14:24:14-04:00",
+  "date" : "2026-09-02T22:40:54-04:00",
   "publisher" : "HL7 International / Community Based Collaborative Care",
   "contact" : [{
     "name" : "HL7 International / Community Based Collaborative Care",
@@ -15,9 +15,9 @@
       "value" : "http://www.hl7.org/Special/committees/cbcc"
     }]
   }],
-  "description" : "Workflow Requirements for Client Admin Service",
-  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server",
-  "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "description" : "Workflow Requirements for Client Consent Server",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/client",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
   "statement" : [{
     "key" : "541",
     "label" : "requirement-541",
@@ -25,6 +25,7 @@
     "conditionality" : false,
     "requirement" : "Informative: Consent Client and Consent Administration Service generally follow the subscription workflow for R4 systems in section 2.3.3<br/><br/>All constituent parts of this workflow are normatively defined elsewhere. Will use this workflow as a basis for the test cases needed.",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/workflow.html#workflow-fhir-r4"]
+    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/workflow.html#workflow-fhir-r4",
+    "https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/workflow.html#workflow-fhir-r4"]
   }]
 }

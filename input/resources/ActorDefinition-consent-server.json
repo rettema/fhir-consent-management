@@ -3,10 +3,10 @@
   "id" : "consent-server",
   "url" : "http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server",
   "name" : "ConsentServer",
-  "title" : "Consent Server System",
+  "title" : "Consent Server",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-15T14:24:14-04:00",
+  "date" : "2026-09-02T22:40:54-04:00",
   "publisher" : "HL7 International / Community Based Collaborative Care",
   "contact" : [{
     "name" : "HL7 International / Community Based Collaborative Care",

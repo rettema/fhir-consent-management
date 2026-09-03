@@ -2,11 +2,11 @@
   "resourceType" : "Requirements",
   "id" : "technical-specification-consent-server",
   "url" : "http://hl7.org/fhir/us/consent-management/Requirements/technical-specification-consent-server",
-  "name" : "TechnicalSpecificationAdminService",
-  "title" : "Technical Specification Admin Service",
+  "name" : "TechnicalSpecificationConsentServer",
+  "title" : "Technical Specification Consent Server",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-15T14:24:14-04:00",
+  "date" : "2026-09-02T22:40:54-04:00",
   "publisher" : "HL7 International / Community Based Collaborative Care",
   "contact" : [{
     "name" : "HL7 International / Community Based Collaborative Care",
@@ -15,88 +15,25 @@
       "value" : "http://www.hl7.org/Special/committees/cbcc"
     }]
   }],
-  "description" : "Technical Specification Requirements for Admin Service",
+  "description" : "Technical Specification Requirements for Consent Server",
   "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
   "statement" : [{
-    "key" : "68",
-    "label" : "requirement-68",
-    "conformance" : ["SHOULD"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHOULD return OperationOutcome with details of which business rules did not allow an operation to be successful if an HTTP status code of 4xx or 5xx is returned",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=Systems%20SHOULD%20return%20an%20OperationOutcome%20with%20the%20details%20if%20an%20HTTP%20status%20code%20of%204xx%20or%205xx%20is%20returned"]
-  },
-  {
     "key" : "69",
     "label" : "requirement-69",
     "conformance" : ["MAY"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service MAY return OperationOutcome for a successful operation<br/><br/>- Right now, linking to each transaction. But rather than link many generic requirements to every transaction, should I create generic tests that each transaction uses?\n•\tFor now, no, but consider iterating into this. Once everything traces, can consider refactoring traces.\n•\tAn argument for doing this: every time we add a new transaction, we need to add those traces.",
+    "requirement" : "Consent Administration Service MAY return OperationOutcome for a successful operation<br/><br/>I believe they are referring only to extended operations defined by the IG.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=systems%20MAY%20return%20an%20OperationOutcome%20with%20a%20success%20to%20be%20consistent"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=Consent%20Server%20systems%20MAY%20return%20an%20OperationOutcome%20with%20a%20success%20when%20they%20wish%20to%20provide%20additional%20structured%20information%20alongside%20a%20successful%20operation%20response"]
   },
   {
-    "key" : "63",
-    "label" : "requirement-63",
-    "conformance" : ["SHALL"],
+    "key" : "68",
+    "label" : "requirement-68",
+    "conformance" : ["SHOULD"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search",
+    "requirement" : "Consent Administration Service SHOULD return OperationOutcome with details of which business rules did not allow an operation to be successful if an HTTP status code of 4xx or 5xx is returned<br/><br/>I believe they are referring only to extended operations defined by the IG.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=consent%20administration%20service%20systems%20SHALL%20support%20searching%20for%20consents"]
-  },
-  {
-    "key" : "364",
-    "label" : "requirement-364",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentController",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=To%20support%20searching,controller"]
-  },
-  {
-    "key" : "365",
-    "label" : "requirement-365",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by date",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=To%20support%20searching,date"]
-  },
-  {
-    "key" : "367",
-    "label" : "requirement-367",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentManager",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=To%20support%20searching,manager"]
-  },
-  {
-    "key" : "71",
-    "label" : "requirement-71",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by patient",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=To%20support%20searching,patient"]
-  },
-  {
-    "key" : "201",
-    "label" : "requirement-201",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by scope",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=To%20support%20searching,scope"]
-  },
-  {
-    "key" : "73",
-    "label" : "requirement-73",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support Consent search by status",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=To%20support%20searching,status"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=Systems%20SHOULD%20return%20an%20OperationOutcome%20with%20the%20details%20if%20an%20HTTP%20status%20code%20of%204xx%20or%205xx%20is%20returned"]
   },
   {
     "key" : "62",
@@ -105,8 +42,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support File Consent operation<br/><br/>Redundant with CapStmt",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=a%20consent%20administration%20service%20SHALL%20support%3A,File%20Consent",
-    "http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#consent-management"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=are%20defined%20that-,a%20consent%20administration%20service%20SHALL%20support%3A,-File%20Consent&text=service%20SHALL%20support%3A-,File%20Consent,-and%20Revoke%20Consent"]
   },
   {
     "key" : "101",
@@ -115,7 +51,16 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support Revoke Consent operation<br/><br/>Redundant with CapStmt",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=a%20consent%20administration%20service%20SHALL%20support%3A,Revoke%20Consent"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=are%20defined%20that-,a%20consent%20administration%20service%20SHALL%20support%3A,-File%20Consent&text=File%20Consent%20and-,Revoke%20Consent,-.%20%C2%A7OP1"]
+  },
+  {
+    "key" : "63",
+    "label" : "requirement-63",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=consent%20administration%20service%20systems%20SHALL%20support%20searching%20for%20consents"]
   },
   {
     "key" : "64",
@@ -124,25 +69,133 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support Consent subscriptions (as defined by the FAST Subscription Topic for FHIR R4 with Subscriptions Backport)<br/><br/>Fix: \"a consent administration service SHALL support subscriptions to allow other systems to be informed when consents for a patient have changed.\" - this should be more precise, like \"a consent administration service SHALL support subscriptions as defined by the FAST Subscription Topic, e.g. to allow other systems to be informed when consents for a patient have changed.\"",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=consent%20administration%20service%20SHALL%20support%20subscriptions%20to%20allow%20other%20systems%20to%20be%20informed%20when%20consents%20for%20a%20patient%20have%20changed"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=consent%20administration%20service%20SHALL%20support%20subscriptions%20to%20allow%20other%20systems%20to%20be%20informed%20when%20consents%20for%20a%20patient%20have%20changed"]
   },
   {
-    "key" : "407",
-    "label" : "requirement-407",
+    "key" : "727",
+    "label" : "requirement-727",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support AuditEvent search",
+    "requirement" : "Consent Administration Service SHALL set Consent status element to 'active' when a File Consent operation has succeeded.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=systems%20SHALL%20support%20the%20searching%20for%20FAST%20Audit%20Events"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=When%20filing%20a%20consent%2C%20the%20Consent%20status%20element%20SHALL%20be%20set%20to%20%27active%27"]
   },
   {
-    "key" : "266",
-    "label" : "requirement-266",
+    "key" : "634",
+    "label" : "requirement-634",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Administration Service SHALL support AuditEvent search by FASTAuditEventConsent<br/><br/>Need to specify actor(s). For now, assuming CAS SHALL support and Consent Client MAY support",
+    "requirement" : "Consent Administration Service SHALL set Consent status element to 'inactive' when a Revoke Consent operation has succeeded.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=systems%20SHALL%20support%20the,consent"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=After%20a%20consent%20has%20been%20revoked%2C%20the%20Consent%20status%20element%20for%20the%20revoked%20consent%20SHALL%20be%20set%20to%20%27inactive%27."]
+  },
+  {
+    "key" : "760",
+    "label" : "requirement-760",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL NOT delete a Consent resource as a result of a Revoke Consent operation.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=A%20revoked%20consent%20SHALL%20NOT%20be%20deleted%20from%20the%20consent%20management%20system"]
+  },
+  {
+    "key" : "71",
+    "label" : "requirement-71",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by patient",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=Searching%20for%20Consents-,To%20support%20searching%20for%20consents%2C%20the%20following%20search%20parameters%20SHALL%20be%20supported,-%2D%20patient%2C%20controller%2C%20manager&text=scope.%20%C2%A7OP7-,patient,-controller"]
+  },
+  {
+    "key" : "364",
+    "label" : "requirement-364",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentController",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=Searching%20for%20Consents-,To%20support%20searching%20for%20consents%2C%20the%20following%20search%20parameters%20SHALL%20be%20supported,-%2D%20patient%2C%20controller%2C%20manager&text=patient-,controller,-manager"]
+  },
+  {
+    "key" : "367",
+    "label" : "requirement-367",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by FASTConsentManager",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=Searching%20for%20Consents-,To%20support%20searching%20for%20consents%2C%20the%20following%20search%20parameters%20SHALL%20be%20supported,-%2D%20patient%2C%20controller%2C%20manager&text=controller-,manager,-date"]
+  },
+  {
+    "key" : "365",
+    "label" : "requirement-365",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by date",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=Searching%20for%20Consents-,To%20support%20searching%20for%20consents%2C%20the%20following%20search%20parameters%20SHALL%20be%20supported,-%2D%20patient%2C%20controller%2C%20manager&text=manager-,date,-status"]
+  },
+  {
+    "key" : "73",
+    "label" : "requirement-73",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by status",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=Searching%20for%20Consents-,To%20support%20searching%20for%20consents%2C%20the%20following%20search%20parameters%20SHALL%20be%20supported,-%2D%20patient%2C%20controller%2C%20manager&text=date-,status,-scope"]
+  },
+  {
+    "key" : "201",
+    "label" : "requirement-201",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by scope",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=Searching%20for%20Consents-,To%20support%20searching%20for%20consents%2C%20the%20following%20search%20parameters%20SHALL%20be%20supported,-%2D%20patient%2C%20controller%2C%20manager&text=status-,scope,-The%20controller%20and"]
+  },
+  {
+    "key" : "827",
+    "label" : "requirement-827",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL be able to record disclosures of when a consent was accessed to determine whether patient information could be accessed<br/><br/>- Need to clarify which system has the responsibility for calling this - assuming Consent Client, calling the CAS.\n- For now, assuming client calls after accessing.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=consent%20administration%20services%20SHALL%20be%20able%20to%20record%20and%20retrieve%20disclosures%20of%20when%20a%20consent%20was%20accessed%20to%20determine%20whether%20patient%20information%20could%20be%20accessed."]
+  },
+  {
+    "key" : "828",
+    "label" : "requirement-828",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL be able to retrieve disclosures of when a consent was accessed to determine whether patient information could be accessed<br/><br/>- Need to clarify which system has the responsibility for calling this - assuming Consent Client, calling the CAS.\n- For now, assuming client calls after accessing.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=consent%20administration%20services%20SHALL%20be%20able%20to%20record%20and%20retrieve%20disclosures%20of%20when%20a%20consent%20was%20accessed%20to%20determine%20whether%20patient%20information%20could%20be%20accessed."]
+  },
+  {
+    "key" : "1166",
+    "label" : "requirement-1166",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Systems SHALL create a FAST Consent Audit Event via a RESTful FHIR POST AuditEvent whenever a Consent instance is accessed to determine whether patient information can be accessed<br/><br/>See 7.2.6.1 - not always the Consent Admin Service, so if we test this in a workflow with a CAS, need to allow a different configurable actor to be the one that POSTs.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=systems%20shall%20create%20a%20fast%20consent%20audit%20event%20via%20a%20restful%20fhir%20post%20auditevent%20whenever%20a%20consent%20instance%20is%20accessed%20to%20determine%20whether%20patient%20information%20can%20be%20accessed"]
+  },
+  {
+    "key" : "1163",
+    "label" : "requirement-1163",
+    "conformance" : ["SHOULD"],
+    "conditionality" : false,
+    "requirement" : "For disclosure events, implementers SHOULD follow the IHE Basic Audit Log Patterns (BALP) guide, specifically the patterns for data disclosure audit events. This guide does not define a custom profile for disclosure events; IHE-BALP patterns should be used directly.<br/><br/>Requires a separate analysis task",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=for%20disclosure%20events%2C%20implementers%20should%20follow%20the%20ihe%20basic%20audit%20log%20patterns%20%28balp%29%20guide%2C%20specifically%20the%20patterns%20for%20data%20disclosure%20audit%20events.%C2%A7op16%20this%20guide%20does%20not%20define%20a%20custom%20profile%20for%20disclosure%20events%3B%20ihe%2Dbalp%20patterns%20should%20be%20used%20directly."]
+  },
+  {
+    "key" : "1164",
+    "label" : "requirement-1164",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support AuditEvent search by Consent (entity)",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=systems%20shall%20support%20searching%20for%20fast%20consent%20audit%20events%C2%A7op9%20using%20the%20following%20search%20parameters&text=entity%20%E2%80%94%20use%20entity%3DConsent/%5Bid%5D%20to%20search%20for%20all%20authorization%20decisions%20made%20against%20a%20specific%20Consent%20instance"]
   },
   {
     "key" : "298",
@@ -151,6 +204,6 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support AuditEvent search by patient<br/><br/>Need to specify actor(s). For now, assuming CAS SHALL support and Consent Client MAY support",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=systems%20SHALL%20support%20the,patient"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=systems%20shall%20support%20searching%20for%20fast%20consent%20audit%20events%C2%A7op9%20using%20the%20following%20search%20parameters&text=patient%20%E2%80%94%20use%20patient%3D%5Bref%5D%20to%20search%20for%20all%20authorization%20decisions%20involving%20any%20consent%20for%20a%20specific%20patient"]
   }]
 }
