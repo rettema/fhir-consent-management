@@ -137,7 +137,9 @@ menu:
     Conformance Expectations: conformance.html
     Technical Specification: technical.html
     Information Sharing: sharing.html
-  Artifacts: artifact_overview.html 
+  Artifacts:
+    Overview: artifact_overview.html
+    Summary: artifacts.html
   Base Specs:
     FHIR R4 Spec: new-tab {{site.data.fhir.path}}
     US Core 6.1.0: new-tab https://hl7.org/fhir/us/core/STU6.1/index.html

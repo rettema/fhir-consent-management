@@ -2,11 +2,11 @@
   "resourceType" : "Requirements",
   "id" : "components-consent-server",
   "url" : "http://hl7.org/fhir/us/consent-management/Requirements/components-consent-server",
-  "name" : "ComponentsAdminService",
-  "title" : "Components Admin Service",
+  "name" : "ComponentsConsentServer",
+  "title" : "Components Consent Server",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-15T14:24:14-04:00",
+  "date" : "2026-09-02T22:40:54-04:00",
   "publisher" : "HL7 International / Community Based Collaborative Care",
   "contact" : [{
     "name" : "HL7 International / Community Based Collaborative Care",
@@ -15,7 +15,7 @@
       "value" : "http://www.hl7.org/Special/committees/cbcc"
     }]
   }],
-  "description" : "Components Requirements for Admin Service",
+  "description" : "Components Requirements for Consent Server",
   "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
   "statement" : [{
     "key" : "565",
@@ -24,6 +24,16 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD NOT use cross version extensions on R4 subscriptions to describe any elements also described by this guide<br/><br/>Not exactly sure how to test this",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/STU1.1/components.html#:~:text=cross%20version%20extensions%20SHOULD%20NOT%20be%20used%20on%20R4%20subscriptions%20to%20describe%20any%20elements%20also%20described%20by%20this%20guide"]
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/components.html#:~:text=cross%20version%20extensions%20SHOULD%20NOT%20be%20used%20on%20R4%20subscriptions%20to%20describe%20any%20elements%20also%20described%20by%20this%20guide"]
+  },
+  {
+    "key" : "633",
+    "label" : "requirement-633",
+    "conformance" : ["MAY"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service MAY support Consent notification filters by search parameters not listed by FASTConsentSubscriptionTopic<br/><br/>Not going to test just yet",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "parent" : "Requirements-subscription-topics-client-consent-server.html#requirement-596",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/components.html#:~:text=A%20server%20MAY%20support,parameters%20for%20best%20interoperability."]
   }]
 }

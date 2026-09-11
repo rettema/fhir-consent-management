@@ -20,7 +20,7 @@
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=For%20FHIR%20R4,by%20this%20guide.">https://hl7.org/fhir/uv/subscriptions-backport/conformance.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#:~:text=For%20FHIR%20R4,by%20this%20guide.">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHOULD</p>
 <p>
@@ -37,7 +37,10 @@
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-channel-type-1">https://hl7.org/fhir/uv/subscriptions-backport/conformance.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#backport-channel-type-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
+</p>
+<p>
+<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#backport-channel-type-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;MAY</p>
 <p>
@@ -54,7 +57,10 @@
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1">https://hl7.org/fhir/uv/subscriptions-backport/conformance.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#backport-filter-criteria-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
+</p>
+<p>
+<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#backport-filter-criteria-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -68,9 +74,15 @@
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1">https://hl7.org/fhir/uv/subscriptions-backport/conformance.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#backport-payload-content-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
+</p>
+<p>
+<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#backport-payload-content-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-535">535:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-535</a>
+</p>
 </div>
 </div>
 
@@ -82,9 +94,15 @@
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#notification-entry-subscriptionstatus-1">https://hl7.org/fhir/uv/subscriptions-backport/conformance.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#notification-entry-subscriptionstatus-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
+</p>
+<p>
+<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#notification-entry-subscriptionstatus-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Notes:</b>&nbsp;May need to be manually verified.
+</p>
 </div>
 </div>
 
@@ -96,7 +114,10 @@
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1">https://hl7.org/fhir/uv/subscriptions-backport/conformance.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#subscriptioncriteria-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
+</p>
+<p>
+<b>Reference:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html#subscriptioncriteria-1">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/conformance.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>

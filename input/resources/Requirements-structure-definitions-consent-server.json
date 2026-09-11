@@ -1,0 +1,90 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "structure-definitions-consent-server",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/structure-definitions-consent-server",
+  "name" : "StructureDefinitionsConsentServer",
+  "title" : "Structure Definitions Consent Server",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-02T22:40:54-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "Structure Definitions Requirements for Consent Server",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
+  "statement" : [{
+    "key" : "1030",
+    "label" : "requirement-1030",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent read",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=SHALL%20support%20both%C2%A0read%20Consent%20by%20id"]
+  },
+  {
+    "key" : "1024",
+    "label" : "requirement-1024",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support FASTConsent search by _id",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=Consent%20search%20using%20the%20_id%20search%20parameter"]
+  },
+  {
+    "key" : "1026",
+    "label" : "requirement-1026",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by identifier",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=SHALL%20support%20searching%20a%20consent%20by%20an%20identifier%20such%20as%20a%20CDA%20consent%20document%20using%20the%20identifier%20search%20parameter"]
+  },
+  {
+    "key" : "1028",
+    "label" : "requirement-1028",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support FASTConsent search by patient",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=SHALL%20support%20searching%20a%20consent%20by%20a%20patient%20using%20the%20patient%20search%20parameter"]
+  },
+  {
+    "key" : "1032",
+    "label" : "requirement-1032",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent search by the combination of the patient and status search parameters",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=SHALL%20support%20searching%20using%20the%20combination%20of%20the%20patient%20and%20status%20search%20parameters"]
+  },
+  {
+    "key" : "1034",
+    "label" : "requirement-1034",
+    "conformance" : ["SHOULD"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHOULD support Consent search by the combination of the patient and date search parameters",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structure-definitions-client-consent-server.html#requirement-597",
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/StructureDefinition-FASTConsent.html#:~:text=SHOULD%20support%20searching%20using%20the%20combination%20of%20the%20patient%20and%20date%20search%20parameters"]
+  },
+  {
+    "key" : "632",
+    "label" : "requirement-632",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent notification filter combinations, and they combine as AND<br/><br/>Not sure if there is a more direct requirement somewhere that says this.",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "parent" : "Requirements-subscription-topics-client-consent-server.html#requirement-596",
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/StructureDefinition-backport-subscription-definitions.html#:~:text=When%20multiple%20filters%20are%20applied%2C%20evaluates%20to%20true%20if%20all%20the%20conditions%20are%20met%3B%20otherwise%20it%20returns%20false.%20%28i.e.%2C%20logical%20AND%29."]
+  }]
+}

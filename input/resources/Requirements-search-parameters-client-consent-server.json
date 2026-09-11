@@ -2,11 +2,11 @@
   "resourceType" : "Requirements",
   "id" : "search-parameters-client-consent-server",
   "url" : "http://hl7.org/fhir/us/consent-management/Requirements/search-parameters-client-consent-server",
-  "name" : "SearchParametersClientAdminService",
-  "title" : "Search Parameters Client Admin Service",
+  "name" : "SearchParametersClientConsentServer",
+  "title" : "Search Parameters Client Consent Server",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-10-15T14:24:14-04:00",
+  "date" : "2026-09-02T22:40:54-04:00",
   "publisher" : "HL7 International / Community Based Collaborative Care",
   "contact" : [{
     "name" : "HL7 International / Community Based Collaborative Care",
@@ -15,9 +15,9 @@
       "value" : "http://www.hl7.org/Special/committees/cbcc"
     }]
   }],
-  "description" : "Search Parameters Requirements for Client Admin Service",
-  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server",
-  "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "description" : "Search Parameters Requirements for Client Consent Server",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/client",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
   "statement" : [{
     "key" : "472",
     "label" : "requirement-472",
@@ -25,16 +25,8 @@
     "conditionality" : false,
     "requirement" : "SearchParameter FASTConsentController",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-controller.html"]
-  },
-  {
-    "key" : "473",
-    "label" : "requirement-473",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "SearchParameter FASTConsentGrantee",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-grantee.html"]
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/SearchParameter-fast-consent-controller.html#root",
+    "https://build.fhir.org/ig/HL7/fhir-consent-management/en/SearchParameter-fast-consent-controller.html#root"]
   },
   {
     "key" : "474",
@@ -43,33 +35,7 @@
     "conditionality" : false,
     "requirement" : "SearchParameter FASTConsentManager",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-manager.html"]
-  },
-  {
-    "key" : "475",
-    "label" : "requirement-475",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "SearchParameter FASTConsentOrganizationId",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-organizationId.html"]
-  },
-  {
-    "key" : "476",
-    "label" : "requirement-476",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "SearchParameter FASTConsentPatientId",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-patientId.html"]
-  },
-  {
-    "key" : "471",
-    "label" : "requirement-471",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "SearchParameter FASTAuditEventConsent",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-auditevent-consent.html"]
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/SearchParameter-fast-consent-manager.html#root",
+    "https://build.fhir.org/ig/HL7/fhir-consent-management/en/SearchParameter-fast-consent-manager.html#root"]
   }]
 }

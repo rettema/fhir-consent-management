@@ -9,26 +9,8 @@
 ### Requirements Statement List
 
 <p>
-<button class="btn btn-info btn-lg btn-block" type="button" title="Click to Expand/Collapse All Requirements Statement Details" data-toggle="collapse" data-target="#req-1detail,#req-2detail,#req-34detail,#req-43detail,#req-35detail,#req-331detail,#req-332detail,#req-36detail,#req-37detail,#req-199detail,#req-72detail,#req-38detail,#req-200detail,#req-39detail,#req-40detail,#req-368detail,#req-42detail,#req-41detail,#req-46detail,#req-374detail,#req-661detail,#req-377detail,#req-378detail,#req-379detail,#req-380detail,#req-415detail,#req-397detail,#req-398detail,#req-399detail,#req-400detail,#req-404detail,#req-406detail,#req-409detail,#req-412detail,#req-505detail,#req-503detail,#req-509detail,#req-510detail,#req-511detail,#req-602detail,#req-604detail,#req-508detail,#req-694detail,#req-695detail,#req-517detail,#req-514detail,#req-515detail" aria-expanded="false">Expand/Collapse All Requirements Statement Details</button>
+<button class="btn btn-info btn-lg btn-block" type="button" title="Click to Expand/Collapse All Requirements Statement Details" data-toggle="collapse" data-target="#req-2detail,#req-34detail,#req-397detail,#req-398detail,#req-1161detail,#req-406detail,#req-404detail,#req-412detail,#req-43detail,#req-35detail,#req-37detail,#req-36detail,#req-199detail,#req-72detail,#req-200detail,#req-40detail,#req-42detail,#req-41detail,#req-46detail,#req-374detail,#req-377detail,#req-661detail,#req-959detail,#req-378detail,#req-379detail,#req-380detail,#req-331detail,#req-961detail,#req-400detail,#req-332detail,#req-515detail,#req-960detail,#req-514detail,#req-399detail,#req-508detail,#req-505detail,#req-503detail,#req-509detail,#req-510detail,#req-511detail,#req-517detail,#req-602detail,#req-604detail,#req-694detail,#req-695detail" aria-expanded="false">Expand/Collapse All Requirements Statement Details</button>
 </p>
-
-#### <a id="requirement-1" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-1detail" aria-expanded="false">1:&nbsp;Consent Administration Service SHALL implement the server CapabilityStatement</a>
-
-<div class="collapse" id="req-1detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/artifacts.html#:~:text=Capabilities%20required%20for%20a%20server%20system%20receiving%20consents.">https://build.fhir.org/ig/HL7/fhir-consent-management/artifacts.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Notes:</b>&nbsp;Does this mean a conforming system has to reference the "requirements" CS here, or could they just have their own CS that happens to be compatible?
-Also, what test should this be traced to? I'm thinking this traces to test procedure that ensures the right complement of tests are applied to a given system.
-</p>
-</div>
-</div>
 
 #### <a id="requirement-2" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-2detail" aria-expanded="false">2:&nbsp;Consent Administration Service SHALL support JSON FHIR</a>
 
@@ -38,7 +20,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22%20%3A%20%5B-,%22json%22,-%2C%0A%20%20%20%20%22xml%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22%20%3A%20%5B-,%22json%22,-%2C%0A%20%20%20%20%22xml%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
@@ -55,12 +37,96 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22json%22%2C-,%22xml%22,-%5D%2C%0A%20%20%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22json%22%2C-,%22xml%22,-%5D%2C%0A%20%20%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
 <b>Notes:</b>&nbsp;- Plan is to have JSON and XML flavors of all tests, but explicitly tracing each of those back to these requirements is probably not necessary.
 </p>
+</div>
+</div>
+
+#### <a id="requirement-397" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-397detail" aria-expanded="false">397:&nbsp;Consent Administration Service SHALL support AuditEvent resource</a>
+
+<div class="collapse" id="req-397detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=type%22%20%3A-,%22AuditEvent%22,-%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+</div>
+</div>
+
+#### <a id="requirement-398" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-398detail" aria-expanded="false">398:&nbsp;Consent Administration Service SHALL support AuditEvent resources that conform to FASTConsentAuditEvent profile</a>
+
+<div class="collapse" id="req-398detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97-,%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsentAuditEvent%22,-%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+</div>
+</div>
+
+#### <a id="requirement-1161" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-1161detail" aria-expanded="false">1161:&nbsp;Consent Administration Service SHALL support AuditEvent create</a>
+
+<div class="collapse" id="req-1161detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=StructureDefinition/FASTConsentAuditEvent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22create%22,-%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+</div>
+</div>
+
+#### <a id="requirement-406" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-406detail" aria-expanded="false">406:&nbsp;Consent Administration Service SHALL support AuditEvent search</a>
+
+<div class="collapse" id="req-406detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22create%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22search%2Dtype%22,-%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22read%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22searchParam">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+</div>
+</div>
+
+#### <a id="requirement-404" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-404detail" aria-expanded="false">404:&nbsp;Consent Administration Service SHALL support AuditEvent read</a>
+
+<div class="collapse" id="req-404detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=code%22%20%3A%20%22search%2Dtype%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22read%22,-%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22searchParam%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%20%3A%20%22patient">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+</div>
+</div>
+
+#### <a id="requirement-412" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-412detail" aria-expanded="false">412:&nbsp;Consent Administration Service SHALL support AuditEvent search by patient</a>
+
+<div class="collapse" id="req-412detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=code%22%20%3A%20%22read%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22searchParam%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22name%22%20%3A%20%22patient%22%2C%20%22type%22%20%3A%20%22reference%22,-%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
 </div>
 
@@ -72,7 +138,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22mode%22%20%3A%20%22server,type%22%20%3A%20%22Consent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=type%22%20%3A-,%22Consent%22,-%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -86,66 +152,12 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97-,%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22,-%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
 <b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
 </p>
-</div>
-</div>
-
-#### <a id="requirement-331" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-331detail" aria-expanded="false">331:&nbsp;Consent Administration Service SHALL mark with profile assertions Consent resources that conform to the FASTConsent profile</a>
-
-<div class="collapse" id="req-331detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FHIR R4
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)">https://hl7.org/fhir/R4/profiling.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.
-</p>
-</div>
-</div>
-
-#### <a id="requirement-332" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-332detail" aria-expanded="false">332:&nbsp;Consent Administration Service SHALL support searching by the _profile parameter for Consent resources that conform to the FASTConsent profile</a>
-
-<div class="collapse" id="req-332detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FHIR R4
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles">https://hl7.org/fhir/R4/profiling.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile
-</p>
-</div>
-</div>
-
-#### <a id="requirement-36" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-36detail" aria-expanded="false">36:&nbsp;Consent Administration Service SHALL support Consent read</a>
-
-<div class="collapse" id="req-36detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.html#:~:text=Core%20FHIR%20Resource-,Consent,Supports%20search%2Dtype%2C%20read,-.">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
 </div>
 
@@ -157,7 +169,21 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=FASTConsent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22search%2Dtype%22,-%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22read%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+</div>
+</div>
+
+#### <a id="requirement-36" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-36detail" aria-expanded="false">36:&nbsp;Consent Administration Service SHALL support Consent read</a>
+
+<div class="collapse" id="req-36detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22read%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -171,7 +197,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22reference%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22controller%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/SearchParameter/fast%2Dconsent%2Dcontroller%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
@@ -188,29 +214,9 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22date%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22date%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22date%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
-</div>
-</div>
-
-#### <a id="requirement-38" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-38detail" aria-expanded="false">38:&nbsp;Consent Administration Service SHALL support Consent search by FASTConsentGrantee</a>
-
-<div class="collapse" id="req-38detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,grantee%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-473">473:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-473</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;Missing corresponding req in Tech spec 6.2.3.4
-</p>
 </div>
 </div>
 
@@ -222,32 +228,11 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,manager%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22manager%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/SearchParameter/fast%2Dconsent%2Dmanager%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
 <b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-474">474:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-474</a>
-</p>
-</div>
-</div>
-
-#### <a id="requirement-39" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-39detail" aria-expanded="false">39:&nbsp;Consent Administration Service SHALL support Consent search by FASTConsentOrganizationId</a>
-
-<div class="collapse" id="req-39detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22token%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-475">475:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-475</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;Matches identifier of grantee, manager, controller or the provision.actor.reference
-Missing corresponding req in Tech spec 6.2.3.4
 </p>
 </div>
 </div>
@@ -260,30 +245,9 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,patient%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22name%22%20%3A%20%22patient%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22,-%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
-</div>
-</div>
-
-#### <a id="requirement-368" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-368detail" aria-expanded="false">368:&nbsp;Consent Administration Service SHALL support Consent search by FASTConsentPatientId</a>
-
-<div class="collapse" id="req-368detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,patientId%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-consent-server.html#requirement-476">476:&nbsp;Requirements-search-parameters-client-consent-server.html#requirement-476</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;Matches patient.identifier or patient.extension additionalIdentifier
-Missing corresponding req in Tech spec 6.2.3.4
-</p>
 </div>
 </div>
 
@@ -295,7 +259,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,scope%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22scope%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -309,7 +273,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,status%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22status%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -323,7 +287,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/file%2Dconsent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22fileConsent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/OperationDefinition/file%2Dconsent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
@@ -340,26 +304,12 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/revoke%2Dconsent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22name%22%20%3A%20%22revokeConsent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/OperationDefinition/revoke%2Dconsent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
 <b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-466">466:&nbsp;Requirements-extended-operations-client-consent-server.html#requirement-466</a>
 </p>
-</div>
-</div>
-
-#### <a id="requirement-661" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-661detail" aria-expanded="false">661:&nbsp;Consent Administration Service SHALL support Subscription resource</a>
-
-<div class="collapse" id="req-661detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22resource%22,%3A%20%22Subscription%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
 </div>
 
@@ -371,9 +321,40 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22type%22%20%3A%20%22Subscription%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22url%22%20%3A%20%22http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/StructureDefinition/capabilitystatement%2Dsubscriptiontopic%2Dcanonical%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22valueCanonical%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/SubscriptionTopic/FASTConsentSubscriptionTopic%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
+</div>
+</div>
+
+#### <a id="requirement-661" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-661detail" aria-expanded="false">661:&nbsp;Consent Administration Service SHALL support Subscription resource</a>
+
+<div class="collapse" id="req-661detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22%20%3A%20%22-,Subscription,-%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+</div>
+</div>
+
+#### <a id="requirement-959" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-959detail" aria-expanded="false">959:&nbsp;Consent Administration Service SHALL support Subscription resources that conform to FASTSubscription profile</a>
+
+<div class="collapse" id="req-959detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTSubscription%22">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-477">477:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-477</a>
+</p>
 </div>
 </div>
 
@@ -385,7 +366,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22create%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=StructureDefinition/FASTSubscription%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22create%22,-%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22update%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
@@ -402,7 +383,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22update%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22%20%3A%20%22-,update,-%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -416,70 +397,48 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22delete%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22%20%3A%20%22-,delete,-%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D">https://build.fhir.org/ig/HL7/fhir-consent-management/en/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
 </div>
 
-#### <a id="requirement-415" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-415detail" aria-expanded="false">415:&nbsp;Consent Administration Service SHALL support $recordDisclosure operation against AuditEvent resource</a>
+#### <a id="requirement-331" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-331detail" aria-expanded="false">331:&nbsp;Consent Administration Service SHALL mark with profile assertions Consent resources that conform to the FASTConsent profile</a>
 
-<div class="collapse" id="req-415detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22,OperationDefinition/record%2Ddisclosure%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-consent-server.html#requirement-445">445:&nbsp;Requirements-extended-operations-client-consent-server.html#requirement-445</a>
-</p>
-</div>
-</div>
-
-#### <a id="requirement-397" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-397detail" aria-expanded="false">397:&nbsp;Consent Administration Service SHALL support AuditEvent resource</a>
-
-<div class="collapse" id="req-397detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22resource%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22AuditEvent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-</div>
-</div>
-
-#### <a id="requirement-398" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-398detail" aria-expanded="false">398:&nbsp;Consent Administration Service SHALL support AuditEvent resources that conform to FASTConsentAuditEvent profile</a>
-
-<div class="collapse" id="req-398detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsentAuditEvent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-</div>
-</div>
-
-#### <a id="requirement-399" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-399detail" aria-expanded="false">399:&nbsp;Consent Administration Service SHALL mark with profile assertions AuditEvent resources that conform to the FASTConsentAuditEvent profile</a>
-
-<div class="collapse" id="req-399detail">
+<div class="collapse" id="req-331detail">
 <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
 <p>
 <b>Specification:</b>&nbsp;HL7 FHIR R4
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)">https://hl7.org/fhir/R4/profiling.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile%3A&text=Mark%20resources%20with%20profile%20assertions%20documenting%20the%20profile%28s%29%20they%20conform%20to%20%28this%20enables%20indexing%20by%20the%20profile%29">https://hl7.org/fhir/R4/profiling.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
+</p>
+<p>
 <b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.
+</p>
+</div>
+</div>
+
+#### <a id="requirement-961" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-961detail" aria-expanded="false">961:&nbsp;Consent Administration Service SHALL support searching by the _profile parameter for Subscription resources that conform to the FASTSubscription profile</a>
+
+<div class="collapse" id="req-961detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FHIR R4
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile&text=%28if%20a%20server%29%20support%20searching%20by%20the%20_profile%20parameter%20for%20the%20declared%20profiles">https://hl7.org/fhir/R4/profiling.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-477">477:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-477</a>
+</p>
+<p>
+<b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. BUT, what if the server doesn't support searching on the resource at all? Since searching isn't required, leaving this untested for now.
 </p>
 </div>
 </div>
@@ -492,7 +451,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;HL7 FHIR R4
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles">https://hl7.org/fhir/R4/profiling.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile&text=%28if%20a%20server%29%20support%20searching%20by%20the%20_profile%20parameter%20for%20the%20declared%20profiles">https://hl7.org/fhir/R4/profiling.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
@@ -501,57 +460,112 @@ Missing corresponding req in Tech spec 6.2.3.4
 </div>
 </div>
 
-#### <a id="requirement-404" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-404detail" aria-expanded="false">404:&nbsp;Consent Administration Service SHALL support AuditEvent read</a>
+#### <a id="requirement-332" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-332detail" aria-expanded="false">332:&nbsp;Consent Administration Service SHALL support searching by the _profile parameter for Consent resources that conform to the FASTConsent profile</a>
 
-<div class="collapse" id="req-404detail">
+<div class="collapse" id="req-332detail">
 <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
 <p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+<b>Specification:</b>&nbsp;HL7 FHIR R4
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent,code%22%20%3A%20%22read%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile&text=%28if%20a%20server%29%20support%20searching%20by%20the%20_profile%20parameter%20for%20the%20declared%20profiles">https://hl7.org/fhir/R4/profiling.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
-</div>
-</div>
-
-#### <a id="requirement-406" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-406detail" aria-expanded="false">406:&nbsp;Consent Administration Service SHALL support AuditEvent search</a>
-
-<div class="collapse" id="req-406detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
 <p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-597</a>
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsentAuditEvent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile
+</p>
+</div>
+</div>
+
+#### <a id="requirement-515" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-515detail" aria-expanded="false">515:&nbsp;Consent Administration Service SHALL support searching by the _profile parameter for Subscription resources that conform to the BackportSubscription profile</a>
+
+<div class="collapse" id="req-515detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FHIR R4
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile&text=%28if%20a%20server%29%20support%20searching%20by%20the%20_profile%20parameter%20for%20the%20declared%20profiles">https://hl7.org/fhir/R4/profiling.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
-</div>
-</div>
-
-#### <a id="requirement-409" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-409detail" aria-expanded="false">409:&nbsp;Consent Administration Service SHALL support AuditEvent search by FASTAuditEventConsent</a>
-
-<div class="collapse" id="req-409detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
 <p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-595">595:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-595</a>
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent,type%22%20%3A%20%22reference%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. BUT, what if the server doesn't support searching on the resource at all? Since searching isn't required, leaving this untested for now.
+</p>
+</div>
+</div>
+
+#### <a id="requirement-960" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-960detail" aria-expanded="false">960:&nbsp;Consent Administration Service SHALL mark with profile assertions Subscription resources that conform to the FASTSubscription profile</a>
+
+<div class="collapse" id="req-960detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FHIR R4
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of,by%20the%20profile%29&text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile">https://hl7.org/fhir/R4/profiling.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
-</div>
-</div>
-
-#### <a id="requirement-412" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-412detail" aria-expanded="false">412:&nbsp;Consent Administration Service SHALL support AuditEvent search by patient</a>
-
-<div class="collapse" id="req-412detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
 <p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-477">477:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-477</a>
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,patient%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.
+</p>
+</div>
+</div>
+
+#### <a id="requirement-514" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-514detail" aria-expanded="false">514:&nbsp;Consent Administration Service SHALL mark with profile assertions Subscription resources that conform to the BackportSubscription profile</a>
+
+<div class="collapse" id="req-514detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FHIR R4
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of,by%20the%20profile%29&text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile">https://hl7.org/fhir/R4/profiling.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-595">595:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-595</a>
+</p>
+<p>
+<b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.
+</p>
+</div>
+</div>
+
+#### <a id="requirement-399" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-399detail" aria-expanded="false">399:&nbsp;Consent Administration Service SHALL mark with profile assertions AuditEvent resources that conform to the FASTConsentAuditEvent profile</a>
+
+<div class="collapse" id="req-399detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FHIR R4
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#:~:text=a%20producer%20of,by%20the%20profile%29&text=a%20producer%20of%20resources%20also%20SHALL%2C%20for%20any%20profile%20declared%20in%20CapabilityStatement.rest.resource.supportedProfile">https://hl7.org/fhir/R4/profiling.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.
+</p>
+</div>
+</div>
+
+#### <a id="requirement-508" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-508detail" aria-expanded="false">508:&nbsp;Consent Administration Service SHALL support $status operation against Subscription resource</a>
+
+<div class="collapse" id="req-508detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;Subscriptions R5 Backport
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=SHALL%20support%20the%20%24status%20operation">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -565,7 +579,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHALL%20be%20capable%20of%20returning%20a%20Subscription%20resource%20using%3A%20GET%20%5Bbase%5D/Subscription/%5Bid%5D">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHALL%20be%20capable%20of%20returning%20a%20Subscription%20resource%20using%3A%20GET%20%5Bbase%5D/Subscription/%5Bid%5D">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -579,7 +593,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20creating%20a%20Subscription%20resource%20using%20either%3A%20POST%20%5Bbase%5D/Subscription%20or%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20creating%20a%20Subscription%20resource%20using%20either%3A%20POST%20%5Bbase%5D/Subscription%20or%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHOULD</p>
 <p>
@@ -596,7 +610,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHOULD</p>
 <p>
@@ -613,7 +627,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20deleting%20a%20Subscription%20resource%20using%3A%20DELETE%20%5Bbase%5D/Subscription/%5Bid%5D">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHOULD</p>
 </div>
@@ -627,11 +641,31 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20searching%20for%20Subscription%20resources%20using%3A%20GET%20%5Bbase%5D/Subscription/%3F%5Bparameters%5D">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHOULD</p>
 <p>
-<b>Notes:</b>&nbsp;Not testing search at this time
+<b>Notes:</b>&nbsp;Not testing search at this time, as the Consent IG doesn't require/use it.
+</p>
+</div>
+</div>
+
+#### <a id="requirement-517" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-517detail" aria-expanded="false">517:&nbsp;Consent Administration Service SHALL support Subscription resources that conform to BackportSubscription profile</a>
+
+<div class="collapse" id="req-517detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;Subscriptions R5 Backport
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22type%22%20%3A%20%22Subscription%22%2C%0A%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%22http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/StructureDefinition/backport%2Dsubscription%22">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-consent-server.html#requirement-595">595:&nbsp;Requirements-structure-definitions-client-consent-server.html#requirement-595</a>
+</p>
+<p>
+<b>Notes:</b>&nbsp;For now, only testing Subscriptions that conform to FASTSubscription, since it derives from BackportSubscription.
 </p>
 </div>
 </div>
@@ -644,11 +678,11 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Supported%20Operations-,Subscription,url%2C%20status,-%2D">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22name%22%20%3A%20%22url%22%2C%0A%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/SearchParameter/Subscription%2Durl%22">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Notes:</b>&nbsp;Not testing search at this time. Also, the raw CapStmt (linked) and the rendered page for the CapStmt disagree: the raw says SHALL, the page says SHOULD. See: https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,uri
+<b>Notes:</b>&nbsp;Not testing search at this time, as the Consent IG doesn't require/use it. Also, the raw CapStmt (linked) and the rendered page for the CapStmt disagree: the raw says SHALL, the page says SHOULD. See: https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,uri
 </p>
 </div>
 </div>
@@ -661,26 +695,12 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,token">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22name%22%20%3A%20%22status%22%2C%0A%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/SearchParameter/Subscription%2Dstatus%22">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHOULD</p>
 <p>
-<b>Notes:</b>&nbsp;Not testing search at this time
+<b>Notes:</b>&nbsp;Not testing search at this time, as the Consent IG doesn't require/use it.
 </p>
-</div>
-</div>
-
-#### <a id="requirement-508" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-508detail" aria-expanded="false">508:&nbsp;Consent Administration Service SHALL support $status operation against Subscription resource</a>
-
-<div class="collapse" id="req-508detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;Subscriptions R5 Backport
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=SHALL%20support%20the%20%24status%20operation">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
 </div>
 
@@ -692,7 +712,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22extension%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%22url%22%20%3A%20%22http%3A//hl7.org/fhir/StructureDefinition/capabilitystatement%2Dexpectation%22%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%22valueCode%22%20%3A%20%22MAY,http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/OperationDefinition/backport%2Dsubscription%2Devents%22">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.json</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22name%22%20%3A%20%22%24events%22%2C%0A%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/OperationDefinition/backport%2Dsubscription%2Devents%22">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json</a>
 </p>
 <p><b>Conformance:</b>&nbsp;MAY</p>
 <p>
@@ -709,59 +729,11 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=%24status%2C%20%24events%2C-,%24get%2Dws%2Dbinding%2Dtoken,-Subscription">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22name%22%20%3A%20%22%24get%2Dws%2Dbinding%2Dtoken%22%2C%0A%20%20%20%20%20%20%20%20%22definition%22%20%3A%20%22http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/OperationDefinition/backport%2Dsubscription%2Dget%2Dws%2Dbinding%2Dtoken%22">https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/CapabilityStatement-backport-subscription-server-r4.json</a>
 </p>
 <p><b>Conformance:</b>&nbsp;MAY</p>
 <p>
 <b>Notes:</b>&nbsp;Not testing at this time
-</p>
-</div>
-</div>
-
-#### <a id="requirement-517" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-517detail" aria-expanded="false">517:&nbsp;Consent Administration Service SHALL support Subscription resources that conform to BackportSubscription profile</a>
-
-<div class="collapse" id="req-517detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;Subscriptions R5 Backport
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22resource%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%22extension%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%20%20%22url,StructureDefinition/backport%2Dsubscription%22%5D">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.json</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-</div>
-</div>
-
-#### <a id="requirement-514" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-514detail" aria-expanded="false">514:&nbsp;Consent Administration Service SHALL mark with profile assertions Subscription resources that conform to the BackportSubscription profile</a>
-
-<div class="collapse" id="req-514detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FHIR R4
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)">https://hl7.org/fhir/R4/profiling.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.
-</p>
-</div>
-</div>
-
-#### <a id="requirement-515" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-515detail" aria-expanded="false">515:&nbsp;Consent Administration Service SHALL support searching by the _profile parameter for Subscription resources that conform to the BackportSubscription profile</a>
-
-<div class="collapse" id="req-515detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FHIR R4
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles">https://hl7.org/fhir/R4/profiling.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile
 </p>
 </div>
 </div>

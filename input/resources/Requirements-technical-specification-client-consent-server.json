@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "technical-specification-client-consent-server",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/technical-specification-client-consent-server",
+  "name" : "TechnicalSpecificationClientConsentServer",
+  "title" : "Technical Specification Client Consent Server",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-02T22:40:54-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "Technical Specification Requirements for Client Consent Server",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/client",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/consent-server"],
+  "statement" : [{
+    "key" : "826",
+    "label" : "requirement-826",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Defined filter criteria for the FAST Subscription Topic<br/><br/>No conformance words: \"filter criteria...are\", and it's redundant with the SubscriptionTopic as defined, so not testing per se.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/en/technical.html#:~:text=defined%20filter%20criteria%20for%20the%20FAST%20Subscription%20Topic%20are"]
+  }]
+}
